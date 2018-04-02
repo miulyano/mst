@@ -1,19 +1,19 @@
 {
-  "name": "project_name",
+  "name": "mst",
   "version": "1.0.0",
-  "description": "project_description",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.4px.ru:project_repository"
+    "url": "https://github.com/morecodemore/mst"
   },
   "keywords": [
     ""
   ],
-  "author": "project_author",
+  "author": "morecodemore",
   "license": "UNLICENSED",
   "devDependencies": {
     "gulp": "^3.9.1",
