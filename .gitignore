@@ -1,2 +1,6 @@
-.DS_Store
-node_modules/
+﻿#скомпилированные файлы 
+_assets/*
+
+#пакеты node.js для gulp
+node_modules/*
+
