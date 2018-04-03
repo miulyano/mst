@@ -89,7 +89,7 @@ gulp.task('img:build', function (cb)
 {
     pump([
         gulp.src(path.src.img),
-        imagemin(),
+        //imagemin(),
         rename(function (path)
         {
             path.extname = (path.extname + "").toLowerCase();
@@ -126,7 +126,6 @@ gulp.task('svg:build', function (cb)
         cheerio({
             run: function ($)
             {
-                $('[fill]').removeAttr('fill');
                 $('[stroke]').removeAttr('stroke');
                 $('[style]').removeAttr('style');
             },
