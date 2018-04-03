@@ -7,20 +7,13 @@
 }
 
 .header__info_wrapper,
+.header__slider,
+.header__nav,
 .main__contacts_wrapper,
 .main__services,
 .main__partners,
 .main__certificates,
 .footer {
+  margin: 0 auto;
   @include make-container-max-widths();
-  margin: 0 auto;
-}
-
-.header__info_wrapper,
-.main__contacts_wrapper,
-.main__services,
-.main__partners,
-.main__certificates,
-.footer {
-  margin: 0 auto;
 }
