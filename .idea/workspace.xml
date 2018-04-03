@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faeb7c6d-75e6-4b73-9566-c26062ce1aa6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/block/html/_header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/block/system/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/block/system/_bootstrap.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/block/system/_layouts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/block/system/_vars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_source/css/normalize.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/certificates/certificate_1.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/certificates/certificate_2.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/certificates/certificate_3.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/certificates/certificate_4.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/partners/energy_sales.png" afterPath="$PROJECT_DIR$/_source/img/partners/energy-sales.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_source/img/services/technical_offers.png" afterPath="$PROJECT_DIR$/_source/img/services/technical-offers.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/css/style.scss" afterPath="$PROJECT_DIR$/_source/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/logo.svg" afterPath="$PROJECT_DIR$/_source/svg/logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/arrow.svg" afterPath="$PROJECT_DIR$/_source/svg/style/arrow.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/footer_mail.svg" afterPath="$PROJECT_DIR$/_source/svg/style/footer_mail.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/footer_phone.svg" afterPath="$PROJECT_DIR$/_source/svg/style/footer_phone.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/header_mail.svg" afterPath="$PROJECT_DIR$/_source/svg/style/header_mail.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/header_phone.svg" afterPath="$PROJECT_DIR$/_source/svg/style/header_phone.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_source/svg/style/marker.svg" afterPath="$PROJECT_DIR$/_source/svg/style/marker.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-    </list>
+    <list default="true" id="faeb7c6d-75e6-4b73-9566-c26062ce1aa6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +148,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="22" />
     <option name="y" value="39" />
     <option name="width" value="1920" />
@@ -317,15 +291,15 @@
       <updated>1522679393239</updated>
       <workItem from="1522679395948" duration="1865000" />
       <workItem from="1522691696570" duration="12946000" />
-      <workItem from="1522706074873" duration="9807000" />
+      <workItem from="1522706074873" duration="10085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24618000" />
+    <option name="totallyTimeSpent" value="24896000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1719697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
