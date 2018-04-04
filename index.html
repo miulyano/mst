@@ -74,7 +74,19 @@
     </section>
     <nav class="header__nav">
       <ul class="header__nav_list">
-        <li class="header__nav_category"><a href="">Продукция</a></li>
+        <li class="header__nav_category">
+          <ul class="header__nav_category-list">Продукция
+            <li class="header__nav_category-item"><a href="/">Производство бетона</a></li>
+            <li class="header__nav_category-item"><a href="/">Подливочные и анкерные составы</a></li>
+            <li class="header__nav_category-item"><a href="/">Ремонт и защита бетона</a></li>
+            <li class="header__nav_category-item"><a href="/">Усиление конструкций</a></li>
+            <li class="header__nav_category-item"><a href="/">Клеи и герметики</a></li>
+            <li class="header__nav_category-item"><a href="/">Антикорозийнная защита металоконструкций</a></li>
+            <li class="header__nav_category-item"><a href="/">Гидроизоляция</a></li>
+            <li class="header__nav_category-item"><a href="/">Полы и напольные покрытия</a></li>
+            <li class="header__nav_category-item"><a href="/">Кровельные материалы</a></li>
+          </ul>
+        </li>
         <li class="header__nav_category"><a href="/">Услуги</a></li>
         <li class="header__nav_category"><a href="/">Объекты</a></li>
         <li class="header__nav_category"><a href="/">О компании</a></li>
@@ -106,29 +118,13 @@
         <h4 class="main__services_aside-heading">Товары</h4>
         <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Производство бетона</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Подливочные и анкерные составы</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Ремонт и защита бетона</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Усиление конструкций</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Клеи и герметики</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Антикорозийнная защита металоконструкций</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Гидроизоляция</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Полы и напольные покрытия</a></li>
-        </ul>
-        <ul class="main__services_aside list">
           <li class="main__services_aside-item"><a href="/">Кровельные материалы</a></li>
         </ul>
       </aside>
@@ -181,11 +177,38 @@
       </div>
     </section>
     <section class="main__contacts">
-      <div class="main__contacts_wrapper"></div>
+
+      <section class="main__contacts_wrapper">
+        <div class="main__contacts_block">
+          <h4 class="main__contacts_block-header">Контакты</h4>
+          <p class="main__contacts_block-text">Телефон<a href="tel:+74953993331">+7(495) 399-33-31</a></p>
+          <p class="main__contacts_block-text">Электронная почта<a href="mailto:admin@sitename.ru">admin@sitename.ru</a></p>
+          <p class="main__contacts_block-text">Адрес<span>г. Москва, ул. Чекистов 28</span></p>
+          <button class="main__contacts_block-button">Написать нам</button>
+        </div>
+      </section>
     </section>
   </main>
   <footer class="footer">
-    <section class="footer__info"></section>
+    <section class="footer__info">
+      <div class="footer__info_logo">
+        <svg width="130" height="130" class="logo">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </div>
+      <div class="footer__info_block">
+        <div class="footer__info_text">
+          <h1 class="footer__info_heading">Мостовые строительные технологии</h1>
+          <h2 class="footer__info_title">Обеспечиваем строительство лучшими технологиями </h2>
+        </div>
+        <div class="footer__info_action">
+          <p class="footer__info_mail"><span>Адрес</span><span>г. Москва, ул. Чекистов 28</span></p>
+          <p class="footer__info_mail"><span>Электронная почта</span><a href="mailto:office1@-mail.ru">office1@-mail.ru</a></p>
+          <p class="footer__info_tel"><a href="tel:8800221221">8 (800) 222 12 21</a><span>Бесплатные звонки по РФ</span></p>
+          <button class="footer__info_button">Заказать звонок</button>
+        </div>
+      </div>
+    </section>
   </footer>
 </body>
 </html>
