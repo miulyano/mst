@@ -1,0 +1,10 @@
+@import "../../block/system/vars";
+
+.header {
+  min-height: 685px;
+  background-color: $heading-bg-color;
+  background-image: url("../img/content/bridge.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}

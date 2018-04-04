@@ -19,6 +19,7 @@
 }
 
 
+<<<<<<< HEAD
 .header {
   min-height: 685px;
   background-color: $heading-bg-color;
@@ -27,6 +28,8 @@
   background-position: center;
   background-size: auto 100%;
 }
+=======
+>>>>>>> 16f1f0fcdc126f954e781c730a94542e3eab23b7
 
 .header__info_wrapper,
 .main__services,
@@ -34,7 +37,14 @@
 .main__services_block-article,
 .main__partners_article-block,
 .main__certificates_article-block,
+<<<<<<< HEAD
 .footer {
+=======
+.footer__info,
+.header__info_action,
+.header__nav_list,
+.footer__info_action {
+>>>>>>> 16f1f0fcdc126f954e781c730a94542e3eab23b7
   display: flex;
 }
 

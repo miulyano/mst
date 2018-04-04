@@ -8,9 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_source/css/block/html/_header.scss" afterPath="$PROJECT_DIR$/_source/css/block/html/_header.scss" />
       <change beforePath="$PROJECT_DIR$/_source/css/block/system/_layouts.scss" afterPath="$PROJECT_DIR$/_source/css/block/system/_layouts.scss" />
+      <change beforePath="$PROJECT_DIR$/_source/img/certificates/certificate1.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate_1.png" />
+      <change beforePath="$PROJECT_DIR$/_source/img/certificates/certificate2.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate_2.png" />
+      <change beforePath="$PROJECT_DIR$/_source/img/certificates/certificate3.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate_3.png" />
+      <change beforePath="$PROJECT_DIR$/_source/img/certificates/certificate4.png" afterPath="$PROJECT_DIR$/_source/img/certificates/certificate_4.png" />
+      <change beforePath="$PROJECT_DIR$/_source/img/partners/energy-sales.png" afterPath="$PROJECT_DIR$/_source/img/partners/energy_sales.png" />
+      <change beforePath="$PROJECT_DIR$/_source/img/services/technical-offers.png" afterPath="$PROJECT_DIR$/_source/img/services/technical_offers.png" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
 >>>>>>> 7f897cead570414de8b6fed7fcf1976fda4286e7
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,16 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="38294" lean-forward="false" selection-start-line="0" selection-start-column="38294" selection-end-line="0" selection-end-column="38294" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_vars.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_source/css/block/system/_vars.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="174" column="56" lean-forward="false" selection-start-line="174" selection-start-column="56" selection-end-line="174" selection-end-column="56" />
+            <state relative-caret-position="429">
+              <caret line="203" column="20" lean-forward="true" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="39" />
               <folding>
                 <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -70,21 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_source/css/block/html/_header.scss">
+      <file leaf-file-name="_layouts.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_source/css/block/system/_layouts.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="258">
+              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layouts.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_source/css/block/system/_layouts.scss">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_source/css/block/html/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="216">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -126,11 +121,11 @@
         <option value="$PROJECT_DIR$/_source/svg/style/header_mail.svg" />
         <option value="$PROJECT_DIR$/_source/svg/style/footer_phone.svg" />
         <option value="$PROJECT_DIR$/_source/svg/style/footer_mail.svg" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/_assets/svg/sprite.svg" />
-        <option value="$PROJECT_DIR$/_source/css/block/system/_layouts.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/_source/css/block/html/_header.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_source/css/block/system/_layouts.scss" />
       </list>
     </option>
   </component>
@@ -152,6 +147,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="22" />
     <option name="y" value="39" />
@@ -162,6 +158,12 @@
 >>>>>>> 7f897cead570414de8b6fed7fcf1976fda4286e7
     <option name="width" value="1920" />
     <option name="height" value="1057" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="24" />
+    <option name="width" value="1828" />
+    <option name="height" value="1031" />
+>>>>>>> 16f1f0fcdc126f954e781c730a94542e3eab23b7
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -179,7 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,30 +192,6 @@
             <path>
               <item name="mst" type="b2602c69:ProjectViewProjectNode" />
               <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="certificates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="_source" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -228,6 +206,14 @@
               <item name="_source" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="block" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mst" type="b2602c69:ProjectViewProjectNode" />
@@ -237,11 +223,17 @@
               <item name="block" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="mst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mst" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,11 +282,16 @@
 =======
       <workItem from="1522706074873" duration="9807000" />
       <workItem from="1522764253032" duration="4381000" />
+<<<<<<< HEAD
 >>>>>>> 7f897cead570414de8b6fed7fcf1976fda4286e7
+=======
+      <workItem from="1522864794839" duration="2444000" />
+>>>>>>> 16f1f0fcdc126f954e781c730a94542e3eab23b7
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="24896000" />
   </component>
@@ -306,15 +303,21 @@
   <component name="ToolWindowManager">
     <frame x="8" y="96" width="1920" height="1057" extended-state="0" />
 >>>>>>> 7f897cead570414de8b6fed7fcf1976fda4286e7
+=======
+    <option name="totallyTimeSpent" value="34418000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
+>>>>>>> 16f1f0fcdc126f954e781c730a94542e3eab23b7
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3498943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24116424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17518637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -603,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2421">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -620,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="912">
           <caret line="0" column="38294" lean-forward="false" selection-start-line="0" selection-start-column="38294" selection-end-line="0" selection-end-column="38294" />
           <folding />
         </state>
@@ -657,29 +653,37 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_source/css/block/system/_layouts.scss">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="313">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_source/css/block/html/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="216">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="174" column="56" lean-forward="false" selection-start-line="174" selection-start-column="56" selection-end-line="174" selection-end-column="56" />
+        <state relative-caret-position="429">
+          <caret line="203" column="20" lean-forward="true" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="39" />
           <folding>
             <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_source/css/block/system/_layouts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
