@@ -17,3 +17,33 @@
   margin: 0 auto;
   @include make-container-max-widths();
 }
+
+
+.header {
+  min-height: 685px;
+  background-color: $heading-bg-color;
+  background-image: url("../img/content/bridge.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.header__info_wrapper,
+.main__services,
+.main__services_block,
+.main__services_block-article,
+.main__partners_article-block,
+.main__certificates_article-block,
+.footer {
+  display: flex;
+}
+
+.main__services_block {
+  flex-direction: column;
+}
+
+.main__services_block-article,
+.main__partners_article-block,
+.main__certificates_article-block {
+  flex-wrap: wrap;
+}
