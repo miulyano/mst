@@ -1,20 +1,4 @@
 {
-  "name": "mst",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/morecodemore/mst"
-  },
-  "keywords": [
-    ""
-  ],
-  "author": "morecodemore",
-  "license": "UNLICENSED",
   "devDependencies": {
     "bootstrap": "^4.0.0",
     "browser-sync": "^2.23.6",
@@ -23,6 +7,7 @@
     "gulp-cheerio": "^0.6.3",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",

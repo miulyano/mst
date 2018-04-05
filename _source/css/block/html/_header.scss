@@ -15,11 +15,14 @@
     justify-content: center;
   }
   &_action {
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     .item-action:not(:last-child) {
       margin-right: 25px;
     }
+  }
+  &_title {
+    margin-bottom: 12px;
   }
   &_button {
     @extend .button
@@ -27,9 +30,11 @@
   &_search {
     padding: 20px 30px;
     display: inline-block;
+    width: 265px;
     background-color: $text-white;
     text-transform: none;
     font-weight: normal;
+    line-height: 16px;
     color: $text-black;
     border-radius: 3px;
     border: 0;  }
