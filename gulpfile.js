@@ -11,10 +11,12 @@ var gulp = require('gulp'),
   svgmin = require('gulp-svgmin'),
   cheerio = require('gulp-cheerio'),
   svgsprite = require('gulp-svg-sprite'),
-  concat = require('gulp-concat');
+  concat = require('gulp-concat'),
+  browserSync  = require('browser-sync');
 
 var path = {
   src: {
+    html: './_source/**/*.html',
     js: './_source/js/**/*.js',
     style: './_source/css/**/*\.scss',
     css: './_source/css/**/*\.css',
@@ -25,6 +27,7 @@ var path = {
     favicon: './_source/favicon/*.*'
   },
   build: {
+    html: './_assets/',
     js: './_assets/js/',
     style: './_assets/css/',
     css: './_assets/css/',
@@ -35,6 +38,15 @@ var path = {
     favicon: './_assets/favicon/'
   }
 };
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: '_assets'
+    },
+    notify: false
+  });
+});
 
 gulp.task('js:work:build', function ()
 {
@@ -71,7 +83,7 @@ gulp.task('css:build', function ()
 gulp.task('img:build', function ()
 {
   return gulp.src(path.src.img)
-    .pipe(imagemin())
+    //.pipe(imagemin())
     .pipe(rename(function (path)
     {
       path.extname = (path.extname + "").toLowerCase();
@@ -134,7 +146,15 @@ gulp.task('favicon:build', function ()
     .pipe(gulp.dest(path.build.favicon));
 });
 
+gulp.task('html:build', function ()
+{
+  return gulp.src(path.src.html)
+    .pipe(gulp.dest(path.build.html));
+});
+
+
 gulp.task('build', [
+  'html:build',
   'js:build',
   'style:build',
   'css:build',
@@ -145,35 +165,39 @@ gulp.task('build', [
   'favicon:build'
 ]);
 
-gulp.task('watch', function ()
+gulp.task('watch', ['browser-sync'], function ()
 {
-  watch([path.src.js], function ()
+  gulp.watch([path.src.html], function ()
   {
-    gulp.start('js:work:build');
+    gulp.start(browserSync.reload);
   });
-  watch([path.src.style], function ()
+  gulp.watch([path.src.js], function ()
   {
-    gulp.start('style:build');
+    gulp.start('js:work:build', browserSync.reload);
   });
-  watch([path.src.css], function ()
+  gulp.watch([path.src.style], function ()
   {
-    gulp.start('css:build');
+    gulp.start('style:build', browserSync.reload);
   });
-  watch([path.src.img], function ()
+  gulp.watch([path.src.css], function ()
   {
-    gulp.start('img:work:build');
+    gulp.start('css:build', browserSync.reload);
   });
-  watch([path.src.svg], function ()
+  gulp.watch([path.src.img], function ()
   {
-    gulp.start('svg:build');
+    gulp.start('img:work:build', browserSync.reload);
   });
-  watch([path.src.font], function ()
+  gulp.watch([path.src.svg], function ()
   {
-    gulp.start('font:build');
+    gulp.start('svg:build', browserSync.reload);
   });
-  watch([path.src.module], function ()
+  gulp.watch([path.src.font], function ()
   {
-    gulp.start('module:build');
+    gulp.start('font:build', browserSync.reload);
+  });
+  gulp.watch([path.src.module], function ()
+  {
+    gulp.start('module:build', browserSync.reload);
   });
 });
 

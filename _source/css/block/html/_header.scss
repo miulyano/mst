@@ -8,3 +8,29 @@
   background-position: center;
   background-size: auto 100%;
 }
+
+.header__info {
+  &_block {
+    margin-left: 35px;
+    justify-content: center;
+  }
+  &_action {
+    justify-content: space-between;
+    align-items: center;
+    .item-action:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &_button {
+    @extend .button
+  }
+  &_search {
+    padding: 20px 30px;
+    display: inline-block;
+    background-color: $text-white;
+    text-transform: none;
+    font-weight: normal;
+    color: $text-black;
+    border-radius: 3px;
+    border: 0;  }
+}

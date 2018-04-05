@@ -1,0 +1,47 @@
+@import "../system/vars";
+
+.body {
+  font-family: $default-font;
+  font-size: $base-font_size;
+  font-weight: normal;
+  color: $text-black;
+}
+
+
+.header__info {
+  &_wrapper {
+    padding: 22px 0;
+  }
+  &_heading {
+    margin-bottom: 5px;
+    color: $text-white;
+    text-transform: uppercase;
+    font-size: $h1-font_size;
+    font-weight: bold;
+    line-height: $h1-font_size;
+  }
+  &_title {
+    color: $text-white;
+  }
+  &_mail {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: $label-font_size-sm;
+    color: $text-white;
+    a {
+      color: $text-white;
+      font-size: $label-font_size-normal;
+    }
+  }
+  &_tel {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: $label-font_size-normal;
+    color: $text-white;
+    a {
+      font-weight: bold;
+      font-size: $label-font_size-lg;
+      color: $text-white;
+    }
+  }
+}
