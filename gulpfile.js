@@ -68,17 +68,17 @@ gulp.task('style:build', function ()
 {
   return gulp.src(path.src.style)
     .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(prefixer({browsers: ['last 3 version', '> 1%', 'ie 8', 'ie 9', 'Opera 12.1'], cascade: false}))
     .pipe(gcmq())
+    .pipe(prefixer({browsers: ['last 3 version', '> 1%', 'ie 8', 'ie 9', 'Opera 12.1'], cascade: false}))
     .pipe(gulp.dest(path.build.style));
 });
 
 gulp.task('css:build', function ()
 {
   return gulp.src(path.src.css)
+    .pipe(gcmq())
     .pipe(prefixer({browsers: ['last 3 version', '> 1%', 'ie 8', 'ie 9', 'Opera 12.1'], cascade: false}))
     .pipe(cssnano())
-    .pipe(gcmq())
     .pipe(gulp.dest(path.build.css));
 });
 

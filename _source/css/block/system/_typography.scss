@@ -13,35 +13,38 @@
     padding: 22px 0;
   }
   &_heading {
-    margin-bottom: 5px;
     color: $text-white;
     text-transform: uppercase;
     font-size: $h1-font_size;
     font-weight: bold;
     line-height: $h1-font_size;
+    letter-spacing: 1.3px;
   }
   &_title {
     color: $text-white;
   }
   &_mail {
     display: inline-flex;
-    flex-direction: column;
     font-size: $label-font_size-sm;
+    line-height: $label-font_size-sm;
     color: $text-white;
     a {
       color: $text-white;
       font-size: $label-font_size-normal;
+      line-height: 24px;
     }
   }
   &_tel {
     display: inline-flex;
-    flex-direction: column;
     font-size: $label-font_size-normal;
+    line-height: 20px;
     color: $text-white;
     a {
       font-weight: bold;
       font-size: $label-font_size-lg;
+      line-height: 30px;
       color: $text-white;
+      letter-spacing: .8px;
     }
   }
 }

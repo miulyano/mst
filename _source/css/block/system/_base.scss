@@ -4,21 +4,53 @@ html, body {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+ul, li {
+  padding: 0;
+}
+
 .button {
-  padding: 20px 30px;
+  padding: 19px 26px;
   display: inline-block;
   background-color: $active-color;
   color: $text-white;
   text-transform: uppercase;
-  line-height: 16px;
-  letter-spacing: .5px;
+  line-height: $label-font_size-sm;
+  font-size: $label-font_size-sm;
+  letter-spacing: .8px;
   font-weight: 900;
   border-radius: 3px;
   border: 0;
   cursor: pointer;
 }
 
-.button:hover {
+.button-lg {
+  padding: 27px 44px;
+  display: inline-block;
+  background-color: $active-color;
+  color: $text-white;
+  text-transform: uppercase;
+  line-height: $label-font_size-sm;
+  font-size: 15px;
+  letter-spacing: .8px;
+  font-weight: 900;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover,
+.button-lg:hover {
   background-color: $list-hover;
 }
 
