@@ -51,6 +51,17 @@
     <symbol viewBox="0 0 11 15" id="style--marker" xmlns="http://www.w3.org/2000/svg">
       <path d="M5.5 15S0 8.52 0 5.49a5.5 5.5 0 0 1 11 0C11 8.52 5.5 15 5.5 15zm0-11.91a2.54 2.54 0 1 0 2.48 2.53 2.51 2.51 0 0 0-2.46-2.53z" fill="#171b57"/>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="footer__mobile_mail">
+      <path  fill="rgb(23, 27, 87)"  d="M19.339,15.089 L24.492,10.461 L24.492,19.657 L19.339,15.089 ZM9.804,9.820 C9.996,9.623 10.261,9.499 10.554,9.499 L23.438,9.499 C23.723,9.499 23.985,9.612 24.172,9.804 C24.174,9.806 16.996,16.111 16.996,16.111 C16.996,16.111 9.804,9.820 9.804,9.820 ZM9.500,19.657 L9.500,10.461 L14.653,15.089 L9.500,19.657 ZM16.975,17.193 L18.870,15.510 C18.870,15.510 24.142,20.192 24.141,20.194 C23.954,20.385 23.693,20.499 23.408,20.499 L10.542,20.499 C10.249,20.499 9.985,20.375 9.793,20.177 C9.793,20.177 15.122,15.510 15.122,15.510 L16.975,17.193 Z"/>
+      <path  stroke="rgb(235, 235, 235)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"  d="M16.422,0.500 C24.697,0.500 31.406,7.216 31.406,15.500 C31.406,23.784 24.697,30.500 16.422,30.500 C8.146,30.500 1.437,23.784 1.437,15.500 C1.437,7.216 8.146,0.500 16.422,0.500 Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="footer__mobile_marker">
+      <path  fill="rgb(23, 27, 87)"  d="M16.000,23.498 C16.000,23.498 10.500,17.015 10.500,13.984 C10.500,10.955 12.962,8.498 16.000,8.498 C19.037,8.498 21.500,10.955 21.500,13.984 C21.500,17.015 16.000,23.498 16.000,23.498 ZM16.016,11.594 C14.644,11.594 13.531,12.727 13.531,14.125 C13.531,15.523 14.644,16.656 16.016,16.656 C17.388,16.656 18.500,15.523 18.500,14.125 C18.500,12.727 17.388,11.594 16.016,11.594 Z"/>
+      <path  stroke="rgb(235, 235, 235)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"  d="M16.422,0.500 C24.697,0.500 31.406,7.216 31.406,15.500 C31.406,23.784 24.697,30.500 16.422,30.500 C8.146,30.500 1.437,23.784 1.437,15.500 C1.437,7.216 8.146,0.500 16.422,0.500 Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="menu-btn">
+      <path fill="rgb(26, 175, 142)"  d="M-0.000,21.000 L-0.000,18.000 L21.000,18.000 L21.000,21.000 L-0.000,21.000 ZM-0.000,9.000 L21.000,9.000 L21.000,12.000 L-0.000,12.000 L-0.000,9.000 ZM-0.000,-0.000 L21.000,-0.000 L21.000,3.000 L-0.000,3.000 L-0.000,-0.000 Z"/>
+    </symbol>
   </svg>
   <header class="header">
     <section class="header__info">
@@ -59,6 +70,12 @@
           <svg width="180" height="180" class="logo">
             <use xlink:href="#logo"></use>
           </svg>
+          <button class="menu-button">
+            <svg width="21" height="21">
+              <use xlink:href="#menu-btn"></use>
+            </svg>
+            <span>Открыть меню</span>
+          </button>
         </div>
         <div class="header__info_block">
           <div class="header__info_text">
@@ -103,14 +120,14 @@
           </svg>
           <ul class="header__nav_category-list">
             <li class="list__label">
-              <span role="button">Производство бетона
+              <span role="button" class="label">Производство бетона
               <svg width="5" height="9" class="arrow">
                 <use xlink:href="#arrow"></use>
               </svg>
             </span>
               <ul class="list__label_block">
                 <li class="list__sub-label">
-                  <span role="button">Пластификаторы
+                  <span role="button" class="sub-label">Пластификаторы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -124,7 +141,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Регуляторы схватывания и твердения
+                  <span role="button" class="sub-label">Регуляторы схватывания и твердения
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -138,7 +155,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Воздухововлекающие добавки
+                  <span role="button" class="sub-label">Воздухововлекающие добавки
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -148,7 +165,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Регулятор усадки и расширения бетонов и строительных растворов
+                  <span role="button" class="sub-label">Регулятор усадки и расширения бетонов и строительных растворов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -158,7 +175,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Противоморозные добавки
+                  <span role="button" class="sub-label">Противоморозные добавки
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -168,7 +185,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Стабилизаторы
+                  <span role="button" class="sub-label">Стабилизаторы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -179,7 +196,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Добавки для жестких бетонных смесей
+                  <span role="button" class="sub-label">Добавки для жестких бетонных смесей
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -189,7 +206,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Модификаторы строительных растворов
+                  <span role="button" class="sub-label">Модификаторы строительных растворов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -199,7 +216,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Пластифицирующие добавки для строительных растворов
+                  <span role="button" class="sub-label">Пластифицирующие добавки для строительных растворов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -209,7 +226,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Вспомогательные материалы
+                  <span role="button" class="sub-label">Вспомогательные материалы
                   </span>
                   <svg width="5" height="9" class="sub-arrow">
                     <use xlink:href="#arrow"></use>
@@ -224,14 +241,15 @@
                 </li>
               </ul>
             </li>
-            <li class="list__label"><span role="button">Подливочные и анкерные составы
+            <li class="list__label">
+              <span role="button" class="label">Подливочные и анкерные составы
               <svg width="5" height="9" class="arrow">
                 <use xlink:href="#arrow"></use>
               </svg>
             </span>
               <ul class="list__label_block">
                 <li class="list__sub-label">
-                  <span role="button">Подливочные составы на минеральной основе
+                  <span role="button" class="sub-label">Подливочные составы на минеральной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -242,7 +260,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Подливочные составы на полиуретановой основе
+                  <span role="button" class="sub-label">Подливочные составы на полиуретановой основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -252,7 +270,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Подливочные составы на основе ПММА
+                  <span role="button" class="sub-label">Подливочные составы на основе ПММА
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -262,7 +280,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Подливочные составы на эпоксидной основе
+                  <span role="button" class="sub-label">Подливочные составы на эпоксидной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -273,7 +291,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Анкеровочные составы
+                  <span role="button" class="sub-label">Анкеровочные составы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -285,14 +303,14 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Ремонт и защита бетона
+              <span role="button" class="label">Ремонт и защита бетона
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__150">
                 <li class="list__sub-label">
-                  <span role="button">Составы для создания адгезионного слоя и антикоррозионной защиты арматуры
+                  <span role="button" class="sub-label">Составы для создания адгезионного слоя и антикоррозионной защиты арматуры
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -307,7 +325,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Ремонтные составы на минеральной основе
+                  <span role="button" class="sub-label">Ремонтные составы на минеральной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -322,7 +340,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Ремонтные составы на эпоксидной основе
+                  <span role="button" class="sub-label">Ремонтные составы на эпоксидной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -333,7 +351,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Ремонтные составы на эпоксидно-цементной основе
+                  <span role="button" class="sub-label">Ремонтные составы на эпоксидно-цементной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -343,7 +361,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Материалы для торкретирования
+                  <span role="button" class="sub-label">Материалы для торкретирования
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -353,7 +371,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Материалы для защиты бетона
+                  <span role="button" class="sub-label">Материалы для защиты бетона
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -376,7 +394,7 @@
                 </ul>
               </li>
                 <li class="list__sub-label">
-                  <span role="button">Ремонтные и защитные составы для резервуаров с питьевой водой
+                  <span role="button" class="sub-label">Ремонтные и защитные составы для резервуаров с питьевой водой
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -389,28 +407,28 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Усиление конструкций
+              <span role="button" class="label">Усиление конструкций
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block">
-                <li class="list__sub-label"><a href="/">Sika®CarboDur® System</a></li>
-                <li class="list__sub-label"><a href="/">Sikadur® 30</a></li>
-                <li class="list__sub-label"><a href="/">SikaWrap®–530 C/ 230 C</a></li>
-                <li class="list__sub-label"><a href="/">Sikadur® 300</a></li>
-                <li class="list__sub-label"><a href="/">Sika®CarboDur® System</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sika®CarboDur® System</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sikadur® 30</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">SikaWrap®–530 C/ 230 C</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sikadur® 300</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sika®CarboDur® System</a></li>
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Клеи и герметики
+              <span role="button" class="label">Клеи и герметики
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__400">
                 <li class="list__sub-label">
-                  <span role="button">Клеи на акриловой основе
+                  <span role="button" class="sub-label">Клеи на акриловой основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -420,7 +438,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Клеи на эпоксидной основе
+                  <span role="button" class="sub-label">Клеи на эпоксидной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -430,7 +448,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Клеи на полиуретановой основе
+                  <span role="button" class="sub-label">Клеи на полиуретановой основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -442,7 +460,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Грунты для повышения прочности сцепления
+                  <span role="button" class="sub-label">Грунты для повышения прочности сцепления
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -452,7 +470,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Герметики
+                  <span role="button" class="sub-label">Герметики
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -469,7 +487,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Клеи и герметики для устройства деревянных полов
+                  <span role="button" class="sub-label">Клеи и герметики для устройства деревянных полов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -489,7 +507,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Клеи и герметики для вентилируемых и светопрозрачных фасадов
+                  <span role="button" class="sub-label">Клеи и герметики для вентилируемых и светопрозрачных фасадов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -501,7 +519,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Всепогодные герметики для герметизации швов
+                  <span role="button" class="sub-label">Всепогодные герметики для герметизации швов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -515,14 +533,14 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Антикорозийнная защита металоконструкций
+              <span role="button" class="label">Антикорозийнная защита металоконструкций
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__250">
                 <li class="list__sub-label">
-                  <span role="button">Грунтовочные материалы
+                  <span role="button" class="sub-label">Грунтовочные материалы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -537,7 +555,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Системы антикоррозионных защитных покрытий
+                  <span role="button" class="sub-label">Системы антикоррозионных защитных покрытий
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -548,7 +566,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Покровные химически стойкие антикоррозионные материалы
+                  <span role="button" class="sub-label">Покровные химически стойкие антикоррозионные материалы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -572,7 +590,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Антикоррозионные материалы для контакта с питьевой водой
+                  <span role="button" class="sub-label">Антикоррозионные материалы для контакта с питьевой водой
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -582,7 +600,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Жидкие мембраны для гидроизоляции и антикоррозионной защиты
+                  <span role="button" class="sub-label">Жидкие мембраны для гидроизоляции и антикоррозионной защиты
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -597,14 +615,14 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Гидроизоляция
+              <span role="button" class="label">Гидроизоляция
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__650">
                 <li class="list__sub-label">
-                  <span role="button">Рулонные гидроизоляционные материалы на основе пластифицированного поливинилхлорида (ПвХ)/ термопластичных полиолефинов (ТПО)
+                  <span role="button" class="sub-label">Рулонные гидроизоляционные материалы на основе пластифицированного поливинилхлорида (ПвХ)/ термопластичных полиолефинов (ТПО)
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -617,7 +635,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Жидкие мембраны
+                  <span role="button" class="sub-label">Жидкие мембраны
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -628,7 +646,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Материалы для штукатурной гидроизоляции/обмазочной гидроизоляции на полимер-цементной основе
+                  <span role="button" class="sub-label">Материалы для штукатурной гидроизоляции/обмазочной гидроизоляции на полимер-цементной основе
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -643,7 +661,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Битумная лента для гидроизоляции
+                  <span role="button" class="sub-label">Битумная лента для гидроизоляции
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -653,7 +671,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Материалы для инъектирования
+                  <span role="button" class="sub-label">Материалы для инъектирования
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -671,7 +689,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Гидроизоляция швов
+                  <span role="button" class="sub-label">Гидроизоляция швов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -684,7 +702,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Гидроизоляционные ленты для швов
+                  <span role="button" class="sub-label">Гидроизоляционные ленты для швов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -698,14 +716,14 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Полы и напольные покрытия
+              <span role="button" class="label">Полы и напольные покрытия
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__550">
                 <li class="list__sub-label">
-                  <span role="button">Сухие упрочнители бетонных полов
+                  <span role="button" class="sub-label">Сухие упрочнители бетонных полов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -717,7 +735,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Уход засвежеуложенным бетонным полом
+                  <span role="button" class="sub-label">Уход засвежеуложенным бетонным полом
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -727,7 +745,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Жидкие упрочнители бетонных полов
+                  <span role="button" class="sub-label">Жидкие упрочнители бетонных полов
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -738,7 +756,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Самовыравнивающиеся составы
+                  <span role="button" class="sub-label">Самовыравнивающиеся составы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -749,7 +767,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Высокопрочные бетонные стяжки
+                  <span role="button" class="sub-label">Высокопрочные бетонные стяжки
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -760,7 +778,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Грунтовочные составы
+                  <span role="button" class="sub-label">Грунтовочные составы
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -772,7 +790,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Полимерные напольные покрытия
+                  <span role="button" class="sub-label">Полимерные напольные покрытия
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -796,8 +814,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Антистатические напольные покрытия
-
+                  <span role="button" class="sub-label">Антистатические напольные покрытия
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -812,7 +829,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Системные решения для декоративных напольных покрытий
+                  <span role="button" class="sub-label">Системные решения для декоративных напольных покрытий
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -826,7 +843,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Материалы для чистых помещений
+                  <span role="button" class="sub-label">Материалы для чистых помещений
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -838,7 +855,7 @@
                   </ul>
                 </li>
                 <li class="list__sub-label">
-                  <span role="button">Спортивные напольные покрытия
+                  <span role="button" class="sub-label">Спортивные напольные покрытия
                     <svg width="5" height="9" class="sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
@@ -851,16 +868,16 @@
               </ul>
             </li>
             <li class="list__label">
-              <span role="button">Кровельные материалы
+              <span role="button" class="label">Кровельные материалы
                 <svg width="5" height="9" class="arrow">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </span>
               <ul class="list__label_block top__500">
-                <li class="list__sub-label"><a href="/">Sarnafil® TG 66-12/TG 66–15, Sarnafil® TG 76–12 Felt/TG 76–15 Felt</a></li>
-                <li class="list__sub-label"><a href="/">Sarnafil® S 327–12 / S 327–15, Sarnafil® S 327-12EL / S 327-15EL</a></li>
-                <li class="list__sub-label"><a href="/">Sikaplan® 12 VGW / 15 VGW, Sikaplan® 12G/15G, Sikaplan® 12VG / 15VG</a></li>
-                <li class="list__sub-label"><a href="/">Системы SikaRoof MTC</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sarnafil® TG 66-12/TG 66–15, Sarnafil® TG 76–12 Felt/TG 76–15 Felt</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sarnafil® S 327–12 / S 327–15, Sarnafil® S 327-12EL / S 327-15EL</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Sikaplan® 12 VGW / 15 VGW, Sikaplan® 12G/15G, Sikaplan® 12VG / 15VG</a></li>
+                <li class="list__sub-label"><a href="/" class="sub-label">Системы SikaRoof MTC</a></li>
               </ul>
             </li>
           </ul>
@@ -1007,10 +1024,10 @@
     <section class="main__certificates">
       <h4 class="main__certificates_heading">Сертификаты</h4>
       <div class="main__certificates_article-block">
-        <article class="main__certificates_item"><img src="img/certificates/certificate_1.png" alt="" class="main__partners_item-img"></article>
-        <article class="main__certificates_item"><img src="img/certificates/certificate_2.png" alt="" class="main__partners_item-img"></article>
-        <article class="main__certificates_item"><img src="img/certificates/certificate_3.png" alt="" class="main__partners_item-img"></article>
-        <article class="main__certificates_item"><img src="img/certificates/certificate_4.png" alt="" class="main__partners_item-img"></article>
+        <article class="main__certificates_item"><img src="img/certificates/certificate_1.png" alt="" class="main__certificates_item-img"></article>
+        <article class="main__certificates_item"><img src="img/certificates/certificate_2.png" alt="" class="main__certificates_item-img"></article>
+        <article class="main__certificates_item"><img src="img/certificates/certificate_3.png" alt="" class="main__certificates_item-img"></article>
+        <article class="main__certificates_item"><img src="img/certificates/certificate_4.png" alt="" class="main__certificates_item-img"></article>
       </div>
     </section>
     <section class="main__contacts">
@@ -1040,25 +1057,31 @@
         </div>
         <div class="footer__info_action">
           <div class="footer__info_action-block">
-            <svg width="12" height="15" class="logo">
+            <svg width="12" height="15" class="svg-main">
               <use xlink:href="#style--marker"></use>
+            </svg>
+            <svg width="30" height="30" class="svg-mobile mobile-marker">
+              <use xlink:href="#footer__mobile_marker"></use>
             </svg>
             <p class="footer__info_action-text">
               <span class="tag">Адрес</span>
-              <span>Нижний Новгорд, ул. Нижнепечерская д. 17</span>
+              <span class="address">Нижний Новгорд, ул. Нижнепечерская д. 17</span>
             </p>
           </div>
           <div class="footer__info_action-block">
-            <svg width="15" height="11" class="logo">
+            <svg width="15" height="11" class="svg-main">
               <use xlink:href="#style--footer_mail"></use>
             </svg>
+            <svg width="30" height="30" class="svg-mobile">
+              <use xlink:href="#footer__mobile_mail"></use>
+            </svg>
             <p class="footer__info_action-text">
-              <span class="tag">Электронная почта</span>
+              <span class="tag mail-tag">Электронная почта</span>
               <a class="mail" href="mailto:office1@-mail.ru">office1@-mail.ru</a>
             </p>
           </div>
           <div class="footer__info_action-block">
-            <svg width="30" height="30" class="logo">
+            <svg width="30" height="30">
               <use xlink:href="#style--footer_phone"></use>
             </svg>
             <p class="footer__info_action-text">

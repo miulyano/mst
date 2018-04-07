@@ -8,7 +8,7 @@
   background-position: center;
   background-size: auto 100%;
   @include media-breakpoint-down(sm) {
-    min-height: 545px;
+    min-height: 550px;
   }
 }
 .logo {
@@ -19,6 +19,9 @@
 }
 
 .header__info {
+  &_logo {
+    position: relative;
+  }
   &_heading {
     margin-bottom: 5px;
     @include media-breakpoint-down(sm) {
@@ -29,12 +32,16 @@
     padding-bottom: 20px;
     justify-content: space-between;
     @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
       flex-direction: column;
     }
   }
   &_block {
     margin-top: 30px;
     margin-left: 25px;
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
   }
   &_action {
     justify-content: flex-end;
@@ -59,6 +66,23 @@
     p {
       display: flex;
       flex-direction: column;
+    }
+    @include media-breakpoint-down(sm) {
+      a {
+        font-size: 23px;
+        letter-spacing: 0px;
+      }
+      span {
+        font-size: $label-font_size-normal;
+        line-height: $label-font_size-normal;
+      }
+      p {
+        margin: 0;
+      }
+      svg {
+        margin-left: 10px;
+      }
+      margin: 15px 0 25px;
     }
   }
   &_mail {
@@ -247,10 +271,9 @@
 }
 
 .header__slider {
-
   &_heading {
     margin-bottom: 13px;
-    max-width: 660px;
+    max-width: 665px;
     color: $text-white;
     text-transform: uppercase;
     font-size: 38px;
@@ -259,10 +282,11 @@
     letter-spacing: 1.3px;
     @include media-breakpoint-down(sm) {
       margin: 0 auto;
+      margin-bottom: 10px;
       max-width: 270px;
       font-size: 20px;
       text-align: center;
-      line-height: 28px;
+      line-height: 27px;
     }
   }
   &_text {
@@ -272,16 +296,21 @@
     font-size: 17px;
     letter-spacing: .5px;
     @include media-breakpoint-down(sm) {
+      max-width: 290px;
       text-align: center;
       font-weight: 300;
       font-size: 16px;
       line-height: 22px;
+      letter-spacing: 0px;
   }
   }
   &_link {
     margin-bottom: 45px;
     @extend .button-lg;
     text-decoration: none;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 28px;
+    }
   }
   &_link:hover {
     color: $text-white;
@@ -298,6 +327,10 @@
     border-radius: 50%;
     background-color: $text-white;
     cursor: pointer;
+  }
+
+  &_label:last-child {
+    margin-right: 0;
   }
 
   @include media-breakpoint-down(sm) {
@@ -371,12 +404,11 @@
   display: block;
 }
 
-.list__label_item:last-of-type a,
-.list__label_item:last-of-type span,
-.list__label_sub-item:last-of-type a,
-.list__sub-label:last-of-type span,
-.list__sub-label:last-of-type a,
-.list__label:last-of-type span {
+
+.list__label_sub-item:last-child span,
+.list__label_sub-item:last-child a,
+.list__sub-label:last-child .sub-label,
+.list__label:last-child .label {
   border-radius: 0 0 4px 4px;
 }
 
@@ -433,5 +465,25 @@
   }
   &__900 {
     top: -900%;
+  }
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 20px 10px;
+  align-items:center;
+  font-size: $label-font_size-normal;
+  background-color: rgba(255, 255, 255, 0);
+  color: $text-white;
+  border: none;
+  cursor: pointer;
+  span {
+    margin-left: 10px;
+  }
+  @include media-breakpoint-down(sm) {
+    display: inline-flex;
   }
 }

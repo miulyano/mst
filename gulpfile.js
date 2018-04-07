@@ -55,7 +55,6 @@ gulp.task('js:work:build', function ()
     .pipe(concat('bundle.min.js'))
     .pipe(gulp.dest(path.build.js));
 });
-
 gulp.task('js:build', function ()
 {
   return gulp.src(path.src.js)

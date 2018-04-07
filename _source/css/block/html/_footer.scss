@@ -2,9 +2,29 @@
 
 .footer__info {
   padding: 34px 0;
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  &_logo {
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      bottom: 35px;
+      left: 15px;
+    }
+  }
   &_block {
     width: 100%;
     margin-left: 25px;
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-left: 0;
+      width: 100%;
+      padding: 0 15px;
+    }
   }
   &_heading {
     margin-top: 6px;
@@ -12,26 +32,49 @@
     font-size: $section-heading-size;
     text-transform: uppercase;
     line-height: 35px;
+    @include media-breakpoint-down(sm) {
+      font-size: $label-contact;
+      margin-left: 110px;
+      margin-bottom: 5px;
+      margin-top: 25px;
+      line-height: 25px;
+    }
   }
   &_title {
     margin-bottom: 7px;
+    @include media-breakpoint-down(sm) {
+      font-size: $label-font_size-sm;
+      margin-left: 110px;
+      padding-bottom: 0;
+    }
   }
   &_action {
     width: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+    }
   }
   &_button {
     @extend .button;
-    padding: 25px 28px;
-    font-size: $base-font_size;
+    padding: 25px 25px;
+    font-size: 15px;
     background-color: $button-color;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   &_action-block {
     display: flex;
     align-items: flex-start;
     height: 100%;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
   }
   &_action-text {
     height: 100%;
@@ -40,6 +83,7 @@
     display: inline-flex;
     flex-direction: column;
     line-height: 28px;
+    font-size: 15px;
   }
   &_action-text {
     font-size: 15px;
@@ -47,9 +91,30 @@
   .tag {
     font-size: $label-font_size-sm;
     line-height: 12px;
+    @include media-breakpoint-down(sm) {
+      margin: 5px 0;
+    }
+  }
+
+  .mail {
+    @include media-breakpoint-down(sm) {
+      font-size: $label-contact;
+      letter-spacing: 0;
+    }
+  }
+  .address {
+    @include media-breakpoint-down(sm) {
+      font-size: $label-contact;
+      letter-spacing: 0;
+      max-width: 230px;
+    }
   }
   .tel {
     font-size: 23px;
+    @include media-breakpoint-down(sm) {
+      font-weight: bold;
+      font-size: 28px;
+    }
   }
   .mail,
   .tel {
@@ -58,4 +123,24 @@
   .tel-tag {
     line-height: 20px;
   }
+}
+
+.svg {
+  &-mobile {
+    display: none;
+    width: 30px!important;
+    height: 30px!important;
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+  &-main {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.mobile-marker {
+  width: 30px;
 }

@@ -8,6 +8,9 @@
 }
 
 .main__services {
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
   &_aside {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,11 @@
     min-width: 350px;
     border-radius: 4px;
     border: 3px solid $border-color;
+    @include media-breakpoint-down(sm) {
+      border: none;
+      min-width: 100%;
+      padding: 0 15px;
+    }
   }
   &_aside-heading {
     margin-bottom: 15px;
@@ -28,7 +36,7 @@
   }
   &_aside-item {
     display: inline-flex;
-    border-top: 2px solid $border-color;
+    border-top: 1px solid $border-color;
   }
   .aside-arrow {
     margin-top: 17.6px;
@@ -45,6 +53,9 @@
     font-size: $aside-font_size;
     color: $text-black;
     transition: color .2s ease-in-out;
+    @include media-breakpoint-down(sm) {
+      padding: 18px 0;
+    }
   }
   &_aside-link:hover {
     text-decoration: none;
@@ -53,13 +64,44 @@
   &_block {
     margin-left: 30px;
     padding-top: 17px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+      padding: 0 15px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  &_block-article {
+    width: calc(1140px - 380px);
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-top: 9px;
+    }
   }
   &_block-item {
     margin-top: 27px;
     max-width: 365px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 35px;
+      max-width: 100%;
+      width: inherit;
+    }
+  }
+  &_block-item:first-child {
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+    }
+  }
+  &_block-item img {
+    min-width: 100%;
+    height: auto;
+    min-height: 188px;
   }
   &_block-item:nth-child(2n) {
     margin-left: 30px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
   }
   &_block-name {
     display: inline-block;
@@ -71,17 +113,31 @@
     color: $text-black;
     text-decoration: none;
     transition: color .2s ease-in-out;
+    @include media-breakpoint-down(sm) {
+      margin: 8px 0 10px;
+      font-size: 18px;
+      line-height: 20px;
+      max-width: 80%;
+    }
   }
   &_block-text {
     margin-bottom: 0px;
     max-width: 215px;
     font-size: $label-font_size-normal;
     line-height: 18px;
+    @include media-breakpoint-down(sm) {
+      font-size: $base-font_size;
+      max-width: 85%;
+    }
   }
   &_img-wrapper {
     display: inline-block;
     overflow: hidden;
     border-radius: 4px;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -100,6 +156,11 @@
 
 .main__partners {
   padding-top: 25px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 35px;
+    padding: 0 15px;
+    width: 100%;
+  }
   &_article-block {
     display: flex;
     justify-content: space-between;
@@ -113,16 +174,36 @@
     width: calc(25% - 18px);
     height: 107px;
     border: 2px solid $border-color;
+    @include media-breakpoint-down(sm) {
+      width: calc(50% - 15px);
+      justify-content: space-around;
+    }
+  }
+  &_item img {
+    @include media-breakpoint-down(sm) {
+      max-width: 100px;
+    }
   }
   &_item:not(:nth-child(4n + 1)) {
     margin-left: 20px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
   }
 }
 
 .main__certificates {
   margin-bottom: 17px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 35px;
+    padding: 0 15px;
+    width: 100%;
+  }
   &_heading {
     margin-bottom: 32px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
   }
   &_article-block {
     display: flex;
@@ -130,22 +211,52 @@
     flex-wrap: wrap;
   }
   &_item {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(25% - 31px);
     height: 346px;
     border: 2px solid $border-color;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      padding: 10px;
+      width: calc(50% - 15px);
+      justify-content: space-around;
+      height: auto;
+      min-height: 180px;
+    }
+  }
+}
+
+.main__partners_item-img {
+  @include media-breakpoint-down(sm) {
+    max-width: 100px;
+  }
+}
+
+.main__certificates_item-img {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
   }
 }
 
 .main__contacts {
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
   &_wrapper {
     position: relative;
     display: flex;
     align-items: center;
     top: 0;
     height: 0;
+    @include media-breakpoint-down(sm) {
+      height: auto;
+      margin-top: 35px;
+      padding: 0 15px;
+      width: 100%;
+    }
   }
   &_block {
     display: flex;
@@ -155,24 +266,39 @@
     height: 420px;
     background-color: #fff;
     box-shadow: 0px 8px 25.65px 1.35px rgba(0, 0, 0, 0.23);
+    @include media-breakpoint-down(sm) {
+      height: auto;
+      padding: 0;
+      margin-top: 0;
+      box-shadow: none;
+    }
   }
   &_block-header {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
   &_block-text {
     display: inline-flex;
     flex-direction: column;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   &_block-title {
     margin-bottom: 5px;
     font-size: $label-font_size-normal;
     letter-spacing: .5px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   &_block-info {
     font-size: $label-contact;
     color: $text-black;
     line-height: 29px;
     letter-spacing: .2px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   &_block-info:hover {
     color: $text-black;
@@ -181,7 +307,15 @@
     @extend .button;
     max-width: 205px;
     padding: 23px 25px;
-    font-size: $base-font_size;
+    font-size: $label-font_size-normal;
     background-color: $button-color;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  &_card {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 }
