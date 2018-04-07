@@ -280,10 +280,6 @@
    animation: view .3s ease-in-out;
  }
 
-.last {
-  top: -565%;
-}
-
 .list__sub-label {
   min-height: inherit;
 }
@@ -322,6 +318,65 @@
 
 .list__label_item:last-of-type a,
 .list__label_item:last-of-type span,
-.list__label_sub-item:last-of-type a {
+.list__label_sub-item:last-of-type a,
+.list__sub-label:last-of-type span,
+.list__sub-label:last-of-type a,
+.list__label:last-of-type span {
   border-radius: 0 0 4px 4px;
+}
+
+.top {
+  &__50 {
+    top: -50%;
+  }
+  &__100 {
+    top: -100%;
+  }
+  &__150 {
+    top: -150%;
+  }&__200 {
+     top: -200%;
+   }
+  &__250 {
+    top: -250%;
+  }
+  &__300 {
+    top: -300%;
+  }
+  &__350 {
+    top: -350%;
+  }
+  &__400 {
+    top: -400%;
+  }
+  &__450 {
+    top: -450%;
+  }
+  &__500 {
+    top: -500%;
+  }
+  &__550 {
+    top: -550%;
+  }
+  &__600 {
+    top: -600%;
+  }
+  &__650 {
+    top: -650%;
+  }
+  &__700 {
+    top: -700%;
+  }
+  &__750 {
+    top: -750%;
+  }
+  &__800 {
+    top: -800%;
+  }
+  &__850 {
+    top: -850%;
+  }
+  &__900 {
+    top: -900%;
+  }
 }
