@@ -20,37 +20,43 @@ ul, li {
 }
 
 .button {
-  padding: 19px 26px;
+  padding: 19px 28px;
   display: inline-block;
   background-color: $active-color;
   color: $text-white;
   text-transform: uppercase;
   line-height: $label-font_size-sm;
   font-size: $label-font_size-sm;
-  letter-spacing: .8px;
+  letter-spacing: 1.7px;
   font-weight: 900;
   border-radius: 3px;
   border: 0;
   cursor: pointer;
+  transition: background-color .2s ease-in-out;
 }
 
 .button-lg {
-  padding: 27px 44px;
+  padding: 27px 46px;
   display: inline-block;
   background-color: $active-color;
   color: $text-white;
   text-transform: uppercase;
   line-height: $label-font_size-sm;
-  font-size: 15px;
-  letter-spacing: .8px;
+  font-size: $label-font_size-normal;
+  letter-spacing: 1.6px;
   font-weight: 900;
   border-radius: 3px;
   border: 0;
   cursor: pointer;
+  transition: cbackground-color .2s ease-in-out;
 }
 
 .button:hover,
 .button-lg:hover {
   background-color: $list-hover;
+}
+
+.main-section {
+  padding-top: 30px;
 }
 

@@ -20,6 +20,9 @@
 </head>
 <body class="body">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 9">
+        <path id="arrow"  fill="rgb(255, 255, 255)" d="M4.710,5.189 L1.493,8.727 C1.149,9.104 0.591,9.104 0.248,8.727 C-0.096,8.349 -0.096,7.736 0.248,7.359 L2.844,4.505 L0.248,1.651 C-0.096,1.274 -0.096,0.661 0.248,0.283 C0.591,-0.095 1.149,-0.095 1.493,0.283 L4.710,3.821 C5.054,4.199 5.054,4.811 4.710,5.189 Z"/>
+    </symbol>
     <symbol viewBox="0 0 297.64 297.64" id="logo" xmlns="http://www.w3.org/2000/svg">
       <g data-name="logo"><circle cx="148.82" cy="148.82" r="148.82" fill="#1e2055"/>
         <path fill="#65ad8e" d="M128.36 99.99v47.63h7.99V96.91h-7.99v3.08z"/>
@@ -31,12 +34,11 @@
       <path fill="#199484" d="M560.5 344a11.5 11.5 0 1 1-11.5 11.5 11.5 11.5 0 0 1 11.5-11.5z" transform="translate(-549 -344)"/>
       <path fill="#fff" d="M563.71 356.19l-3.22 3.54a.83.83 0 0 1-1.24 0 1 1 0 0 1 0-1.37l2.59-2.86-2.59-2.85a1 1 0 0 1 0-1.37.82.82 0 0 1 1.24 0l3.22 3.54a1 1 0 0 1 0 1.37z" transform="translate(-549 -344)"/>
     </symbol>
-    <symbol viewBox="0 0 23 23" id="style--footer_mail" xmlns="http://www.w3.org/2000/svg">
-      <path d="M11.5 0A11.5 11.5 0 1 1 0 11.5 11.5 11.5 0 0 1 11.5 0z" fill="#199484"/>
-      <path d="M14.71 12.19l-3.22 3.54a.83.83 0 0 1-1.24 0 1 1 0 0 1 0-1.37l2.59-2.86-2.59-2.85a1 1 0 0 1 0-1.37.82.82 0 0 1 1.24 0l3.22 3.54a1 1 0 0 1 0 1.37z" fill="#fff"/>
+    <symbol viewBox="0 0 15 11" id="style--footer_mail" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.84 5.59L15 1v9.2zM.3.32A1.05 1.05 0 0 1 1.05 0h12.89a1 1 0 0 1 .74.3L7.5 6.61zM0 10.16V1l5.16 4.63zm7.48-2.47l1.9-1.68 5.27 4.68a1 1 0 0 1-.74.31H1a1.09 1.09 0 0 1-.75-.32l5.33-4.67z" fill="#171b57"/>
     </symbol>
     <symbol viewBox="0 0 31 31" id="style--footer_phone" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.5.5a15 15 0 1 1-15 15 15 15 0 0 1 15-15z" fill="none"/>
+      <path d="M15.5.5a15 15 0 1 1-15 15 15 15 0 0 1 15-15z" fill="none" stroke="#f2f4f5"/>
       <path d="M9.4 12a4 4 0 0 1 .44-1.68c.33-.68 1.61-1.05 1.61-1.05s.55-.14 1.65.93a2.54 2.54 0 0 1 .78 1.54c0 .54-1.11 1.69-1.11 1.69a3.49 3.49 0 0 0 .79 1.79c.46.53 1.23 1.35 1.64 1.73a8.93 8.93 0 0 0 1.26 1.1c1 .68 1.27.62 1.27.62s1.46-1.22 1.89-1.18a2.77 2.77 0 0 1 1.4.77 3.81 3.81 0 0 1 1 1 2 2 0 0 1 .19.42s.05.61-.89 1.57a2.61 2.61 0 0 1-2.22.71 8 8 0 0 1-2-.68 13.49 13.49 0 0 1-3.62-2.59 23.31 23.31 0 0 1-2.9-3.65A12.86 12.86 0 0 1 9.4 12z" fill="#171b57"/>
     </symbol>
     <symbol viewBox="0 0 15 11" id="style--header_mail" xmlns="http://www.w3.org/2000/svg">
@@ -85,18 +87,304 @@
               </div>
             </div>
             <button class="header__info_button item-action">Заказать звонок</button>
-            <input type="search" class="header__info_search item-action" placeholder="Поиск">
+            <form class="header__info_search-container item-action" action="/" method="get">
+              <input type="search" class="header__info_search" placeholder="Поиск">
+              <button class="header__info_search-submit" type="submit">Поиск</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
     <nav class="header__nav">
       <ul class="header__nav_list">
-        <li class="header__nav_category">Продукция
+        <li class="header__nav_category production"><span role="button">Продукция</span>
+          <svg width="5" height="9" class="arrow-production">
+            <use xlink:href="#arrow"></use>
+          </svg>
           <ul class="header__nav_category-list">
-            <li class="header__nav_category-item"><a href="/">Производство бетона</a></li>
-            <li class="header__nav_category-item"><a href="/">Подливочные и анкерные составы</a></li>
-            <li class="header__nav_category-item"><a href="/">Ремонт и защита бетона</a></li>
+            <li class="list__label">
+              <span role="button">Производство бетона
+              <svg width="5" height="9" class="arrow">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </span>
+              <ul class="list__label_block">
+                <li class="list__sub-label">
+                  <span role="button">Пластификаторы
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika® Plastiment® 1135 / 1235 / BV 3М / Stayer</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sikament® 131 / 141 / T34 / 151</a></li>
+                    <li class="list__label_sub-item"><a href="/">SikaPlast® E2 / S35 / 2436 / 2135 / 17 / 40 /2190 дА</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® ViscoCrete® 3300/3180/5–600 SK/5–600 N PL/5-800/32 SCC/5 New/ 570/3190</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® ViscoCrete® 20 HE / 20 Gold / T100 / 25 RU / 5 New / 32 SCC</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Регуляторы схватывания и твердения
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaRapid® 1 / 2 / 21</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sigunit® L53 AF / Sigunit® L93 AF</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® Retarder / Sika® Retarder 12</a></li>
+                    <li class="list__label_sub-item"><a href="/">SikaTard® 930</a></li>
+                    <li class="list__label_sub-item"><a href="/">Rugasol® 1S / 2W / 3W / ST</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Воздухововлекающие добавки
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaAer® 200 S / 200 C /200 C (20%)</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Регулятор усадки и расширения бетонов и строительных растворов
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika® IntraPlast® GS</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Противоморозные добавки
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika® Antifreeze 30/ 35/ 202/205 /300 /301/ LS/ N8/ N9/ N18/ P100/ P1000, SikaTard® M Nord</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Стабилизаторы
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaTard® M Nord</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® Stabilizer 4R</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Добавки для жестких бетонных смесей
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaPaver® HC-1 / HC-26 / BK / AE-1 / AE-2</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Модификаторы строительных растворов
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaLatex®</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Пластифицирующие добавки для строительных растворов
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaTard® M / M-20</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Вспомогательные материалы
+                  </span>
+                  <svg width="5" height="9" class="sub-arrow">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                  <ul class="list__label_sub-block last">
+                    <li class="list__label_sub-item"><a href="/">Средства для ухода за бетоном Sika® Antisol® E / Sika® Antisol® E-20 (AT)</a></li>
+                    <li class="list__label_sub-item"><a href="/">Смазка для опалубки Sika® Separol® AR-2 Eco / W120 / W220 / W320 / TR-13 / TR-5</a></li>
+                    <li class="list__label_sub-item"><a href="/">Средства для очистки и защиты оборудования Sika® Betonloser</a></li>
+                    <li class="list__label_sub-item"><a href="/">Средства для очистки и защиты оборудования SikaCare® Extra</a></li>
+                    <li class="list__label_sub-item"><a href="/">Пигменты для цветных бетонов и цементных смесей SikaCim® Color-S</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="list__label"><span role="button">Подливочные и анкерные составы
+              <svg width="5" height="9" class="arrow">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </span>
+              <ul class="list__label_block">
+                <li class="list__sub-label">
+                  <span role="button">Подливочные составы на минеральной основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaGrout® 311 / 314 / 316 / 318</a></li>
+                    <li class="list__label_sub-item"><a href="/">SikaGrout® 4N</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Подливочные составы на полиуретановой основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Icosit® KС 340/4, KC 340/7, KC 340/45, KC 340/65</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Подливочные составы на основе ПММА
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sikadur® 12 Pronto</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Подливочные составы на эпоксидной основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sikadur® 42 HE</a></li>
+                    <li class="list__label_sub-item"><a href="/">Icosit® KC 220/60 TX</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Анкеровочные составы
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika Anchorfix® 1 / Sika Anchorfix® 3+</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="list__label">
+              <span role="button">Ремонт и защита бетона
+              </span>
+              <ul class="list__label_block">
+                <li class="list__sub-label">
+                  <span role="button">Составы для создания адгезионного слоя и антикоррозионной защиты арматуры
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 910 N</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® Repair 10 F</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sikadur® 32</a></li>
+                    <li class="list__label_sub-item"><a href="/">SikaTop® Armatec® 110 EpoCem®</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® FerroGard® 903+</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 312</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Ремонтные составы на минеральной основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 614 / 412 NFG</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 620 / 723 N</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 652</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika MonoTop® 412 N</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® Repair 13 F / 20 F</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sika® FastFix 4 SL Normal / Rapid</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Ремонтные составы на эпоксидной основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sikadur® 31 CF Normal / Rapid</a></li>
+                    <li class="list__label_sub-item"><a href="/">Sikadur® 41 CF Normal / Rapid</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Ремонтные составы на эпоксидно-цементной основе
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">SikaGard® 720 EpoCem®</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Материалы для торкретирования
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Sika® Gunit-03 Normal / Rapid</a></li>
+                  </ul>
+                </li>
+                <li class="list__sub-label">
+                  <span role="button">Материалы для защиты бетона
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                <ul class="list__label_sub-block">
+                  <li class="list__label_sub-item"><a href="/">Sika® Poxitar® F / Sika® Poxitar® SW</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 33</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaCor® 277</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 33</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 63 N</a></li>
+                  <li class="list__label_sub-item"><a href="/">Icosit® 2406 Primer / Icosit® 2406 Deck</a></li>
+                  <li class="list__label_sub-item"><a href="/">Sikagard® WallCoat N /T</a></li>
+                  <li class="list__label_sub-item"><a href="/">Sikagard® 550 W Elastic</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 675 W Elastocolor</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 680 S BetonColor</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 700 S</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 703 W</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 705 L</a></li>
+                  <li class="list__label_sub-item"><a href="/">SikaGard® 706 Thixo</a></li>
+                </ul>
+              </li>
+                <li class="list__sub-label">
+                  <span role="button">Ремонтные и защитные составы для резервуаров с питьевой водой
+                    <svg width="5" height="9" class="sub-arrow">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                  <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item"><a href="/">Icoment® 540</a></li>
+                    <li class="list__label_sub-item"><a href="/">SikaGard® 136 DW</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li class="header__nav_category-item"><a href="/">Усиление конструкций</a></li>
             <li class="header__nav_category-item"><a href="/">Клеи и герметики</a></li>
             <li class="header__nav_category-item"><a href="/">Антикорозийнная защита металоконструкций</a></li>
@@ -132,39 +420,100 @@
     <section class="main__services">
       <aside class="main__services_aside">
         <h4 class="main__services_aside-heading">Товары</h4>
-        <ul class="main__services_aside list">
-          <li class="main__services_aside-item"><a href="/">Производство бетона</a></li>
-          <li class="main__services_aside-item"><a href="/">Подливочные и анкерные составы</a></li>
-          <li class="main__services_aside-item"><a href="/">Ремонт и защита бетона</a></li>
-          <li class="main__services_aside-item"><a href="/">Усиление конструкций</a></li>
-          <li class="main__services_aside-item"><a href="/">Клеи и герметики</a></li>
-          <li class="main__services_aside-item"><a href="/">Антикорозийнная защита металоконструкций</a></li>
-          <li class="main__services_aside-item"><a href="/">Гидроизоляция</a></li>
-          <li class="main__services_aside-item"><a href="/">Полы и напольные покрытия</a></li>
-          <li class="main__services_aside-item"><a href="/">Кровельные материалы</a></li>
+        <ul class="main__services_aside-list">
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Производство бетона</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Подливочные и анкерные составы</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Ремонт и защита бетона</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Усиление конструкций</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Клеи и герметики</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Антикорозийнная защита<br>металоконструкций</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Гидроизоляция</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Полы и напольные покрытия</a>
+          </li>
+          <li class="main__services_aside-item">
+            <svg width="23" height="23" class="aside-arrow">
+              <use xlink:href="#style--arrow"></use>
+            </svg>
+            <a href="/" class="main__services_aside-link">Кровельные материалы</a>
+          </li>
         </ul>
       </aside>
       <section class="main__services_block">
         <h4 class="main__services_block-heading">Наши услуги</h4>
         <div class="main__services_block-article">
           <article class="main__services_block-item">
-            <img src="img/services/technical_offers.png" alt="Разработка" class="main__services_block-img">
-            <h5 class="main__services_block-name">Разработка технических предложений</h5>
+            <a href="/" class="main__services_link-item">
+              <span class="main__services_img-wrapper">
+                <img src="img/services/technical_offers.png" alt="Разработка" class="main__services_block-img">
+              </span>
+              <span class="main__services_block-name">Разработка технических предложений</span>
+            </a>
             <p class="main__services_block-text">Придумать пару строк описания для данной услуги </p>
           </article>
           <article class="main__services_block-item">
-            <img src="img/services/lease.png" alt="Аренда" class="main__services_block-img">
-            <h5 class="main__services_block-name">Аренда, продажа и ремонт оборудования</h5>
+            <a href="/" class="main__services_link-item">
+              <span class="main__services_img-wrapper">
+                <img src="img/services/lease.png" alt="Аренда" class="main__services_block-img">
+              </span>
+              <span class="main__services_block-name">Аренда, продажа и ремонт оборудования</span>
+            </a>
             <p class="main__services_block-text">Придумать пару строк описания для данной услуги </p>
           </article>
           <article class="main__services_block-item">
-            <img src="img/services/survey.png" alt="Обследование" class="main__services_block-img">
-            <h5 class="main__services_block-name">Обследование сооружений</h5>
+            <a href="/" class="main__services_link-item">
+              <span class="main__services_img-wrapper">
+                <img src="img/services/survey.png" alt="Обследование" class="main__services_block-img">
+              </span>
+              <span class="main__services_block-name">Обследование сооружений</span>
+            </a>
             <p class="main__services_block-text">Придумать пару строк описания для данной услуги </p>
           </article>
           <article class="main__services_block-item">
-            <img src="img/services/counseling.png" alt="Консультирование" class="main__services_block-img">
-            <h5 class="main__services_block-name">Консультирование</h5>
+            <a href="/" class="main__services_link-item">
+              <span class="main__services_img-wrapper">
+                <img src="img/services/counseling.png" alt="Консультирование" class="main__services_block-img">
+              </span>
+              <span class="main__services_block-name">Консультирование</span>
+            </a>
             <p class="main__services_block-text">Придумать пару строк описания для данной услуги </p>
           </article>
         </div>
@@ -193,13 +542,13 @@
       </div>
     </section>
     <section class="main__contacts">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBqQ6KABSA" width="100%" height="400" frameborder="0" class="main__contacts_cart"></iframe>
+      <iframe class="main__contacts_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1545734673005!2d37.61544631610641!3d55.75581699922667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDMuNSJF!5e0!3m2!1sru!2sru!4v1523048241201" width="100%" height="532" frameborder="0" style="border:0" allowfullscreen></iframe>
       <section class="main__contacts_wrapper">
         <div class="main__contacts_block">
           <h4 class="main__contacts_block-header">Контакты</h4>
-          <p class="main__contacts_block-text">Телефон<a href="tel:+74953993331">+7(495) 399-33-31</a></p>
-          <p class="main__contacts_block-text">Электронная почта<a href="mailto:admin@sitename.ru">admin@sitename.ru</a></p>
-          <p class="main__contacts_block-text">Адрес<span>г. Москва, ул. Чекистов 28</span></p>
+          <p class="main__contacts_block-text"><span class="main__contacts_block-title">Телефон</span><a class="main__contacts_block-info" href="tel:+74953993331">+7(495) 399-33-31</a></p>
+          <p class="main__contacts_block-text"><span class="main__contacts_block-title">Электронная почта</span><a class="main__contacts_block-info" href="mailto:admin@sitename.ru">admin@sitename.ru</a></p>
+          <p class="main__contacts_block-text"><span class="main__contacts_block-title">Адрес</span><span class="main__contacts_block-info">г. Москва, ул. Чекистов 28</span></p>
           <button class="main__contacts_block-button">Написать нам</button>
         </div>
       </section>
@@ -214,13 +563,37 @@
       </div>
       <div class="footer__info_block">
         <div class="footer__info_text">
-          <h1 class="footer__info_heading">Мостовые строительные технологии</h1>
-          <h2 class="footer__info_title">Обеспечиваем строительство лучшими технологиями </h2>
+          <h3 class="footer__info_heading">Мостовые строительные технологии</h3>
+          <p class="footer__info_title">Обеспечиваем строительство лучшими технологиями </p>
         </div>
         <div class="footer__info_action">
-          <p class="footer__info_mail"><span>Адрес</span><span>г. Москва, ул. Чекистов 28</span></p>
-          <p class="footer__info_mail"><span>Электронная почта</span><a href="mailto:office1@-mail.ru">office1@-mail.ru</a></p>
-          <p class="footer__info_tel"><a href="tel:8800221221">8 (800) 222 12 21</a><span>Бесплатные звонки по РФ</span></p>
+          <div class="footer__info_action-block">
+            <svg width="12" height="15" class="logo">
+              <use xlink:href="#style--marker"></use>
+            </svg>
+            <p class="footer__info_action-text">
+              <span class="tag">Адрес</span>
+              <span>Нижний Новгорд, ул. Нижнепечерская д. 17</span>
+            </p>
+          </div>
+          <div class="footer__info_action-block">
+            <svg width="15" height="11" class="logo">
+              <use xlink:href="#style--footer_mail"></use>
+            </svg>
+            <p class="footer__info_action-text">
+              <span class="tag">Электронная почта</span>
+              <a class="mail" href="mailto:office1@-mail.ru">office1@-mail.ru</a>
+            </p>
+          </div>
+          <div class="footer__info_action-block">
+            <svg width="30" height="30" class="logo">
+              <use xlink:href="#style--footer_phone"></use>
+            </svg>
+            <p class="footer__info_action-text">
+              <a class="tel" href="tel:8800221221">8 (800) 222 12 21</a>
+              <span class="tag tel-tag">Бесплатные звонки по РФ</span>
+            </p>
+          </div>
           <button class="footer__info_button">Заказать звонок</button>
         </div>
       </div>

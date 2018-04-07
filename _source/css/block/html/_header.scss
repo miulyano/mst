@@ -1,7 +1,7 @@
 @import "../../block/system/vars";
 
 .header {
-  min-height: 685px;
+  min-height: 687px;
   background-color: $heading-bg-color;
   background-image: url("../img/content/bridge.png");
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
       align-items: center;
     }
     .item-action:not(:last-child) {
-      margin-right: 16px;
+      margin-right: 15px;
     }
   }
   &_tel {
@@ -70,7 +70,19 @@
     letter-spacing: 1.2px;
     color: $text-black;
     border-radius: 3px;
-    border: 0;  }
+    border: 0;
+    &-submit {
+      @extend .visually-hidden
+    }
+  }
+  &_search::placeholder {
+    color: $placeholder-color;
+    transition: color .2s ease-in-out;
+  }
+  &_search:focus::placeholder,
+  &_search:hover::placeholder {
+    color: $placeholder-hover-color;
+  }
 }
 
 .header__info_tel,
@@ -80,19 +92,106 @@
 
 .header__nav {
   margin-bottom: 60px;
+  &_list {
+    list-style: none;
+    z-index: 20;
+  }
   &_category {
-    @extend .button;
     flex-grow: 1.2;
     text-align: center;
     border-radius: 0;
+
     a {
+      @extend .button;
+      width: 100%;
       color: $text-white;
       text-decoration: none;
+      border-radius: 0;
+    }
+    .production {
+      @extend .button;
+      width: 100%;
+      color: $text-white;
+      text-decoration: none;
+      border-radius: 0;
     }
     &-list {
       display: none;
+      width: 250px;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      list-style: none;
+      animation: view .3s ease-in-out;
+    }
+    &-list a {
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: 0;
+      text-align: left;
+      font-size: 15px;
+      line-height: 24px;
+      background-color: $dropdown-color;
+    }
+    &-list span {
+      @extend .button;
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: 0;
+      text-align: left;
+      font-size: 15px;
+      line-height: 24px;
+      background-color: $dropdown-color;
+      width: 100%;
+      color: $text-white;
+      text-decoration: none;
+      border-radius: 0;
     }
   }
+}
+
+@keyframes view {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.header__nav_category-item:last-child a {
+  border-radius: 0 0 4px 4px;
+}
+
+.header__nav_category-item:hover a {
+  background-color: $active-color;
+}
+
+.list__label:hover span {
+  background-color: $active-color;
+}
+
+.production {
+  position: relative;
+}
+
+.arrow-production {
+  transform: rotate(90deg);
+}
+
+.header__nav_category:first-child:hover {
+  border-radius: 4px 0 0 0;
+  background-color: $dropdown-color;
+}
+
+.production:hover .header__nav_category-list {
+  display: block;
+}
+
+.header__nav_category-list:hover {
+  display: block;
 }
 
 .header__nav_category:not(:last-child) {
@@ -100,12 +199,15 @@
 }
 
 .header__nav_category:first-child {
-  flex-grow: .5;
-  font-size: 15px;
+  @extend .button;
+  flex-grow: .3;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
   border-radius: 4px 0 0 4px;
 }
 
-.header__nav_category:last-child {
+.header__nav_category:last-child a {
   border-radius: 0 4px 4px 0;
 }
 
@@ -154,4 +256,72 @@
  #slide-second:checked ~ .header__slider_label-list #label-second,
  #slide-third:checked ~ .header__slider_label-list #label-third {
   background-color: $active-color;
+}
+
+
+ .list__label,
+ .list__sub-label {
+   position: relative;
+ }
+
+ .list__label span {
+   display: inline-flex;
+   align-items: baseline;
+ }
+
+ .list__label_block,
+ .list__label_sub-block {
+   display: none;
+   width: 250px;
+   position: absolute;
+   left: 250px;
+   top: 0;
+   list-style: none;
+   animation: view .3s ease-in-out;
+ }
+
+.last {
+  top: -565%;
+}
+
+.list__sub-label {
+  min-height: inherit;
+}
+
+.list__label_block a {
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: $active-color;
+}
+
+.arrow,
+.sub-arrow{
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  display: none;
+}
+
+.list__label:hover  .list__label_block,
+.list__sub-label:hover .list__label_sub-block {
+  display: block;
+}
+
+.list__sub-label:hover span{
+  background-color: $list-hover;
+}
+
+.list__label:hover .arrow,
+.list__sub-label:hover .sub-arrow {
+  display: block;
+}
+
+.list__label_item:last-of-type a,
+.list__label_item:last-of-type span,
+.list__label_sub-item:last-of-type a {
+  border-radius: 0 0 4px 4px;
 }

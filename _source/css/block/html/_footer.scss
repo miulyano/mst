@@ -1,0 +1,61 @@
+@import "../system/vars";
+
+.footer__info {
+  padding: 34px 0;
+  &_block {
+    width: 100%;
+    margin-left: 25px;
+  }
+  &_heading {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: $section-heading-size;
+    text-transform: uppercase;
+    line-height: 35px;
+  }
+  &_title {
+    margin-bottom: 7px;
+  }
+  &_action {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_button {
+    @extend .button;
+    padding: 25px 28px;
+    font-size: $base-font_size;
+    background-color: $button-color;
+  }
+  &_action-block {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+  }
+  &_action-text {
+    height: 100%;
+    margin: 0;
+    margin-left: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 28px;
+  }
+  &_action-text {
+    font-size: 15px;
+  }
+  .tag {
+    font-size: $label-font_size-sm;
+    line-height: 12px;
+  }
+  .tel {
+    font-size: 23px;
+  }
+  .mail,
+  .tel {
+    color: $text-black;
+  }
+  .tel-tag {
+    line-height: 20px;
+  }
+}

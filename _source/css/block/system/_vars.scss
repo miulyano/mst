@@ -1,36 +1,43 @@
 //Typography
-$default-font: Arial, Roboto, Helvetica, sans-serif;
+$default-font:                    Arial, Roboto, Helvetica, sans-serif;
 
 //Colors
-$heading-bg-color: #171b57;
-$active-color: #1aaf8e;
-$dropdown-color: #171b57;
-$list-hover: #088368;
-$text-white: #ffffff;
-$text-black: #000000;
+$heading-bg-color:                #171b57;
+$active-color:                    #1aaf8e;
+$dropdown-color:                  #171b57;
+$list-hover:                      #088368;
+$text-white:                      #ffffff;
+$text-black:                      #000000;
+$border-color:                    #f2f4f5;
+$button-color:                    #199484;
+$placeholder-color:               #b5b5b5;
+$placeholder-hover-color:         #4d4946;
 
 //Typography
-$h1-font_size: 40px;
-$base-font_size: 16px;
-$label-font_size-sm: 12px;
-$label-font_size-normal: 14px;
-$label-font_size-lg: 21px;
+$h1-font_size:                    40px;
+$section-heading-size:            30px;
+$base-font_size:                  16px;
+$aside-font_size:                 17px;
+$label-font_size-sm:              12px;
+$label-font_size-normal:          14px;
+$label-font_size-lg:              21px;
+$label-contact:                   20px;
 
 //Customization Bootstrap vars
-$grid-gutter-width: 30px;
-$grid-columns: 12;
+$grid-gutter-width:               30px;
+$grid-columns:                    12;
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+  xs:                             0,
+  sm:                             576px,
+  md:                             768px,
+  lg:                             992px,
+  xl:                             1200px
 );
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  sm:                             540px,
+  md:                             720px,
+  lg:                             960px,
+  xl:                             1140px
 );
 
-$gutter: $grid-gutter-width;
+$gutter:                          $grid-gutter-width;
