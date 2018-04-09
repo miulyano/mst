@@ -7,7 +7,10 @@
   @extend .main-section
 }
 
+//Блок с услугами
+
 .main__services {
+  align-items: flex-start;
   @include media-breakpoint-down(sm) {
     flex-direction: column;
   }
@@ -19,6 +22,9 @@
     min-width: 350px;
     border-radius: 4px;
     border: 3px solid $border-color;
+    @include media-breakpoint-down(md) {
+      min-width: 320px;
+    }
     @include media-breakpoint-down(sm) {
       border: none;
       min-width: 100%;
@@ -72,7 +78,13 @@
     }
   }
   &_block-article {
-    width: calc(1140px - 380px);
+    width: calc(1140px - (350px + 30px));
+    @include media-breakpoint-down(lg) {
+      width: calc(960px - (350px + 30px));
+    }
+    @include media-breakpoint-down(md) {
+      width: calc(720px - (320px + 30px));
+    }
     @include media-breakpoint-down(sm) {
       width: 100%;
       margin-top: 9px;
@@ -81,7 +93,10 @@
   &_block-item {
     margin-top: 27px;
     max-width: 365px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+       max-width: calc((960px - (350px + 30px)) / 2 - 31px);
+    }
+    @include media-breakpoint-down(md) {
       margin-top: 35px;
       max-width: 100%;
       width: inherit;
@@ -99,7 +114,7 @@
   }
   &_block-item:nth-child(2n) {
     margin-left: 30px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-left: 0;
     }
   }
@@ -134,9 +149,18 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 4px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      max-width: calc((960px - (350px + 30px)) / 2 - 31px);
+      img {
+        margin-left: -15%;
+      }
+    }
+    @include media-breakpoint-down(md) {
       max-width: 100%;
       width: 100%;
+      img {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -154,6 +178,8 @@
   opacity: .85;
 }
 
+//Блок партнеров
+
 .main__partners {
   padding-top: 25px;
   @include media-breakpoint-down(sm) {
@@ -163,8 +189,10 @@
   }
   &_article-block {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    @include media-breakpoint-down(sm) {
+      justify-content: space-between;
+    }
   }
   &_item {
     margin-top: 20px;
@@ -185,12 +213,15 @@
     }
   }
   &_item:not(:nth-child(4n + 1)) {
-    margin-left: 20px;
+    margin-left: 23px;
     @include media-breakpoint-down(sm) {
       margin-left: 0;
     }
   }
 }
+
+
+//Сертификаты
 
 .main__certificates {
   margin-bottom: 17px;
@@ -207,10 +238,13 @@
   }
   &_article-block {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    @include media-breakpoint-down(sm) {
+      justify-content: space-between;
+    }
   }
   &_item {
+    padding: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -219,6 +253,9 @@
     height: 346px;
     border: 2px solid $border-color;
     overflow: hidden;
+    @include media-breakpoint-down(lg) {
+      height: auto;
+    }
     @include media-breakpoint-down(sm) {
       padding: 10px;
       width: calc(50% - 15px);
@@ -227,22 +264,27 @@
       min-height: 180px;
     }
   }
+  &_item:not(:nth-child(4n + 1)) {
+    margin-left: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
 }
 
 .main__partners_item-img {
-  @include media-breakpoint-down(sm) {
     max-width: 100px;
-  }
 }
 
 .main__certificates_item-img {
-  @include media-breakpoint-down(sm) {
     width: 100%;
-  }
 }
 
+
+//Контакты
+
 .main__contacts {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding: 0;
   }
   &_wrapper {
@@ -251,7 +293,7 @@
     align-items: center;
     top: 0;
     height: 0;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       height: auto;
       margin-top: 35px;
       padding: 0 15px;
@@ -266,7 +308,7 @@
     height: 420px;
     background-color: #fff;
     box-shadow: 0px 8px 25.65px 1.35px rgba(0, 0, 0, 0.23);
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       height: auto;
       padding: 0;
       margin-top: 0;
@@ -279,7 +321,7 @@
   &_block-text {
     display: inline-flex;
     flex-direction: column;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
@@ -287,7 +329,7 @@
     margin-bottom: 5px;
     font-size: $label-font_size-normal;
     letter-spacing: .5px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
@@ -296,7 +338,7 @@
     color: $text-black;
     line-height: 29px;
     letter-spacing: .2px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
@@ -309,13 +351,17 @@
     padding: 23px 25px;
     font-size: $label-font_size-normal;
     background-color: $button-color;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
   &_card {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
+}
+
+.main__contacts_card {
+  width: 100%;
 }

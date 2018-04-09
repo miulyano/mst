@@ -7,16 +7,33 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
+    min-height: 650px;
+  }
+  @include media-breakpoint-down(md) {
+    min-height: 600px;
+  }
+  @include media-breakpoint-down(xs) {
     min-height: 550px;
   }
 }
+
 .logo {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
+    width: 160px;
+    height: 160px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 130px;
+    width: 130px;
+  }
+  @include media-breakpoint-down(xs) {
     height: 100px;
     width: 100px;
   }
 }
+
+//Инфо в шапке
 
 .header__info {
   &_logo {
@@ -24,14 +41,22 @@
   }
   &_heading {
     margin-bottom: 5px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      font-size: 33px;
+      letter-spacing: .8px;
+      line-height: 33px;
+    }
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
   &_wrapper {
     padding-bottom: 20px;
     justify-content: space-between;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+
+    }
+    @include media-breakpoint-down(md) {
       padding-bottom: 0;
       flex-direction: column;
     }
@@ -39,14 +64,18 @@
   &_block {
     margin-top: 30px;
     margin-left: 25px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      margin-left: 20px;
+      margin-top: 25px;
+    }
+    @include media-breakpoint-down(md) {
       margin: 0;
     }
   }
   &_action {
     justify-content: flex-end;
     align-items: flex-start;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       align-items: center;
       justify-content: center;
     }
@@ -56,7 +85,7 @@
       align-items: center;
     }
     .item-action:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 16px;
     }
   }
   &_tel {
@@ -67,9 +96,19 @@
       display: flex;
       flex-direction: column;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      a {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    @include media-breakpoint-down(md) {
       a {
         font-size: 23px;
+        line-height: 27px;
         letter-spacing: 0px;
       }
       span {
@@ -86,7 +125,7 @@
     }
   }
   &_mail {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
     svg {
@@ -96,16 +135,30 @@
       margin-right: 30px;
       display: flex;
       flex-direction: column;
+      @include media-breakpoint-down(lg) {
+        margin-right: 20px;
+      }
     }
   }
   &_title {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      line-height: 20px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 15px;
+    }
+    @include media-breakpoint-down(md) {
       display: none;
     }
     margin-bottom: 6px;
   }
   &_button {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      padding: 16px 20px;
+      font-size: 11px;
+      letter-spacing: .8px;
+    }
+    @include media-breakpoint-down(md) {
       display: none;
     }
     @extend .button
@@ -123,7 +176,11 @@
     color: $text-black;
     border-radius: 3px;
     border: 0;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      width: 190px;
+      padding: 14px 20px;
+    }
+    @include media-breakpoint-down(md) {
       display: none;
     }
     &-submit {
@@ -145,27 +202,54 @@
   flex-direction: row;
 }
 
+//Плашка с навигацией
+
 .header__nav {
   margin-bottom: 60px;
   margin-bottom: 60px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
   }
   &_list {
+    position: relative;
     list-style: none;
-    z-index: 20;
+    z-index: 10000;
+    @include media-breakpoint-down(md) {
+      height: 100vh;
+      flex-direction: column;
+      overflow-y: auto;
+    }
   }
   &_category {
     flex-grow: 1.2;
     text-align: center;
     border-radius: 0;
-
-    a {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      border-top: 1px solid #fff;
+      min-height: 70px;
+    }
+    a,
+    button {
       @extend .button;
       width: 100%;
       color: $text-white;
       text-decoration: none;
       border-radius: 0;
+      @include media-breakpoint-down(md) {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        font-size: 23px;
+        letter-spacing: 0;
+      }
     }
     .production {
       @extend .button;
@@ -181,7 +265,17 @@
       left: 0;
       top: 50px;
       list-style: none;
-      animation: view .3s ease-in-out;
+      @include media-breakpoint-down(md) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100vw;
+        min-height: 100%;
+        overflow-y: auto;
+        background-color: $dropdown-color;
+      }
     }
     &-list a {
       text-transform: none;
@@ -191,6 +285,13 @@
       font-size: 15px;
       line-height: 24px;
       background-color: $dropdown-color;
+      @include media-breakpoint-down(md) {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        letter-spacing: 0;
+      }
     }
     &-list span {
       @extend .button;
@@ -205,18 +306,20 @@
       color: $text-white;
       text-decoration: none;
       border-radius: 0;
+      @include media-breakpoint-down(md) {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        letter-spacing: 0;
+      }
     }
-  }
-}
-
-@keyframes view {
-  0% {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
+    .list__label {
+      @include media-breakpoint-down(md) {
+        display: flex;
+        min-height: 70px;
+      }
+    }
   }
 }
 
@@ -236,17 +339,28 @@
   position: relative;
 }
 
-.arrow-production {
-  transform: rotate(90deg);
+.production span {
+  position: relative;
 }
 
-.header__nav_category:first-child:hover {
+.arrow-production {
+  transform: rotate(90deg);
+  @include media-breakpoint-down(md) {
+    margin-left: 10px;
+    transform: rotate(0);
+  }
+}
+
+.header__nav_category:nth-of-type(2):hover {
   border-radius: 4px 0 0 0;
   background-color: $dropdown-color;
 }
 
 .production:hover .header__nav_category-list {
   display: block;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .header__nav_category-list:hover {
@@ -255,20 +369,57 @@
 
 .header__nav_category:not(:last-child) {
   border-right: 1px solid $text-white;
+  @include media-breakpoint-down(md) {
+    border-right: none;
+  }
 }
 
 .header__nav_category:first-child {
+  display: none;
+  justify-content: flex-end;
+  border-bottom: 1px solid #fff;
+  .close-button {
+    display: inline-flex;
+    justify-content: flex-end;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+  .close-button span{
+    margin-left: 10px;
+  }
+  @include media-breakpoint-down(md) {
+    display: flex;
+  }
+}
+
+.header__nav_category:nth-of-type(2) {
   @extend .button;
   flex-grow: .3;
   font-size: 16px;
   letter-spacing: 1.5px;
   font-weight: 900;
   border-radius: 4px 0 0 4px;
+  @include media-breakpoint-down(md) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    font-size: 23px;
+    letter-spacing: 0;
+  }
 }
 
 .header__nav_category:last-child a {
   border-radius: 0 4px 4px 0;
+  @include media-breakpoint-down(md) {
+    border-radius: 0;
+  }
 }
+
+//Кастомизация слайдера
 
 .header__slider {
   &_heading {
@@ -280,7 +431,22 @@
     font-weight: bold;
     line-height: 45px;
     letter-spacing: 1.3px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 10px;
+      max-width: 570px;
+      font-size: 33px;
+      line-height: 40px;
+      letter-spacing: .8px;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      max-width: 350px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 32px;
+    }
+    @include media-breakpoint-down(xs) {
       margin: 0 auto;
       margin-bottom: 10px;
       max-width: 270px;
@@ -295,20 +461,29 @@
     color: $text-white;
     font-size: 17px;
     letter-spacing: .5px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
+      max-width: 440px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 320px;
+      text-align: center;
+    }
+    @include media-breakpoint-down(xs) {
       max-width: 290px;
       text-align: center;
       font-weight: 300;
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0px;
-  }
+    }
   }
   &_link {
     margin-bottom: 45px;
     @extend .button-lg;
     text-decoration: none;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-bottom: 28px;
     }
   }
@@ -319,33 +494,89 @@
   &_btn {
     @extend .visually-hidden
   }
-  &_label {
-    margin-right: 13px;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: $text-white;
-    cursor: pointer;
-  }
 
-  &_label:last-child {
-    margin-right: 0;
-  }
-
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
- #slide-first:checked ~ .header__slider_label-list #label-first,
- #slide-second:checked ~ .header__slider_label-list #label-second,
- #slide-third:checked ~ .header__slider_label-list #label-third {
+
+//Стили карусели
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.owl-dot {
+  margin-right: 15px;
+}
+
+.owl-dot span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $text-white;
+  cursor: pointer;
+}
+
+.owl-dot:last-child span {
+  margin-right: 0;
+}
+
+.owl-dot.active  span {
   background-color: $active-color;
 }
 
+//Стили для подменю
+
+.list__label:first-child,
+.list__sub-label:first-child,
+.list__label_sub-item:first-child {
+  display: none;
+  justify-content: flex-end;
+  border-bottom: 1px solid #fff;
+  .arrow-back,.sub__arrow-back,.sub-item__arrow-back {
+    display: inline-flex;
+    justify-content: flex-end;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+    background-color: $dropdown-color;
+  }
+  .sub__arrow-back,
+  .sub-item__arrow-back,
+  .sub-item__arrow-back span {
+    background-color: $active-color;
+  }
+  .arrow-back:hover {
+    background-color: $active-color;
+  }
+  .arrow-back span,
+  .sub__arrow-back span,
+  .sub-item__arrow-back span {
+    padding: 0;
+    margin-left: 10px;
+  }
+  .arrow-back svg,
+  .sub__arrow-back svg,
+  .sub-item__arrow-back svg {
+    transform: rotate(180deg);
+  }
+  @include media-breakpoint-down(md) {
+    display: flex;
+  }
+}
 
  .list__label,
  .list__sub-label {
@@ -365,13 +596,36 @@
    left: 250px;
    top: 0;
    list-style: none;
-   animation: view .3s ease-in-out;
+   @include media-breakpoint-down(md) {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     height: 100vw;
+     min-height: 100%;
+     overflow-y: auto;
+     z-index: 100;
+     background-color: $active-color;
+   }
  }
 
 .list__sub-label {
   min-height: inherit;
+  @include media-breakpoint-down(md) {
+    display: flex;
+    min-height: 70px;
+    font-size: 15px;
+  }
 }
 
+.production a {
+  @include media-breakpoint-down(md) {
+    font-size: 15px !important;
+  }
+}
+
+.list__label_block a,
 .list__label_block a {
   text-transform: none;
   font-weight: normal;
@@ -380,19 +634,42 @@
   font-size: 15px;
   line-height: 24px;
   background-color: $active-color;
+  @include media-breakpoint-down(md) {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    letter-spacing: 0;
+  }
+}
+
+.list__label_sub-item {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    min-height: 70px;
+  }
 }
 
 .arrow,
-.sub-arrow{
+.sub-arrow {
   position: absolute;
   top: 28px;
   right: 20px;
   display: none;
+  @include media-breakpoint-down(md) {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: static;
+    display: block;
+  }
 }
 
 .list__label:hover  .list__label_block,
 .list__sub-label:hover .list__label_sub-block {
   display: block;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .list__sub-label:hover span{
@@ -412,6 +689,7 @@
   border-radius: 0 0 4px 4px;
 }
 
+//Вспомогательные классы для выравнивания подменю на десктопе
 .top {
   &__50 {
     top: -50%;
@@ -483,7 +761,22 @@
   span {
     margin-left: 10px;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: inline-flex;
   }
+}
+
+//Переопределение стилей меню и подменю
+.header a {
+  color: $text-white !important;
+}
+
+.header__nav_category a {
+  text-decoration: none !important;
+}
+
+.sub__arrow-back:hover,
+.sub-item__arrow-back:hover,
+.sub-item__arrow-back:hover span {
+  background-color: $list-hover !important;
 }

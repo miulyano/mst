@@ -28,11 +28,11 @@
     font-size: $label-font_size-sm;
     line-height: $label-font_size-sm;
     color: $text-white;
-    a {
-      color: $text-white;
-      font-size: $label-font_size-normal;
-      line-height: 24px;
-    }
+  &_mail a {
+    color: $text-white;
+    font-size: $label-font_size-normal;
+    line-height: 24px;
+  }
   }
   &_tel {
     display: inline-flex;

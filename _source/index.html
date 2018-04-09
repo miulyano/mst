@@ -16,6 +16,7 @@
   <meta name="theme-color" content="#171b57"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
   <title>Мостовые строительные технологии</title>
 </head>
 <body class="body">
@@ -61,6 +62,9 @@
     </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="menu-btn">
       <path fill="rgb(26, 175, 142)"  d="M-0.000,21.000 L-0.000,18.000 L21.000,18.000 L21.000,21.000 L-0.000,21.000 ZM-0.000,9.000 L21.000,9.000 L21.000,12.000 L-0.000,12.000 L-0.000,9.000 ZM-0.000,-0.000 L21.000,-0.000 L21.000,3.000 L-0.000,3.000 L-0.000,-0.000 Z"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="close-btn">
+      <path  fill="rgb(255, 255, 255)"  d="M16.985,14.864 L14.864,16.985 L8.500,10.621 L2.136,16.985 L0.015,14.864 L6.379,8.500 L0.015,2.136 L2.136,0.015 L8.500,6.379 L14.864,0.015 L16.985,2.136 L10.621,8.500 L16.985,14.864 Z"/>
     </symbol>
   </svg>
   <header class="header">
@@ -114,18 +118,42 @@
     </section>
     <nav class="header__nav">
       <ul class="header__nav_list">
+        <li class="header__nav_category">
+          <button class="close-button">
+            <svg width="17" height="17">
+              <use xlink:href="#close-btn"></use>
+            </svg>
+            <span>Закрыть меню</span>
+          </button>
+        </li>
         <li class="header__nav_category production"><span role="button">Продукция</span>
           <svg width="5" height="9" class="arrow-production">
             <use xlink:href="#arrow"></use>
           </svg>
           <ul class="header__nav_category-list">
+            <li class="list__label arrow-back-li">
+              <button class="arrow-back">
+                <svg width="5" height="9">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+                <span>Назад в меню</span>
+              </button>
+            </li>
             <li class="list__label">
               <span role="button" class="label">Производство бетона
-              <svg width="5" height="9" class="arrow">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </span>
+                <svg width="5" height="9" class="arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </span>
               <ul class="list__label_block">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Пластификаторы
                     <svg width="5" height="9" class="sub-arrow">
@@ -133,6 +161,14 @@
                     </svg>
                 </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Plastiment® 1135 / 1235 / BV 3М / Stayer</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikament® 131 / 141 / T34 / 151</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaPlast® E2 / S35 / 2436 / 2135 / 17 / 40 /2190 дА</a></li>
@@ -147,6 +183,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaRapid® 1 / 2 / 21</a></li>
                     <li class="list__label_sub-item"><a href="/">Sigunit® L53 AF / Sigunit® L93 AF</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® Retarder / Sika® Retarder 12</a></li>
@@ -161,6 +205,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaAer® 200 S / 200 C /200 C (20%)</a></li>
                   </ul>
                 </li>
@@ -171,6 +223,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® IntraPlast® GS</a></li>
                   </ul>
                 </li>
@@ -181,6 +241,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Antifreeze 30/ 35/ 202/205 /300 /301/ LS/ N8/ N9/ N18/ P100/ P1000, SikaTard® M Nord</a></li>
                   </ul>
                 </li>
@@ -191,6 +259,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaTard® M Nord</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® Stabilizer 4R</a></li>
                   </ul>
@@ -202,6 +278,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaPaver® HC-1 / HC-26 / BK / AE-1 / AE-2</a></li>
                   </ul>
                 </li>
@@ -212,6 +296,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaLatex®</a></li>
                   </ul>
                 </li>
@@ -222,6 +314,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaTard® M / M-20</a></li>
                   </ul>
                 </li>
@@ -232,6 +332,14 @@
                     <use xlink:href="#arrow"></use>
                   </svg>
                   <ul class="list__label_sub-block top__550">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Средства для ухода за бетоном Sika® Antisol® E / Sika® Antisol® E-20 (AT)</a></li>
                     <li class="list__label_sub-item"><a href="/">Смазка для опалубки Sika® Separol® AR-2 Eco / W120 / W220 / W320 / TR-13 / TR-5</a></li>
                     <li class="list__label_sub-item"><a href="/">Средства для очистки и защиты оборудования Sika® Betonloser</a></li>
@@ -248,6 +356,14 @@
               </svg>
             </span>
               <ul class="list__label_block">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Подливочные составы на минеральной основе
                     <svg width="5" height="9" class="sub-arrow">
@@ -255,6 +371,14 @@
                     </svg>
                 </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaGrout® 311 / 314 / 316 / 318</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaGrout® 4N</a></li>
                   </ul>
@@ -266,6 +390,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Icosit® KС 340/4, KC 340/7, KC 340/45, KC 340/65</a></li>
                   </ul>
                 </li>
@@ -276,6 +408,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 12 Pronto</a></li>
                   </ul>
                 </li>
@@ -286,6 +426,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 42 HE</a></li>
                     <li class="list__label_sub-item"><a href="/">Icosit® KC 220/60 TX</a></li>
                   </ul>
@@ -297,6 +445,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika Anchorfix® 1 / Sika Anchorfix® 3+</a></li>
                   </ul>
                 </li>
@@ -309,6 +465,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__150">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Составы для создания адгезионного слоя и антикоррозионной защиты арматуры
                     <svg width="5" height="9" class="sub-arrow">
@@ -316,6 +480,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika MonoTop® 910 N</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® Repair 10 F</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 32</a></li>
@@ -331,6 +503,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika MonoTop® 614 / 412 NFG</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika MonoTop® 620 / 723 N</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika MonoTop® 652</a></li>
@@ -346,6 +526,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 31 CF Normal / Rapid</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 41 CF Normal / Rapid</a></li>
                   </ul>
@@ -357,6 +545,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaGard® 720 EpoCem®</a></li>
                   </ul>
                 </li>
@@ -367,6 +563,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Gunit-03 Normal / Rapid</a></li>
                   </ul>
                 </li>
@@ -377,6 +581,14 @@
                     </svg>
                   </span>
                 <ul class="list__label_sub-block top__550">
+                  <li class="list__label_sub-item arrow-back-li">
+                    <button class="sub-item__arrow-back">
+                      <svg width="5" height="9">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                      <span>Назад в меню</span>
+                    </button>
+                  </li>
                   <li class="list__label_sub-item"><a href="/">Sika® Poxitar® F / Sika® Poxitar® SW</a></li>
                   <li class="list__label_sub-item"><a href="/">SikaGard® 33</a></li>
                   <li class="list__label_sub-item"><a href="/">SikaCor® 277</a></li>
@@ -400,6 +612,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Icoment® 540</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaGard® 136 DW</a></li>
                   </ul>
@@ -413,6 +633,14 @@
                 </svg>
               </span>
               <ul class="list__label_block">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label"><a href="/" class="sub-label">Sika®CarboDur® System</a></li>
                 <li class="list__sub-label"><a href="/" class="sub-label">Sikadur® 30</a></li>
                 <li class="list__sub-label"><a href="/" class="sub-label">SikaWrap®–530 C/ 230 C</a></li>
@@ -427,6 +655,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__400">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Клеи на акриловой основе
                     <svg width="5" height="9" class="sub-arrow">
@@ -434,6 +670,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® 525</a></li>
                   </ul>
                 </li>
@@ -444,6 +688,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 31 CF Normal / Rapid</a></li>
                   </ul>
                 </li>
@@ -454,6 +706,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® T2 (i-Cure)</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® T8</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® AT Metal</a></li>
@@ -466,6 +726,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Primer 215 / Sika® Primer 3N</a></li>
                   </ul>
                 </li>
@@ -476,6 +744,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__450">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sanisil®</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikaflex® 11 FC+(i-Cure)</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikaflex® PRO-3 (i-Cure)</a></li>
@@ -493,6 +769,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__300">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Primer MB</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® 54 Parquet (i-Cure)</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaBond® T 45</a></li>
@@ -513,6 +797,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® IG-25</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® IG-25 HM / IG-25 HM Plus</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® SG-500 / SG-550</a></li>
@@ -525,6 +817,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__100">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® WS-605S</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® FS-665</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikasil® WS-355</a></li>
@@ -539,6 +839,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__250">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Грунтовочные материалы
                     <svg width="5" height="9" class="sub-arrow">
@@ -546,6 +854,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaCor® Aktivprimer Rapid</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaCor® Steel Protect VHS Rapid</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaCor® Zinc R / SikaCor® Zinc R Rapid</a></li>
@@ -561,6 +877,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaCor® EG System</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaCor® PUR System</a></li>
                   </ul>
@@ -572,6 +896,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__250">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Inertol® BS 10 FR</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® Inertol® 88</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaGard® 33</a></li>
@@ -596,6 +928,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikagard® 136 DW</a></li>
                   </ul>
                 </li>
@@ -606,6 +946,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__100">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikalastic® 841 ST</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikalastic® 842 BG</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikalastic® 844 XT</a></li>
@@ -621,6 +969,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__650">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Рулонные гидроизоляционные материалы на основе пластифицированного поливинилхлорида (ПвХ)/ термопластичных полиолефинов (ТПО)
                     <svg width="5" height="9" class="sub-arrow">
@@ -628,6 +984,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikaplan® WP 1100-15HL / WP 1100-20HL / WP 1100-30HL</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikaplan® WP 3100-15R / WP 3100-15RE</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikaplan® WT 1200-16C / WT 1200-20C / WT 1200-30C</a></li>
@@ -641,6 +1005,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikalastic® 801 / 801 SL</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikalastic® 152</a></li>
                   </ul>
@@ -652,6 +1024,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__100">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® 1</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika®4a Pulver</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika®101a</a></li>
@@ -667,6 +1047,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® MultiSeal</a></li>
                   </ul>
                 </li>
@@ -677,6 +1065,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__550">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Injection-451</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 52 Injection Type N and LP</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikadur® 53</a></li>
@@ -695,6 +1091,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__350">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">SikaSwell® Profiles</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaSwell® S-2</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaFuko® Eco 1 / Swell 1 / VT 1</a></li>
@@ -708,6 +1112,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__150">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikadur-Combiflex® SG System</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® Dilatec® System</a></li>
                     <li class="list__label_sub-item"><a href="/">SSikaSeal® Tape-S</a></li>
@@ -722,6 +1134,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__550">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label">
                   <span role="button" class="sub-label">Сухие упрочнители бетонных полов
                     <svg width="5" height="9" class="sub-arrow">
@@ -729,6 +1149,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor®–1 MetalTop (Sika® PANBEX® F3E)</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor®–2 SynTop (Sika® PANBEX® F2) / Sikafloor® 2 SynTop</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor®–3 QuartzTop (Sika® PANBEX® F1) / Sikafloor® 3 QuartzTop</a></li>
@@ -741,6 +1169,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® ProSeal 22 / Sikafloor® ProSeal W</a></li>
                   </ul>
                 </li>
@@ -751,6 +1187,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® CureHard 18 / 24</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® CureHard LI / Sikafloor® CureHard GL</a></li>
                   </ul>
@@ -762,6 +1206,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® Level 01 Primer</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® Level T1 / T2</a></li>
                   </ul>
@@ -773,6 +1225,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® MonoTop®–9 10 N</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 3+/ 2+/1+CorCrete</a></li>
                   </ul>
@@ -784,6 +1244,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__150">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 13 Pronto</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 156 / 161</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 159</a></li>
@@ -796,6 +1264,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__550">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 263 SL</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 264 / Sikafloor® 264 Thixo</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 2530 W</a></li>
@@ -820,6 +1296,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__350">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 220 W Conductive</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® Earthing Kit</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 262 AS N / 262 AS N Thixo</a></li>
@@ -835,6 +1319,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__150">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sika® ComfortFloor Systems</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® CompactFloor System</a></li>
                     <li class="list__label_sub-item"><a href="/">Sika® DecoFlake System</a></li>
@@ -849,6 +1341,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__100">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 144</a></li>
                     <li class="list__label_sub-item"><a href="/">Sikafloor® 266 CR</a></li>
                     <li class="list__label_sub-item"><a href="/">SikaGard® 183 W CR</a></li>
@@ -861,6 +1361,14 @@
                     </svg>
                   </span>
                   <ul class="list__label_sub-block top__50">
+                    <li class="list__label_sub-item arrow-back-li">
+                      <button class="sub-item__arrow-back">
+                        <svg width="5" height="9">
+                          <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span>Назад в меню</span>
+                      </button>
+                    </li>
                     <li class="list__label_sub-item"><a href="/">Pulastic® Comfort Court 50</a></li>
                     <li class="list__label_sub-item"><a href="/">Pulastic® Classic 60S / 70S / 80S</a></li>
                   </ul>
@@ -874,6 +1382,14 @@
                 </svg>
               </span>
               <ul class="list__label_block top__500">
+                <li class="list__sub-label arrow-back-li">
+                  <button class="sub__arrow-back">
+                    <svg width="5" height="9">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    <span>Назад в меню</span>
+                  </button>
+                </li>
                 <li class="list__sub-label"><a href="/" class="sub-label">Sarnafil® TG 66-12/TG 66–15, Sarnafil® TG 76–12 Felt/TG 76–15 Felt</a></li>
                 <li class="list__sub-label"><a href="/" class="sub-label">Sarnafil® S 327–12 / S 327–15, Sarnafil® S 327-12EL / S 327-15EL</a></li>
                 <li class="list__sub-label"><a href="/" class="sub-label">Sikaplan® 12 VGW / 15 VGW, Sikaplan® 12G/15G, Sikaplan® 12VG / 15VG</a></li>
@@ -889,21 +1405,23 @@
         <li class="header__nav_category"><a href="/">Контакты</a></li>
       </ul>
     </nav>
-    <section class="header__slider">
-      <h3 class="header__slider_heading">Строительная химия Sika по ценам от производителя </h3>
-      <p class="header__slider_text">Большинство инженерных сооружений, выполненных из железобетона, необходимо гидроизолировать.</p>
-      <a href="/" class="header__slider_link">Заказать</a>
-      <div class="header__slider_control-list">
-        <input id="slide-first" type="radio" class="header__slider_btn" name="special-toggle" checked>
-        <input id="slide-second" type="radio" class="header__slider_btn" name="special-toggle">
-        <input id="slide-third" type="radio" class="header__slider_btn" name="special-toggle">
-        <div class="header__slider_label-list">
-          <label for="slide-first" id="label-first" class="header__slider_label"></label>
-          <label for="slide-second" id="label-second" class="header__slider_label"></label>
-          <label for="slide-third" id="label-third"  class="header__slider_label"></label>
-        </div>
-      </div>
-    </section>
+    <div class="owl-carousel owl-theme">
+      <section class="header__slider item">
+        <h3 class="header__slider_heading">Строительная химия Sika по ценам от производителя </h3>
+        <p class="header__slider_text">Большинство инженерных сооружений, выполненных из железобетона, необходимо гидроизолировать.</p>
+        <a href="/" class="header__slider_link">Заказать</a>
+      </section>
+      <section class="header__slider item">
+        <h3 class="header__slider_heading">Строительная химия Sika по ценам от производителя </h3>
+        <p class="header__slider_text">Большинство инженерных сооружений, выполненных из железобетона, необходимо гидроизолировать.</p>
+        <a href="/" class="header__slider_link">Заказать</a>
+      </section>
+      <section class="header__slider item">
+        <h3 class="header__slider_heading">Строительная химия Sika по ценам от производителя </h3>
+        <p class="header__slider_text">Большинство инженерных сооружений, выполненных из железобетона, необходимо гидроизолировать.</p>
+        <a href="/" class="header__slider_link">Заказать</a>
+      </section>
+    </div>
   </header>
   <main class="main">
     <section class="main__services">
@@ -1031,7 +1549,7 @@
       </div>
     </section>
     <section class="main__contacts">
-      <iframe class="main__contacts_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1545734673005!2d37.61544631610641!3d55.75581699922667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDMuNSJF!5e0!3m2!1sru!2sru!4v1523048241201" width="100%" height="532" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="main__contacts_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1545734673005!2d37.61544631610641!3d55.75581699922667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDMuNSJF!5e0!3m2!1sru!2sru!4v1523048241201" height="532"  style="border:0" allowfullscreen></iframe>
       <section class="main__contacts_wrapper">
         <div class="main__contacts_block">
           <h4 class="main__contacts_block-header">Контакты</h4>
@@ -1046,7 +1564,7 @@
   <footer class="footer">
     <section class="footer__info">
       <div class="footer__info_logo">
-        <svg width="130" height="130" class="logo">
+        <svg width="130" height="130" class="logo footer-logo">
           <use xlink:href="#logo"></use>
         </svg>
       </div>
@@ -1064,7 +1582,7 @@
               <use xlink:href="#footer__mobile_marker"></use>
             </svg>
             <p class="footer__info_action-text">
-              <span class="tag">Адрес</span>
+              <span class="tag address-tag">Адрес</span>
               <span class="address">Нижний Новгорд, ул. Нижнепечерская д. 17</span>
             </p>
           </div>
@@ -1080,7 +1598,7 @@
               <a class="mail" href="mailto:office1@-mail.ru">office1@-mail.ru</a>
             </p>
           </div>
-          <div class="footer__info_action-block">
+          <div class="footer__info_action-block tel-block">
             <svg width="30" height="30">
               <use xlink:href="#style--footer_phone"></use>
             </svg>
@@ -1094,5 +1612,9 @@
       </div>
     </section>
   </footer>
+  <script src="module/jquery-3.3.1.min/index.js"></script>
+  <script src="module/owl.carousel.min.js"></script>
+  <script src="js/bundle.min.js"></script>
+  <link rel="stylesheet" href="css/js-style.css">
 </body>
 </html>
