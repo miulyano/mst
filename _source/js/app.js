@@ -1,6 +1,3 @@
-var production = $(".production");
-
-
 //открытие мобильного меню
 $(function() {
   $(".menu-button").click(function(e) {
@@ -22,9 +19,9 @@ $(function() {
 });
 
 $(function() {
-    production.click(function(e) {
+    $(".main-label").click(function(e) {
     //e.preventDefault();
-    $(this).find(".header__nav_category-list").removeAttr( 'style' ).css('display', 'block');
+    $(this).parent().find(".header__nav_category-list").removeAttr( 'style' ).css('display', 'block');
   })
 });
 
@@ -39,17 +36,17 @@ $(function($){
 });
 
 $(function() {
-  $(".arrow-back").focus(function(e) {
+  $(".arrow-back").click(function(e) {
     e.preventDefault();
-    $(".header__nav_category-list").css('display', 'none');
+    $(this).closest(".header__nav_category-list").css('display', 'none');
     console.log('hi')
   })
 });
 
 $(function() {
-  $(".list__label").click(function(e) {
+  $(".label").click(function(e) {
     //e.preventDefault();
-    $(this).find(".list__label_block").removeAttr( 'style' ).css('display', 'block');
+    $(this).parent().find(".list__label_block").removeAttr( 'style' ).css('display', 'block');
   })
 });
 
@@ -64,17 +61,17 @@ $(function($){
 });
 
 $(function() {
-  $(".sub__arrow-back").focus(function(e) {
+  $(".sub__arrow-back").click(function(e) {
     e.preventDefault();
-    $(".list__label_block").css('display', 'none');
+    $(this).closest(".list__label_block").css('display', 'none');
     console.log('hi')
   })
 });
 
 $(function() {
-  $(".list__sub-label").click(function(e) {
+  $(".sub-label").click(function(e) {
     //e.preventDefault();
-    $(this).find(".list__label_sub-block").removeAttr( 'style' ).css('display', 'block');
+    $(this).parent().find(".list__label_sub-block").removeAttr( 'style' ).css('display', 'block');
   })
 });
 
@@ -89,9 +86,9 @@ $(function($){
 });
 
 $(function() {
-  $(".sub-item__arrow-back").focus(function(e) {
+  $(".sub-item__arrow-back").click(function(e) {
     e.preventDefault();
-    $(".list__label_sub-block").css('display', 'none');
+    $(this).closest(".list__label_sub-block").css('display', 'none');
     console.log('hi')
   })
 });
