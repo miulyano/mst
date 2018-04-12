@@ -1,6 +1,3 @@
-@import "../system/vars";
-@import "../system/bootstrap";
-
 .header {
   @include make-container();
 }
@@ -17,8 +14,6 @@
   margin: 0 auto;
   @include make-container-max-widths();
 }
-
-
 
 .header__info_wrapper,
 .main__services,

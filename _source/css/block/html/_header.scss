@@ -1,5 +1,3 @@
-@import "../../block/system/vars";
-
 .header {
   min-height: 687px;
   background-color: $heading-bg-color;
@@ -34,23 +32,9 @@
 }
 
 //Инфо в шапке
-
 .header__info {
-  &_logo {
-    position: relative;
-  }
-  &_heading {
-    margin-bottom: 5px;
-    @include media-breakpoint-down(lg) {
-      font-size: 33px;
-      letter-spacing: .8px;
-      line-height: 33px;
-    }
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
-  }
-  &_wrapper {
+	&_wrapper {
+    padding: 22px 0;
     padding-bottom: 20px;
     justify-content: space-between;
     @include media-breakpoint-down(lg) {
@@ -72,6 +56,32 @@
       margin: 0;
     }
   }
+  &_logo {
+    position: relative;
+  }
+  &_caption {
+    margin-bottom: 5px;
+    @include media-breakpoint-down(lg) {
+      font-size: 33px;
+      letter-spacing: .8px;
+      line-height: 33px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_title {
+    @include media-breakpoint-down(lg) {
+      line-height: 20px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    margin-bottom: 6px;
+  }
   &_action {
     justify-content: flex-end;
     align-items: flex-start;
@@ -88,71 +98,63 @@
       margin-right: 16px;
     }
   }
-  &_tel {
-    svg {
-      margin-right: 10px;
-    }
-    p {
-      display: flex;
-      flex-direction: column;
-    }
-    @include media-breakpoint-down(lg) {
-      a {
-        font-size: 18px;
-        line-height: 20px;
-      }
-      span {
-        font-size: 12px;
-      }
-    }
+  //email в шапке
+  &_action-mail {
     @include media-breakpoint-down(md) {
-      a {
-        font-size: 23px;
-        line-height: 27px;
-        letter-spacing: 0px;
-      }
-      span {
-        font-size: $label-font_size-normal;
-        line-height: $label-font_size-normal;
-      }
-      p {
-        margin: 0;
-      }
-      svg {
-        margin-left: 10px;
-      }
+      display: none;
+    }
+  }
+  &_mail-img {
+    margin-right: 10px;
+  }
+  &_mail-text {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-down(lg) {
+      margin-right: 20px;
+    }
+  }
+  //телефон в шапке
+  &_action-tel {
+    @include media-breakpoint-down(md) {
       margin: 15px 0 25px;
     }
   }
-  &_mail {
+  &_tel-img {
+    margin-right: 10px;
     @include media-breakpoint-down(md) {
-      display: none;
-    }
-    svg {
-      margin-right: 10px;
-    }
-    p {
-      margin-right: 30px;
-      display: flex;
-      flex-direction: column;
-      @include media-breakpoint-down(lg) {
-        margin-right: 20px;
-      }
+      margin-left: 10px;
     }
   }
-  &_title {
+  &_tel-text {
+    display: inline-flex;
+    flex-direction: column;
+    @include media-breakpoint-down(md) {
+      margin: 0;
+    }
+  }
+  &_tel-link {
     @include media-breakpoint-down(lg) {
+      font-size: 18px;
       line-height: 20px;
     }
+    @include media-breakpoint-down(md) {
+      font-size: 23px;
+      line-height: 27px;
+      letter-spacing: 0px;
+    }
+  }
+  &_tel-label {
     @include media-breakpoint-down(lg) {
-      margin-bottom: 15px;
+      font-size: 12px;
     }
     @include media-breakpoint-down(md) {
-      display: none;
+      font-size: $label-font_size-normal;
+      line-height: $label-font_size-normal;
     }
-    margin-bottom: 6px;
   }
-  &_button {
+  &_action-button {
     @include media-breakpoint-down(lg) {
       padding: 16px 20px;
       font-size: 11px;
@@ -183,9 +185,9 @@
     @include media-breakpoint-down(md) {
       display: none;
     }
-    &-submit {
-      @extend .visually-hidden
-    }
+  }
+  &_search-submit {
+    @extend .visually-hidden
   }
   &_search::placeholder {
     color: $placeholder-color;
@@ -203,7 +205,6 @@
 }
 
 //Плашка с навигацией
-
 .header__nav {
   margin-bottom: 60px;
   margin-bottom: 60px;
@@ -331,7 +332,8 @@
   background-color: $active-color;
 }
 
-.list__label:hover span {
+.list__label:hover span,
+.list__main-label:hover span {
   background-color: $active-color;
 }
 

@@ -1,5 +1,3 @@
-@import "../system/vars";
-
 .body {
   font-family: $default-font;
   font-size: $base-font_size;
@@ -12,7 +10,7 @@
   &_wrapper {
     padding: 22px 0;
   }
-  &_heading {
+  &_caption {
     color: $text-white;
     text-transform: uppercase;
     font-size: $h1-font_size;
@@ -23,29 +21,31 @@
   &_title {
     color: $text-white;
   }
-  &_mail {
+  //email в шапке
+  &_action-mail {
     display: inline-flex;
     font-size: $label-font_size-sm;
     line-height: $label-font_size-sm;
     color: $text-white;
-  &_mail a {
+  }
+  &_mail-link {
     color: $text-white;
     font-size: $label-font_size-normal;
     line-height: 24px;
   }
-  }
-  &_tel {
+  //телефон в шапке
+  &_action-tel {
     display: inline-flex;
     font-size: $label-font_size-normal;
     line-height: 20px;
     color: $text-white;
-    a {
-      font-weight: bold;
-      font-size: $label-font_size-lg;
-      line-height: 30px;
-      color: $text-white;
-      letter-spacing: .8px;
-    }
+  }
+  &_tel-link {
+    font-weight: bold;
+    font-size: $label-font_size-lg;
+    line-height: 30px;
+    color: $text-white;
+    letter-spacing: .8px;
   }
 }
 
