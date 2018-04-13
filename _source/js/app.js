@@ -10,7 +10,7 @@ $(function() {
 
 //закрытие мобильного меню
 $(function() {
-  $(".close-button").click(function(e) {
+  $(".menu__close").click(function(e) {
     //e.preventDefault();
     $(".header__nav").removeClass('menu-active');
     $("body").removeClass('body-hidden');

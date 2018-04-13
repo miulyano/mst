@@ -107,8 +107,8 @@
                 </p>
               </div>
             </div>
-            <button class="header__info_action-button item-action">Заказать звонок</button>
-            <form class="header__info_action-search search-container item-action" action="/" method="get">
+            <button class="header__info_action-button header__info_action-active">Заказать звонок</button>
+            <form class="header__info_action-search search-container header__info_action-active" action="/" method="get">
               <input type="search" class="header__info_search" placeholder="Поиск">
               <button class="header__info_search-submit" type="submit">Поиск</button>
             </form>
@@ -117,20 +117,21 @@
       </div>
     </section>
     <nav class="header__nav">
-      <ul class="header__nav_list">
+      <ul class="header__nav_list menu">
         <li class="header__nav_category">
-          <button class="close-button">
+          <button class="menu__close header__nav_category-active">
             <svg width="17" height="17">
               <use xlink:href="#close-btn"></use>
             </svg>
             <span>Закрыть меню</span>
           </button>
         </li>
-        <li class="header__nav_category production">
-          <span role="button" class="main-label">Продукция</span>
-          <svg width="5" height="9" class="arrow-production">
+        <li class="header__nav_category header__nav_category-production">
+          <span role="button" class="main-label header__nav_category-active">Продукция
+            <svg width="5" height="9" class="arrow-production">
             <use xlink:href="#arrow"></use>
           </svg>
+          </span>
           <!--<ul class="header__nav_main-category">-->
             <!--<li class="list__main-label arrow-back-li">-->
               <!--<button class="arrow-back">-->
@@ -1430,11 +1431,11 @@
             <!--</li>-->
           <!--</ul>-->
         </li>
-        <li class="header__nav_category"><a href="/">Услуги</a></li>
-        <li class="header__nav_category"><a href="/">Объекты</a></li>
-        <li class="header__nav_category"><a href="/">О компании</a></li>
-        <li class="header__nav_category"><a href="/">Новости</a></li>
-        <li class="header__nav_category"><a href="/">Контакты</a></li>
+        <li class="header__nav_category"><a href="/" class="header__nav_category-active">Услуги</a></li>
+        <li class="header__nav_category"><a href="/" class="header__nav_category-active">Объекты</a></li>
+        <li class="header__nav_category"><a href="/" class="header__nav_category-active">О компании</a></li>
+        <li class="header__nav_category"><a href="/" class="header__nav_category-active">Новости</a></li>
+        <li class="header__nav_category"><a href="/" class="header__nav_category-active">Контакты</a></li>
       </ul>
     </nav>
     <div class="owl-carousel owl-theme">
