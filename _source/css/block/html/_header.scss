@@ -157,6 +157,7 @@
       line-height: $label-font_size-normal;
     }
   }
+  //блок активностей
   &_action-active {
       margin-left: 16px;
     }
@@ -274,6 +275,7 @@
     }
     &_category-list a {
     	@extend .button;
+      padding: 15px 25px;
     	width: 100%;
       text-transform: none;
       font-weight: normal;
@@ -293,6 +295,7 @@
     }
     &_category-list span {
       @extend .button;
+      padding: 15px 25px;
       text-transform: none;
       font-weight: normal;
       letter-spacing: 0;
@@ -341,6 +344,14 @@
   @include media-breakpoint-down(md) {
     display: none;
   }
+}
+
+.list__label:nth-child(2) span {
+  padding-top: 25px;
+}
+
+.list__label:last-child span {
+  padding-bottom: 25px;
 }
 
 .header__nav_category-production:hover .header__nav_category-active {
