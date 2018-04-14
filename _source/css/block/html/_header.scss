@@ -349,28 +349,8 @@
   }
 }
 
-.menu__close {
-	@extend .button;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  text-transform: none;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0;
-  border-radius: 0;
-}
-
-.menu__close span{
-  margin-left: 10px;
-}
-
 .header__nav_category-production,
-.list__firm-label {
-  position: relative;
-}
-
+.list__firm-label,
 .header__nav_category-production span,
 .list__firm-label span {
   position: relative;
@@ -558,12 +538,6 @@
   }
 }
 
-.header__nav_category-production a {
-  @include media-breakpoint-down(md) {
-    font-size: 15px;
-  }
-}
-
 .list__label_block a {
   text-transform: none;
   font-weight: normal;
@@ -597,9 +571,7 @@
   right: 15px;
   display: none;
   @include media-breakpoint-down(md) {
-    margin-left: 10px;
-    margin-right: 10px;
-    position: static;
+    top: 30px;
     display: block;
   }
 }
@@ -610,15 +582,6 @@
   @include media-breakpoint-down(md) {
     display: none;
   }
-}
-
-.list__sub-label:hover .sub__arrow-back,
-.list__sub-label:hover span,
-.list__label_sub-item:hover .sub-item__arrow-back,
-.list__label_sub-item:hover .sub-item__arrow-back span,
-.list__label_sub-item:hover span,
-.list__firm-label a:hover {
-  background-color: $list-hover;
 }
 
 .list__firm-label:hover .firm-arrow,
@@ -633,20 +596,23 @@
 .list__label:last-child .label,
 .list__firm-label:last-child .firm-label {
   border-radius: 0 0 4px 4px;
+  @include media-breakpoint-down(md) {
+    border-radius: 0;
+    width: 100vw;
+  }
 }
 
-.firm__fc_list .list__label:hover .arrow-back, 
+.list__sub-label:hover .sub__arrow-back,
+.list__sub-label:hover span,
+.list__label_sub-item:hover .sub-item__arrow-back,
+.list__label_sub-item:hover .sub-item__arrow-back span,
+.list__label_sub-item:hover span,
+.list__firm-label a:hover,
+.firm__fc_list .list__label:hover .arrow-back,
 .firm__ej_list .list__label:hover .arrow-back,
 .firm__fc_list button:hover span, 
 .firm__ej_list button:hover span {
   background-color: $list-hover;
-}
-
-.firm__fc_list a,
-.firm__ej_list a {
-  @include media-breakpoint-down(md) {
-    font-size: 18px;
-  }
 }
 
 
@@ -733,7 +699,6 @@
 }
 
 
-
 //Вспомогательные классы для выравнивания подменю на десктопе
 .top {
   &__50 {
@@ -811,6 +776,25 @@
   @include media-breakpoint-down(md) {
     display: inline-flex;
   }
+}
+
+
+//Кнопка закрытия меню
+.menu__close {
+  @extend .button;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  border-radius: 0;
+}
+
+.menu__close span{
+  margin-left: 10px;
 }
 
 

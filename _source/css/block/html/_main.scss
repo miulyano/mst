@@ -1,5 +1,3 @@
-@import "../system/vars";
-
 .main__services,
 .main__partners,
 .main__certificates,
@@ -7,8 +5,8 @@
   @extend .main-section
 }
 
-//Блок с услугами
 
+//Блок с услугами
 .main__services {
   align-items: flex-start;
   @include media-breakpoint-down(sm) {
@@ -178,8 +176,8 @@
   opacity: .85;
 }
 
-//Блок партнеров
 
+//Блок партнеров
 .main__partners {
   padding-top: 25px;
   @include media-breakpoint-down(sm) {
@@ -222,7 +220,6 @@
 
 
 //Сертификаты
-
 .main__certificates {
   margin-bottom: 17px;
   @include media-breakpoint-down(sm) {
