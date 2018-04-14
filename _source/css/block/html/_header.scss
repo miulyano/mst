@@ -112,6 +112,9 @@
       margin-right: 20px;
     }
   }
+  &_mail-link:hover {
+    color: $text-white;
+  }
   &_mail-label {
   	margin-bottom: 5px;
   	@include media-breakpoint-down(lg) {
@@ -147,6 +150,9 @@
       line-height: 27px;
       letter-spacing: 0px;
     }
+  }
+  &_tel-link:hover {
+    color: $text-white
   }
   &_tel-label {
     @include media-breakpoint-down(lg) {
@@ -206,6 +212,9 @@
   }
 }
 
+
+
+
 //Плашка с навигацией
 .header__nav {
   margin-bottom: 60px;
@@ -219,94 +228,113 @@
     height: auto;
     min-height: 100%;
   }
-  &_list {
-    position: relative;
-    list-style: none;
-    z-index: 10000;
-    @include media-breakpoint-down(md) {
-      height: 100vh;
-      flex-direction: column;
-      overflow-y: auto;
-      background-color: $active-color;
-    }
+}
+
+.header__nav_list {
+  position: relative;
+  list-style: none;
+  z-index: 999;
+  @include media-breakpoint-down(md) {
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: $active-color;
   }
-  &_category {
-    flex-grow: 1.2;
-    text-align: center;
+}
+
+.header__nav_category {
+  flex-grow: 1.2;
+  text-align: center;
+  border-radius: 0;
+  @include media-breakpoint-down(md) {
+    display: flex;
+    border-top: 1px solid #fff;
+    height: 70px;
+    max-height: 70px;
+  }
+}
+
+.header__nav_category-active:not(.menu__close) {
+  @extend .button;
+  width: 100%;
+  color: $text-white;
+  text-decoration: none;
+  border-radius: 0;
+  @include media-breakpoint-down(md) {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 0;
-    @include media-breakpoint-down(md) {
-      display: flex;
-      border-top: 1px solid #fff;
-      height: 70px;
-      max-height: 70px;
-    }
+    font-size: 23px;
+    letter-spacing: 0;
   }
-  &_category-active:not(.menu__close) {
-      @extend .button;
-      width: 100%;
-      color: $text-white;
-      text-decoration: none;
-      border-radius: 0;
-      @include media-breakpoint-down(md) {
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 0;
-        font-size: 23px;
-        letter-spacing: 0;
-      }
-    }
-    &_category-list {
-      display: none;
-      width: 250px;
-      position: absolute;
-      left: 0;
-      top: 50px;
-      list-style: none;
-      @include media-breakpoint-down(md) {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 100vw;
-        min-height: 100%;
-        overflow-y: auto;
-        background-color: $dropdown-color;
-      }
-    }
-    .list__label {
-      @include media-breakpoint-down(md) {
-        display: flex;
-        min-height: 70px;
-      }
-    }
+}
+
+.header__nav_firm-list,
+.header__nav_category-list {
+  display: none;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  list-style: none;
+  @include media-breakpoint-down(md) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100vw;
+    min-height: 100%;
+    overflow-y: auto;
+    background-color: $dropdown-color;
+  }
+}
+
+.header__nav_category-list.firm__fc_list,
+.header__nav_category-list.firm__ej_list {
+  background-color: $active-color;
+}
+
+.header__nav_category-list {
+  left: 250px;
+  top: 0;
+  z-index: 1500;
+}
+
+.list__label,
+.list__firm-label {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    min-height: 70px;
+  }
 }
 
 .header__nav_category-list a,
-.header__nav_category-list span {
-      @extend .button;
-      padding: 15px 25px;
-      text-transform: none;
-      font-weight: normal;
-      letter-spacing: 0;
-      text-align: left;
-      font-size: 15px;
-      line-height: 24px;
-      background-color: $dropdown-color;
-      width: 100%;
-      color: $text-white;
-      text-decoration: none;
-      border-radius: 0;
-      @include media-breakpoint-down(md) {
-      	font-size: 18px;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 0;
-        letter-spacing: 0;
-      }
-    }
+.header__nav_category-list span,
+.header__nav_firm-list span {
+  @extend .button;
+  padding: 15px 25px;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: $dropdown-color;
+  width: 100%;
+  color: $text-white;
+  text-decoration: none;
+  border-radius: 0;
+  @include media-breakpoint-down(md) {
+  	font-size: 18px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    letter-spacing: 0;
+  }
+}
 
 .arrow-back-li span{
 	@include media-breakpoint-down(md) {
@@ -340,46 +368,57 @@
   margin-left: 10px;
 }
 
-.header__nav_category-production {
+.header__nav_category-production,
+.list__firm-label {
   position: relative;
 }
 
-.header__nav_category-production span {
+.header__nav_category-production span,
+.list__firm-label span {
   position: relative;
 }
 /*****************************************************/
 
-.header__nav_category-production:hover .header__nav_category-list {
+.header__nav_category-production:hover .header__nav_firm-list,
+.list__firm_sica-label:hover .firm__sika_list,
+.list__firm_fc-label:hover .firm__fc_list,
+.list__firm_ej-label:hover .firm__ej_list {
   display: block;
   @include media-breakpoint-down(md) {
     display: none;
   }
 }
 
-.list__label:nth-child(2) span {
+
+
+.list__firm-label:nth-child(2) .firm-label {
   padding-top: 25px;
 }
 
-.list__label:last-child span {
+.list__firm-label:last-child .firm-label {
   padding-bottom: 25px;
 }
 
-.header__nav_category-production:hover .header__nav_category-active {
+.header__nav_category-production:hover .header__nav_firm-active,
+.list__firm-label:hover .header__nav_firm-active {
 	background-color: $dropdown-color;
 }
 
-.header__nav_category:nth-of-type(2):hover {
+.header__nav_category-production:hover .main-label {
   border-radius: 4px 0 0 0;
   background-color: $dropdown-color;
 }
 
+.list__firm-label:hover .header__nav_firm-active,
 .list__label:hover span,
-.list__main-label:hover span {
+.list__main-label:hover span, 
+.list__firm-label:hover a {
   background-color: $active-color;
 }
 
 
 
+.header__nav_firm-list:hover,
 .header__nav_category-list:hover {
   display: block;
 }
@@ -423,6 +462,7 @@
 
 //Стили для подменю
 
+.list__firm-label:first-child,
 .list__label:first-child,
 .list__sub-label:first-child,
 .list__label_sub-item:first-child {
@@ -434,9 +474,12 @@
   .sub-item__arrow-back span {
     background-color: $active-color;
   }
+  .arrow__firm-back:hover,
+  .arrow__firm-back:hover span,
   .arrow-back:hover {
     background-color: $active-color;
   }
+  .arrow__firm-back span,
   .arrow-back span,
   .sub__arrow-back span,
   .sub-item__arrow-back span {
@@ -444,6 +487,7 @@
     margin-left: 10px;
     transition: background-color .2s ease-in-out;
   }
+  .arrow__firm-back svg,
   .arrow-back svg,
   .sub__arrow-back svg,
   .sub-item__arrow-back svg {
@@ -454,52 +498,63 @@
   }
 }
 
-  .arrow-back,.sub__arrow-back,.sub-item__arrow-back {
-  	@extend .button;
-  	width: 100%;
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-transform: none;
-    font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 0;
-    background-color: $dropdown-color;
-    border: none;
-    border-radius: 0;
-  }
+.arrow__firm-back,
+.arrow-back,
+.sub__arrow-back,
+.sub-item__arrow-back {
+	@extend .button;
+	width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  background-color: $dropdown-color;
+  border: none;
+  border-radius: 0;
+}
 
- .list__label,
- .list__sub-label {
-   position: relative;
- }
+.firm__fc_list button, 
+.firm__ej_list button,
+.firm__fc_list span,
+.firm__ej_list span {
+  background-color: $active-color;
+}
 
- .list__label span {
-   display: inline-flex;
-   align-items: baseline;
- }
+.list__firm-label,
+.list__label,
+.list__sub-label {
+ position: relative;
+}
 
- .list__label_block,
- .list__label_sub-block {
+.list__label span {
+ display: inline-flex;
+ align-items: baseline;
+}
+
+.list__label_block,
+.list__label_sub-block {
+ display: none;
+ width: 250px;
+ position: absolute;
+ left: 250px;
+ top: 0;
+ list-style: none;
+ @include media-breakpoint-down(md) {
    display: none;
-   width: 250px;
-   position: absolute;
-   left: 250px;
+   position: fixed;
    top: 0;
-   list-style: none;
-   @include media-breakpoint-down(md) {
-     display: none;
-     position: fixed;
-     top: 0;
-     left: 0;
-     min-width: 100%;
-     height: 100vw;
-     min-height: 100%;
-     overflow-y: auto;
-     z-index: 100;
-     background-color: $active-color;
-   }
+   left: 0;
+   min-width: 100%;
+   height: 100vw;
+   min-height: 100%;
+   overflow-y: auto;
+   z-index: 100;
+   background-color: $active-color;
  }
+}
 
 .list__sub-label {
   min-height: inherit;
@@ -512,11 +567,10 @@
 
 .header__nav_category-production a {
   @include media-breakpoint-down(md) {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 }
 
-.list__label_block a,
 .list__label_block a {
   text-transform: none;
   font-weight: normal;
@@ -526,6 +580,7 @@
   line-height: 24px;
   background-color: $active-color;
   @include media-breakpoint-down(md) {
+    font-size: 18px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -541,6 +596,7 @@
   }
 }
 
+.firm-arrow,
 .arrow,
 .sub-arrow {
   position: absolute;
@@ -563,10 +619,17 @@
   }
 }
 
-.list__sub-label:hover span{
+.list__sub-label:hover .sub__arrow-back,
+.list__sub-label:hover span,
+.list__label_sub-item:hover .sub-item__arrow-back,
+.list__label_sub-item:hover .sub-item__arrow-back span,
+.list__label_sub-item:hover span,
+.list__firm-label a:hover {
   background-color: $list-hover;
 }
 
+
+.list__firm-label:hover .firm-arrow,
 .list__label:hover .arrow,
 .list__sub-label:hover .sub-arrow {
   display: block;
@@ -576,9 +639,25 @@
 .list__label_sub-item:last-child span,
 .list__label_sub-item:last-child a,
 .list__sub-label:last-child .sub-label,
-.list__label:last-child .label {
+.list__label:last-child .label,
+.list__firm-label:last-child .firm-label {
   border-radius: 0 0 4px 4px;
 }
+
+.firm__fc_list .list__label:hover .arrow-back, 
+.firm__ej_list .list__label:hover .arrow-back,
+.firm__fc_list button:hover span, 
+.firm__ej_list button:hover span, {
+  background-color: $list-hover;
+}
+
+.firm__fc_list a,
+.firm__ej_list a {
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
 
 //Слайдер
 .header__slider {
@@ -662,6 +741,8 @@
   }
 }
 
+
+
 //Вспомогательные классы для выравнивания подменю на десктопе
 .top {
   &__50 {
@@ -719,6 +800,8 @@
   }
 }
 
+
+//Кнопка открытия меню
 .menu-button {
   display: none;
   position: absolute;
@@ -739,8 +822,8 @@
   }
 }
 
-//Стили карусели
 
+//Стили карусели
 .owl-nav {
   display: none;
 }
@@ -773,17 +856,5 @@
   background-color: $active-color;
 }
 
+
 //Переопределение стилей меню и подменю
-.header a {
-  color: $text-white !important;
-}
-
-.header__nav_category a {
-  text-decoration: none !important;
-}
-
-.sub__arrow-back:hover,
-.sub-item__arrow-back:hover,
-.sub-item__arrow-back:hover span {
-  background-color: $list-hover !important;
-}

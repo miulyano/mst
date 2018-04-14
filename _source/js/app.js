@@ -21,8 +21,25 @@ $(function() {
 $(function() {
     $(".main-label").click(function(e) {
     //e.preventDefault();
+    $(this).parent().find(".header__nav_firm-list").removeAttr( 'style' ).css('display', 'block');
+  })
+});
+
+$(function() {
+  $(".firm-label").click(function(e) {
+    //e.preventDefault();
     $(this).parent().find(".header__nav_category-list").removeAttr( 'style' ).css('display', 'block');
   })
+});
+
+$(function($){
+  $(document).mouseup(function (e){
+    var menu = $(".header__nav_firm-list");
+    if (!menu.is(e.target)
+      && menu.has(e.target).length === 0) {
+      menu.removeAttr( 'style' ).css('display', 'none');
+    }
+  });
 });
 
 $(function($){
@@ -33,6 +50,14 @@ $(function($){
       menu.removeAttr( 'style' ).css('display', 'none');
     }
   });
+});
+
+$(function() {
+  $(".arrow__firm-back").click(function(e) {
+    e.preventDefault();
+    $(this).closest(".header__nav_firm-list").css('display', 'none');
+    console.log('hi')
+  })
 });
 
 $(function() {
@@ -92,6 +117,8 @@ $(function() {
     console.log('hi')
   })
 });
+
+
 
 //Подключение карусели
 $('.owl-carousel').owlCarousel({
