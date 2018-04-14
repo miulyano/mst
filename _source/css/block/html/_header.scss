@@ -31,6 +31,7 @@
   }
 }
 
+
 //Инфо в шапке
 .header__info {
 	&_wrapper {
@@ -213,8 +214,6 @@
 }
 
 
-
-
 //Плашка с навигацией
 .header__nav {
   margin-bottom: 60px;
@@ -342,7 +341,6 @@
 	}
 }
 
-/*****************************************************/
 .arrow-production {
   transform: rotate(90deg);
   @include media-breakpoint-down(md) {
@@ -377,7 +375,6 @@
 .list__firm-label span {
   position: relative;
 }
-/*****************************************************/
 
 .header__nav_category-production:hover .header__nav_firm-list,
 .list__firm_sica-label:hover .firm__sika_list,
@@ -388,8 +385,6 @@
     display: none;
   }
 }
-
-
 
 .list__firm-label:nth-child(2) .firm-label {
   padding-top: 25px;
@@ -416,8 +411,6 @@
   background-color: $active-color;
 }
 
-
-
 .header__nav_firm-list:hover,
 .header__nav_category-list:hover {
   display: block;
@@ -436,6 +429,7 @@
     display: flex;
   }
 }
+
 .header__nav_category:nth-of-type(2) .header__nav_category-active {
   flex-grow: .3;
   font-size: 16px;
@@ -461,7 +455,6 @@
 }
 
 //Стили для подменю
-
 .list__firm-label:first-child,
 .list__label:first-child,
 .list__sub-label:first-child,
@@ -628,13 +621,11 @@
   background-color: $list-hover;
 }
 
-
 .list__firm-label:hover .firm-arrow,
 .list__label:hover .arrow,
 .list__sub-label:hover .sub-arrow {
   display: block;
 }
-
 
 .list__label_sub-item:last-child span,
 .list__label_sub-item:last-child a,
@@ -647,7 +638,7 @@
 .firm__fc_list .list__label:hover .arrow-back, 
 .firm__ej_list .list__label:hover .arrow-back,
 .firm__fc_list button:hover span, 
-.firm__ej_list button:hover span, {
+.firm__ej_list button:hover span {
   background-color: $list-hover;
 }
 
@@ -855,6 +846,3 @@
 .owl-dot.active  span {
   background-color: $active-color;
 }
-
-
-//Переопределение стилей меню и подменю

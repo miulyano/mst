@@ -18,6 +18,7 @@ $(function() {
   })
 });
 
+//логика подменю для мобил
 $(function() {
     $(".main-label").click(function(e) {
     //e.preventDefault();
@@ -117,8 +118,6 @@ $(function() {
     console.log('hi')
   })
 });
-
-
 
 //Подключение карусели
 $('.owl-carousel').owlCarousel({
