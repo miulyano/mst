@@ -227,6 +227,7 @@
       height: 100vh;
       flex-direction: column;
       overflow-y: auto;
+      background-color: $active-color;
     }
   }
   &_category {
@@ -236,7 +237,8 @@
     @include media-breakpoint-down(md) {
       display: flex;
       border-top: 1px solid #fff;
-      min-height: 70px;
+      height: 70px;
+      max-height: 70px;
     }
   }
   &_category-active:not(.menu__close) {
@@ -273,27 +275,16 @@
         background-color: $dropdown-color;
       }
     }
-    &_category-list a {
-    	@extend .button;
-      padding: 15px 25px;
-    	width: 100%;
-      text-transform: none;
-      font-weight: normal;
-      letter-spacing: 0;
-      text-align: left;
-      font-size: 15px;
-      line-height: 24px;
-      border-radius: 0;
-      background-color: $dropdown-color;
+    .list__label {
       @include media-breakpoint-down(md) {
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 0;
-        letter-spacing: 0;
+        display: flex;
+        min-height: 70px;
       }
     }
-    &_category-list span {
+}
+
+.header__nav_category-list a,
+.header__nav_category-list span {
       @extend .button;
       padding: 15px 25px;
       text-transform: none;
@@ -308,6 +299,7 @@
       text-decoration: none;
       border-radius: 0;
       @include media-breakpoint-down(md) {
+      	font-size: 18px;
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
@@ -315,12 +307,37 @@
         letter-spacing: 0;
       }
     }
-    .list__label {
-      @include media-breakpoint-down(md) {
-        display: flex;
-        min-height: 70px;
-      }
-    }
+
+.arrow-back-li span{
+	@include media-breakpoint-down(md) {
+		font-size: 14px;
+	}
+}
+
+/*****************************************************/
+.arrow-production {
+  transform: rotate(90deg);
+  @include media-breakpoint-down(md) {
+    margin-left: 10px;
+    transform: rotate(0) scale(1.8);
+  }
+}
+
+.menu__close {
+	@extend .button;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  border-radius: 0;
+}
+
+.menu__close span{
+  margin-left: 10px;
 }
 
 .header__nav_category-production {
@@ -330,14 +347,7 @@
 .header__nav_category-production span {
   position: relative;
 }
-
-.arrow-production {
-  transform: rotate(90deg);
-  @include media-breakpoint-down(md) {
-    margin-left: 10px;
-    transform: rotate(0);
-  }
-}
+/*****************************************************/
 
 .header__nav_category-production:hover .header__nav_category-list {
   display: block;
@@ -409,141 +419,6 @@
   @include media-breakpoint-down(md) {
     border-radius: 0;
   }
-}
-
-.menu__close {
-	@extend .button;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  text-transform: none;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0;
-  border-radius: 0;
-}
-
-.menu__close span{
-  margin-left: 10px;
-}
-
-//Слайдер
-
-.header__slider {
-  &_heading {
-    margin-bottom: 13px;
-    max-width: 665px;
-    color: $text-white;
-    text-transform: uppercase;
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 45px;
-    letter-spacing: 1.3px;
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 10px;
-      max-width: 570px;
-      font-size: 33px;
-      line-height: 40px;
-      letter-spacing: .8px;
-    }
-    @include media-breakpoint-down(md) {
-      margin: 0 auto;
-      margin-bottom: 10px;
-      max-width: 350px;
-      font-size: 24px;
-      text-align: center;
-      line-height: 32px;
-    }
-    @include media-breakpoint-down(xs) {
-      margin: 0 auto;
-      margin-bottom: 10px;
-      max-width: 270px;
-      font-size: 20px;
-      text-align: center;
-      line-height: 27px;
-    }
-  }
-  &_text {
-    margin-bottom: 22px;
-    max-width: 460px;
-    color: $text-white;
-    font-size: 17px;
-    letter-spacing: .5px;
-    @include media-breakpoint-down(lg) {
-      max-width: 440px;
-      font-size: 16px;
-      line-height: 22px;
-    }
-    @include media-breakpoint-down(md) {
-      max-width: 320px;
-      text-align: center;
-    }
-    @include media-breakpoint-down(xs) {
-      max-width: 290px;
-      text-align: center;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 22px;
-      letter-spacing: 0px;
-    }
-  }
-  &_link {
-    margin-bottom: 45px;
-    @extend .button-lg;
-    text-decoration: none;
-    @include media-breakpoint-down(md) {
-      margin-bottom: 28px;
-    }
-  }
-  &_link:hover {
-    color: $text-white;
-    text-decoration: none;
-  }
-  &_btn {
-    @extend .visually-hidden
-  }
-
-  @include media-breakpoint-down(md) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-//Стили карусели
-
-.owl-nav {
-  display: none;
-}
-
-.owl-dots {
-  @include media-breakpoint-down(md) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.owl-dot {
-  margin-right: 15px;
-}
-
-.owl-dot span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: $text-white;
-  cursor: pointer;
-}
-
-.owl-dot:last-child span {
-  margin-right: 0;
-}
-
-.owl-dot.active  span {
-  background-color: $active-color;
 }
 
 //Стили для подменю
@@ -669,8 +544,8 @@
 .arrow,
 .sub-arrow {
   position: absolute;
-  top: 28px;
-  right: 20px;
+  top: 22px;
+  right: 15px;
   display: none;
   @include media-breakpoint-down(md) {
     margin-left: 10px;
@@ -703,6 +578,88 @@
 .list__sub-label:last-child .sub-label,
 .list__label:last-child .label {
   border-radius: 0 0 4px 4px;
+}
+
+//Слайдер
+.header__slider {
+  &_heading {
+    margin-bottom: 13px;
+    max-width: 665px;
+    color: $text-white;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 1.3px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 10px;
+      max-width: 570px;
+      font-size: 33px;
+      line-height: 40px;
+      letter-spacing: .8px;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      max-width: 350px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 32px;
+    }
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      max-width: 270px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 27px;
+    }
+  }
+  &_text {
+    margin-bottom: 22px;
+    max-width: 460px;
+    color: $text-white;
+    font-size: 17px;
+    letter-spacing: .5px;
+    @include media-breakpoint-down(lg) {
+      max-width: 440px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 320px;
+      text-align: center;
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: 290px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0px;
+    }
+  }
+  &_link {
+    margin-bottom: 45px;
+    @extend .button-lg;
+    text-decoration: none;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 28px;
+    }
+  }
+  &_link:hover {
+    color: $text-white;
+    text-decoration: none;
+  }
+  &_btn {
+    @extend .visually-hidden
+  }
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 //Вспомогательные классы для выравнивания подменю на десктопе
@@ -780,6 +737,40 @@
   @include media-breakpoint-down(md) {
     display: inline-flex;
   }
+}
+
+//Стили карусели
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.owl-dot {
+  margin-right: 15px;
+}
+
+.owl-dot span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $text-white;
+  cursor: pointer;
+}
+
+.owl-dot:last-child span {
+  margin-right: 0;
+}
+
+.owl-dot.active  span {
+  background-color: $active-color;
 }
 
 //Переопределение стилей меню и подменю
