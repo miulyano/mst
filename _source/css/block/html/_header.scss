@@ -382,13 +382,11 @@
 }
 
 .header__nav_category-production:hover .main-label {
-  border-radius: 4px 0 0 0;
   background-color: $dropdown-color;
 }
 
 .list__firm-label:hover .header__nav_firm-active,
 .list__label:hover span,
-.list__main-label:hover span, 
 .list__firm-label:hover a {
   background-color: $active-color;
 }
@@ -427,6 +425,10 @@
     font-size: 23px;
     letter-spacing: 0;
   }
+}
+
+.header__nav_category:nth-of-type(2):hover .header__nav_category-active {
+  border-radius: 4px 0 0 0;
 }
 
 .header__nav_category:last-child a {
