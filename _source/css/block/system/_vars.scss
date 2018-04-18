@@ -41,3 +41,25 @@ $container-max-widths: (
 );
 
 $gutter:                          $grid-gutter-width;
+
+
+//mix--$active-color
+$--active-color-darken-05: mix($text-black, $active-color, 5%) !default;
+$--active-color-darken-10: mix($text-black, $active-color, 10%) !default;
+$--active-color-darken-15: mix($text-black, $active-color, 15%) !default;
+$--active-color-darken-20: mix($text-black, $active-color, 20%) !default;
+$--active-color-darken-25: mix($text-black, $active-color, 25%) !default;
+$--active-color-darken-30: mix($text-black, $active-color, 30%) !default;
+$--active-color-darken-35: mix($text-black, $active-color, 35%) !default;
+$--active-color-darken-40: mix($text-black, $active-color, 40%) !default;
+$--active-color-darken-45: mix($text-black, $active-color, 45%) !default;
+$--active-color-darken-50: mix($text-black, $active-color, 50%) !default;
+$--active-color-darken-55: mix($text-black, $active-color, 55%) !default;
+$--active-color-darken-60: mix($text-black, $active-color, 60%) !default;
+$--active-color-darken-65: mix($text-black, $active-color, 65%) !default;
+$--active-color-darken-70: mix($text-black, $active-color, 70%) !default;
+$--active-color-darken-75: mix($text-black, $active-color, 75%) !default;
+$--active-color-darken-80: mix($text-black, $active-color, 80%) !default;
+$--active-color-darken-85: mix($text-black, $active-color, 85%) !default;
+$--active-color-darken-90: mix($text-black, $active-color, 90%) !default;
+$--active-color-darken-95: mix($text-black, $active-color, 95%) !default;

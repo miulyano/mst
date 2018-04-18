@@ -242,7 +242,8 @@
 }
 
 .header__nav_category {
-  flex-grow: 1.2;
+  flex-basis: 190px;
+  flex-grow: 1;
   text-align: center;
   border-radius: 0;
   @include media-breakpoint-down(md) {
@@ -256,6 +257,7 @@
 .header__nav_category-active:not(.menu__close) {
   @extend .button;
   width: 100%;
+  font-size: 13px;
   color: $text-white;
   text-decoration: none;
   border-radius: 0;
@@ -290,11 +292,14 @@
   }
 }
 
-.header__nav_category-list.firm__fc_list,
-.header__nav_category-list.firm__ej_list {
+.header__nav_category-list {
   @include media-breakpoint-down(md) {
     background-color: $active-color;
   }
+}
+
+.header__nav_category-list.firm__sika_list {
+  top: 1px;
 }
 
 .header__nav_category-list {
@@ -315,14 +320,13 @@
 .header__nav_category-list span,
 .header__nav_firm-list span {
   @extend .button;
-  padding: 15px 25px;
+  padding: 10px 25px;
   text-transform: none;
   font-weight: normal;
   letter-spacing: 0;
   text-align: left;
-  font-size: 15px;
-  line-height: 24px;
-  background-color: $dropdown-color;
+  font-size: 14px;
+  line-height: 20px;
   width: 100%;
   color: $text-white;
   text-decoration: none;
@@ -344,7 +348,11 @@
 }
 
 .arrow-production {
+  margin-left: 25px;
   transform: rotate(90deg);
+  @include media-breakpoint-down(lg) {
+    margin-left: 8px;
+  }
   @include media-breakpoint-down(md) {
     margin-left: 10px;
     transform: rotate(0) scale(1.8);
@@ -369,26 +377,11 @@
 }
 
 .list__firm-label:nth-child(2) .firm-label {
-  padding-top: 25px;
+  padding-top: 11px;
 }
 
 .list__firm-label:last-child .firm-label {
   padding-bottom: 25px;
-}
-
-.header__nav_category-production:hover .header__nav_firm-active,
-.list__firm-label:hover .header__nav_firm-active {
-	background-color: $dropdown-color;
-}
-
-.header__nav_category-production:hover .main-label {
-  background-color: $dropdown-color;
-}
-
-.list__firm-label:hover .header__nav_firm-active,
-.list__label:hover span,
-.list__firm-label:hover a {
-  background-color: $active-color;
 }
 
 .header__nav_firm-list:hover,
@@ -411,13 +404,10 @@
 }
 
 .header__nav_category:nth-of-type(2) .header__nav_category-active {
-  flex-grow: .3;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 13px;
   font-weight: 900;
   border-radius: 4px 0 0 4px;
   @include media-breakpoint-down(md) {
-    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -446,16 +436,6 @@
   display: none;
   justify-content: flex-end;
   border-bottom: 1px solid #fff;
-  .sub__arrow-back,
-  .sub-item__arrow-back,
-  .sub-item__arrow-back span {
-    background-color: $active-color;
-  }
-  .arrow__firm-back:hover,
-  .arrow__firm-back:hover span,
-  .arrow-back:hover {
-    background-color: $active-color;
-  }
   .arrow__firm-back span,
   .arrow-back span,
   .sub__arrow-back span,
@@ -488,16 +468,8 @@
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0;
-  background-color: $dropdown-color;
   border: none;
   border-radius: 0;
-}
-
-.firm__fc_list button, 
-.firm__ej_list button,
-.firm__fc_list span,
-.firm__ej_list span {
-  background-color: $active-color;
 }
 
 .list__firm-label,
@@ -529,8 +501,26 @@
    min-height: 100%;
    overflow-y: auto;
    z-index: 100;
-   background-color: $active-color;
  }
+}
+
+.list__label_block {
+  @include media-breakpoint-down(md) {
+    background-color: $--active-color-darken-25;
+  }
+}
+
+.list__label_sub-block {
+  @include media-breakpoint-down(md) {
+    background-color: $--active-color-darken-35;
+  }
+}
+
+.list__label_block {
+  width: 368px;
+}
+.list__label_sub-block {
+  left: 368px;
 }
 
 .list__sub-label {
@@ -538,7 +528,7 @@
   @include media-breakpoint-down(md) {
     display: flex;
     min-height: 70px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -547,9 +537,8 @@
   font-weight: normal;
   letter-spacing: 0;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
-  background-color: $active-color;
   @include media-breakpoint-down(md) {
     font-size: 18px;
     display: inline-flex;
@@ -571,7 +560,7 @@
 .arrow,
 .sub-arrow {
   position: absolute;
-  top: 22px;
+  top: 16px;
   right: 15px;
   display: none;
   @include media-breakpoint-down(md) {
@@ -606,19 +595,94 @@
   }
 }
 
-.list__sub-label:hover .sub__arrow-back,
-.list__sub-label:hover span,
-.list__label_sub-item:hover .sub-item__arrow-back,
-.list__label_sub-item:hover .sub-item__arrow-back span,
-.list__label_sub-item:hover span,
-.list__firm-label a:hover,
-.firm__fc_list .list__label:hover .arrow-back,
-.firm__ej_list .list__label:hover .arrow-back,
-.firm__fc_list button:hover span, 
-.firm__ej_list button:hover span {
-  background-color: $list-hover;
+//menu colors
+.arrow__firm-back,
+.arrow__firm-back span {
+  background-color: $dropdown-color;
 }
 
+.arrow__firm-back:hover,
+.arrow__firm-back:hover span,
+.arrow__firm-back span:hover {
+  background-color: $active-color;
+}
+
+button.sub__arrow-back,
+button.sub__arrow-back span {
+  background-color: $--active-color-darken-25;
+}
+
+button.sub__arrow-back:hover,
+button.sub__arrow-back:hover span,
+button.sub__arrow-back span:hover {
+  background-color: $--active-color-darken-35;
+}
+
+button.sub-item__arrow-back,
+.list__label_sub-item button.sub-item__arrow-back span{
+  background-color: $--active-color-darken-35;
+}
+
+button.sub-item__arrow-back:hover,
+button.sub-item__arrow-back:hover span,
+button.sub-item__arrow-back span:hover {
+  background-color: $--active-color-darken-45;
+}
+
+.header__nav_firm-list span {
+  background-color: $dropdown-color;
+}
+
+.header__nav_category-list span {
+  background-color: $active-color;
+}
+
+.header__nav_category-production:hover .header__nav_firm-active,
+.list__firm-label:hover .header__nav_firm-active {
+  background-color: $dropdown-color;
+}
+
+.header__nav_category-production:hover .main-label {
+  background-color: $dropdown-color;
+}
+
+.list__firm-label:hover .header__nav_firm-active {
+  background-color: $active-color;
+}
+
+.list__label:hover span {
+  background-color: $--active-color-darken-25;
+}
+
+.header__nav_category-list.firm__fc_list a.sub-label,
+.header__nav_category-list.firm__ej_list a.sub-label {
+  background-color: $active-color;
+}
+
+.header__nav_category-list.firm__fc_list a.sub-label:hover,
+.header__nav_category-list.firm__ej_list a.sub-label:hover {
+  background-color: $--active-color-darken-25;
+}
+
+.list__sub-label .sub-label,
+.list__sub-label a.sub-label {
+  background-color: $--active-color-darken-25;
+}
+
+.list__sub-label .sub-label:hover,
+.list__sub-label a.sub-label:hover {
+  background-color: $--active-color-darken-35;
+}
+
+.list__label_sub-item  span,
+.list__label_sub-item  a {
+  background-color: $--active-color-darken-35;
+}
+
+.list__label_sub-item  span:hover,
+.list__label_sub-item  a:hover {
+  background-color: $--active-color-darken-45;
+}
 
 //Слайдер
 .header__slider {
