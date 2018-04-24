@@ -1,10 +1,65 @@
-@import "block/system/bootstrap";  //подключение исетки Bootstrap-4
+@import "block/system/bootstrap";  //подключение сетки Bootstrap-4
 @import "block/system/vars";  //переменные проекта
 @import "block/system/typography"; //основные стили типографики
 @import "block/system/base";  //глобальные классы и классы для примесей
 @import "block/system/layouts";  //базовые стили сетки
 
-//стили блоков
-@import "block/html/header";
-@import "block/html/main";
-@import "block/html/footer";
+//стили блоков - главная
+@import "block/html/main/header";
+@import "block/html/main/main";
+@import "block/html/main/footer";
+
+
+.header__inner-page {
+  .header__info_caption,
+  .header__info_title,
+  .header__info_action-mail,
+  .header__info_mail-link,
+  .header__info_action-tel,
+  .header__info_tel-link,
+  .menu-button {
+    color: $text-black;
+  }
+  .header__info_search {
+    border: 1px solid $input--border-color;
+    &::placeholder {
+      color: $text-black;
+    }
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: $placeholder-color;
+    }
+  }
+  .header__nav {
+    margin-bottom: 10px;
+  }
+}
+
+.main__inner-page {
+  .main__services_block {
+    margin-bottom: 25px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+  .link-more {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .link-more:hover {
+    color: $text-white;
+  }
+  .main__services_block-item {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .main__services_block-heading {
+    margin-bottom: 15px;
+  }
+  .main__partners {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
