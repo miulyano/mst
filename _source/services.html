@@ -65,6 +65,9 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="close-btn">
       <path  fill="rgb(255, 255, 255)"  d="M16.985,14.864 L14.864,16.985 L8.500,10.621 L2.136,16.985 L0.015,14.864 L6.379,8.500 L0.015,2.136 L2.136,0.015 L8.500,6.379 L14.864,0.015 L16.985,2.136 L10.621,8.500 L16.985,14.864 Z"/>
     </symbol>
+    <symbol viewBox="0 0 5 7" xmlns="http://www.w3.org/2000/svg" id="breadcrumbs-arrow">
+      <path  fill="rgb(23, 27, 87)" d="M1.539,7.013 L-0.004,5.451 L1.925,3.499 L-0.004,1.547 L1.539,-0.015 L5.010,3.499 L1.539,7.013 Z"/>
+    </symbol>
   </svg>
   <header class="header header__inner-page">
     <section class="header__info">
@@ -1531,6 +1534,17 @@
         </ul>
       </aside>
       <section class="main__services_block">
+        <ul class="main__breadcrumbs_block">
+          <li class="main__breadcrumbs_item">
+            <a href="/"><span class="main__breadcrumbs_item-text">Главная</span></a>
+            <svg width="5" height="7" class="breadcrumbs-arrow">
+              <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+          </li>
+          <li class="main__breadcrumbs_item">
+            <span class="main__breadcrumbs_item-text">Услуги</span>
+          </li>
+        </ul>
         <h4 class="main__services_block-heading">Услуги</h4>
         <div class="main__services_block-article">
           <article class="main__services_block-item">
