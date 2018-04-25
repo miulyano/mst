@@ -1,0 +1,18 @@
+.main__services_item {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.main__services_item-text {
+  max-width: 700px;
+  line-height: 24px;
+}
+
+.main__services_item-button {
+  padding-right: 28px;
+  padding-left: 28px;
+}

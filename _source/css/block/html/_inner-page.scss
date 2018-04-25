@@ -1,0 +1,102 @@
+.header__inner-page {
+  .header__info_caption,
+  .header__info_title,
+  .header__info_action-mail,
+  .header__info_mail-link,
+  .header__info_action-tel,
+  .header__info_tel-link,
+  .menu-button {
+    color: $text-black;
+  }
+  .header__info_search {
+    border: 1px solid $input--border-color;
+    &::placeholder {
+      color: $text-black;
+    }
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: $placeholder-color;
+    }
+  }
+  .header__nav {
+    margin-bottom: 10px;
+  }
+}
+
+.main__inner-page {
+  .main__services_block {
+    margin-bottom: 25px;
+    padding-top: 0;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+  .link-more {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .link-more:hover {
+    color: $text-white;
+  }
+  .main__services_block-item {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .main__services_block-item:last-child {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+  .main__services_block-heading {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .main__partners {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .main__breadcrumbs_block {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .main__breadcrumbs_item {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .main__breadcrumbs_item-text {
+    font-size: $label-font_size-normal;
+  }
+  .main__breadcrumbs_item svg {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .main__breadcrumbs_item a {
+    display: inline-block;
+    position: relative;
+    color: $text-black;
+    text-decoration: none;
+    transition: opacity .2s ease-in-out;
+  }
+  .main__breadcrumbs_item a:hover {
+    opacity: .6;
+  }
+  .main__breadcrumbs_item a::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $active-color;
+  }
+}
+
+.main__objects {
+  .main__services_block-name {
+    max-width: 100%;
+  }
+}

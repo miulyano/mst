@@ -1,7 +1,7 @@
 .header__main {
   min-height: 687px;
   background-color: $heading-bg-color;
-  background-image: url("../img/content/bridge.png");
+  background-image: url("../img/main/content/bridge.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -487,10 +487,16 @@
 .list__label_block {
   width: 368px;
   left: 250px;
+  @include media-breakpoint-down(lg) {
+    width: 250px;
+  }
 }
 .list__label_sub-block {
   width: 250px;
   left: 368px;
+  @include media-breakpoint-down(lg) {
+    left: 250px;
+  }
 }
 
 .list__label_block,

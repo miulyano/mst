@@ -5,6 +5,7 @@ $(function() {
     $(".header__nav").addClass('menu-active');
     $("body").addClass('body-hidden');
     $(".owl-carousel").css('z-index', '-1');
+    $(".main__breadcrumbs_block").css('z-index', '-1');
   })
 });
 
@@ -15,6 +16,7 @@ $(function() {
     $(".header__nav").removeClass('menu-active');
     $("body").removeClass('body-hidden');
     $(".owl-carousel").css('z-index', '1');
+    $(".main__breadcrumbs_block").css('z-index', '1');
   })
 });
 

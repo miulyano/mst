@@ -177,8 +177,9 @@
 }
 
 
-//Блок партнеров
-.main__partners {
+//Блок партнеров и ТМ
+.main__partners,
+.main__trademarks {
   padding-top: 25px;
   @include media-breakpoint-down(sm) {
     margin-top: 35px;
@@ -206,8 +207,10 @@
     }
   }
   &_item img {
+    min-width: auto;
+    max-width: 90%;
     @include media-breakpoint-down(sm) {
-      max-width: 100px;
+      max-width: 80%;
     }
   }
   &_item:not(:nth-child(4n + 1)) {
