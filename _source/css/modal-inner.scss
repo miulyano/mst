@@ -1,0 +1,8 @@
+.modal {
+  &__overlay {
+    opacity: 1;
+    animation: viewOverlay .25s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+}

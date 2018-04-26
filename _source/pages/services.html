@@ -23,6 +23,9 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 9">
       <path id="arrow"  fill="rgb(255, 255, 255)" d="M4.710,5.189 L1.493,8.727 C1.149,9.104 0.591,9.104 0.248,8.727 C-0.096,8.349 -0.096,7.736 0.248,7.359 L2.844,4.505 L0.248,1.651 C-0.096,1.274 -0.096,0.661 0.248,0.283 C0.591,-0.095 1.149,-0.095 1.493,0.283 L4.710,3.821 C5.054,4.199 5.054,4.811 4.710,5.189 Z"/>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 52 53">
+      <path id="close-modal" fill="rgb(255, 255, 255)"  d="M27.621,26.500 L50.855,49.734 C51.246,50.124 51.246,50.758 50.855,51.148 C50.465,51.539 49.832,51.539 49.441,51.148 L26.207,27.914 L2.266,51.855 C1.875,52.246 1.242,52.246 0.852,51.855 C0.461,51.465 0.461,50.832 0.852,50.441 L24.793,26.500 L0.852,2.559 C0.461,2.168 0.461,1.535 0.852,1.145 C1.242,0.754 1.875,0.754 2.266,1.145 L26.207,25.086 L49.441,1.852 C49.832,1.461 50.465,1.461 50.855,1.852 C51.246,2.242 51.246,2.875 50.855,3.266 L27.621,26.500 Z"/>
+    </symbol>
     <symbol viewBox="0 0 297.64 297.64" id="logo" xmlns="http://www.w3.org/2000/svg">
       <g data-name="logo"><circle cx="148.82" cy="148.82" r="148.82" fill="#1e2055"/>
         <path fill="#65ad8e" d="M128.36 99.99v47.63h7.99V96.91h-7.99v3.08z"/>
@@ -1464,7 +1467,7 @@
             </li>
           </ul>
         </li>
-        <li class="header__nav_category"><a href="/pages/services.html" class="header__nav_category-active">Услуги</a></li>
+        <li class="header__nav_category"><a href="/pages/services.html" class="header__nav_category-active active__menu-item">Услуги</a></li>
         <li class="header__nav_category"><a href="/pages/objects.html" class="header__nav_category-active">Объекты</a></li>
         <li class="header__nav_category"><a href="/" class="header__nav_category-active">О компании</a></li>
         <li class="header__nav_category"><a href="/" class="header__nav_category-active">Новости</a></li>
@@ -1687,8 +1690,28 @@
       </div>
     </section>
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__block">
+      <button class="modal__block_close">
+        <svg width="52" height="53" class="close-modal">
+          <use xlink:href="#close-modal"></use>
+        </svg>
+      </button>
+      <h2 class="modal__block_heading">Обратная связь</h2>
+      <p class="modal__block_title">Заполните, пожалуйста, форму. Мы свяжемся с Вами в ближайшее время.</p>
+      <form action="/" class="modal__block_form" autocomplete="on">
+        <input type="text" class="modal__block_input" id="name" placeholder="Ваше имя" required>
+        <input type="tel" class="modal__block_input" placeholder="Ваш телефон" required>
+        <input type="email" class="modal__block_input" placeholder="Ваш е-mail">
+        <textarea  class="modal__block_input" rows="1" placeholder="Комментарий"></textarea>
+        <button type="submit" class="button modal__block_form-submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="../module/jquery-3.3.1.min/index.js"></script>
   <script src="../js/bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/modal-inner.css">
   <link rel="stylesheet" href="../css/js-style.css">
 </body>
 </html>

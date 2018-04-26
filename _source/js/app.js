@@ -121,17 +121,63 @@ $(function() {
   })
 });
 
-//Подключение карусели
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplay:true,
-  autoplayTimeout:10000,
-  autoplayHoverPause:false,
-  responsive: {
-    0: {
-      items: 1
-    }
+//Открытие модалки
+$(function() {
+  $(".header__info_action-button").click(function(e) {
+    //e.preventDefault();
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".header__slider button").click(function(e) {
+    //e.preventDefault();
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".main__contacts_block-button").click(function(e) {
+    //e.preventDefault();
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".footer__info_button").click(function(e) {
+    //e.preventDefault();
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+//Закрытие модалки
+$(function() {
+  $(".modal__block_close").click(function(e) {
+    //e.preventDefault();
+    $(".modal").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__overlay").click(function(e) {
+    //e.preventDefault();
+    $(".modal").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(document).on('keyup',function(evt) {
+  if (evt.keyCode == 27) {
+    $(".modal").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
   }
 });

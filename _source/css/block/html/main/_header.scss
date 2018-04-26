@@ -909,3 +909,7 @@ button.sub-item__arrow-back span:hover {
 .owl-dot.active  span {
   background-color: $active-color;
 }
+
+.header__nav_category-active.active__menu-item {
+  background-color: $dropdown-color;
+}
