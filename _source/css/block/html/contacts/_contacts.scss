@@ -1,0 +1,116 @@
+.contacts.main__services_block-article {
+  flex-direction: column;
+}
+
+.contacts__block {
+  border: 3px solid $border-color;
+}
+
+.communications__block {
+  margin-bottom: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &_item {
+    display: inline-flex;
+    padding: 17px 25px;
+    @include media-breakpoint-down(lg) {
+      padding: 10px 15px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 80%;
+      padding: 20px 19px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+  &_item:not(:last-child) {
+    border-right: 2px solid $border-color;
+    @include media-breakpoint-down(md) {
+      border-right: none;
+      border-bottom: 2px solid $border-color;
+    }
+  }
+  &_item-text {
+    margin: 0;
+    margin-left: 7px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  &_item-tag {
+    font-size: 12px;
+    @include media-breakpoint-down(lg) {
+      font-size: 10px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
+  &_item-value {
+    font-size: 18px;
+    color: $text-black;
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+  }
+  &_item-value:hover {
+    color: $text-black;
+  }
+  svg {
+    display: inline-block;
+  }
+  .mail {
+    margin-top: 2px;
+    @include media-breakpoint-down(md) {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  }
+  .tel {
+    margin-top: -6px;
+  }
+  .address {
+    @include media-breakpoint-down(md) {
+      margin-left: 9px;
+      margin-right: 7px;
+    }
+  }
+}
+
+.requisites__block {
+  padding: 35px 40px;
+  list-style: none;
+  @include media-breakpoint-down(xs) {
+    padding: 20px 30px;;
+  }
+  &_item {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+}

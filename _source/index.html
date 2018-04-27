@@ -1465,9 +1465,9 @@
           </li>
           <li class="header__nav_category"><a href="/pages/services.html" class="header__nav_category-active">Услуги</a></li>
           <li class="header__nav_category"><a href="/pages/objects.html" class="header__nav_category-active">Объекты</a></li>
-          <li class="header__nav_category"><a href="/" class="header__nav_category-active">О компании</a></li>
+          <li class="header__nav_category"><a href="/pages/about_company.html" class="header__nav_category-active">О компании</a></li>
           <li class="header__nav_category"><a href="/" class="header__nav_category-active">Новости</a></li>
-          <li class="header__nav_category"><a href="/" class="header__nav_category-active">Контакты</a></li>
+          <li class="header__nav_category"><a href="/pages/contacts.html" class="header__nav_category-active">Контакты</a></li>
         </ul>
       </nav>
       <div class="owl-carousel owl-theme">
@@ -1722,10 +1722,10 @@
         <h2 class="modal__block_heading">Обратная связь</h2>
         <p class="modal__block_title">Заполните, пожалуйста, форму. Мы свяжемся с Вами в ближайшее время.</p>
         <form action="/" class="modal__block_form" autocomplete="on">
-          <input type="text" class="modal__block_input" id="name" placeholder="Ваше имя" required>
-          <input type="tel" class="modal__block_input" placeholder="Ваш телефон" required>
-          <input type="email" class="modal__block_input" placeholder="Ваш е-mail">
-          <textarea  class="modal__block_input" rows="1" placeholder="Комментарий"></textarea>
+          <input type="text" class="modal__block_input" id="name" name="name" placeholder="Ваше имя" required>
+          <input type="tel" class="modal__block_input" name="tel" placeholder="Ваш телефон" required>
+          <input type="email" class="modal__block_input" name="email" placeholder="Ваш е-mail">
+          <textarea  class="modal__block_input" rows="1" name="comment" placeholder="Комментарий"></textarea>
           <button type="submit" class="button modal__block_form-submit">Отправить</button>
         </form>
       </div>

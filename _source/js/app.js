@@ -158,6 +158,15 @@ $(function() {
   })
 });
 
+$(function() {
+  $(".main__services_item-button").click(function(e) {
+    //e.preventDefault();
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
 //Закрытие модалки
 $(function() {
   $(".modal__block_close").click(function(e) {

@@ -1,0 +1,112 @@
+.main__about-company_title {
+  display: flex;
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+.main__about-company_title-text {
+  margin-bottom: 28px;
+}
+
+.about-company__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__about-company_logo {
+  margin-left: 45px;
+  margin-right: 35px;
+  @include media-breakpoint-down(lg) {
+    margin-left: 30px;
+    margin-right: 0;
+    img {
+      width: 150px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    align-self: center;
+    img {
+      width: 180px;
+    }
+  }
+}
+
+.about-company__info {
+  &_list {
+    list-style: none;
+  }
+  &_list-item {
+    position: relative;
+    margin-left: 17px;
+  }
+  &_list-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+  &_list-item::after {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $ul-list-color;
+  }
+  &_command {
+    margin-bottom: 1rem;
+  }
+  &_management-wrapper {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+    }
+  }
+  &_management-heading {
+    font-size: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  &_management-signature span {
+    margin-right: 24px;
+    display: inline-block;
+    font-size: 18px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 5px;
+    }
+  }
+  &_management-boss {
+    position: relative;
+    margin-left: 30px;
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+  &_management-name {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    font-weight: normal;
+    color: $text-white;
+    text-shadow: 2px 2px 10px #000;
+    .boss-name {
+      font-size: 14px;
+    }
+    .boss-post {
+      font-size: 10px;
+    }
+  }
+}
