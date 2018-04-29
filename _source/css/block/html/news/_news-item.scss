@@ -3,6 +3,11 @@
   @include media-breakpoint-down(lg) {
     font-size: 24px;
   }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .news-item {
@@ -13,18 +18,24 @@
   }
   &__block_foto {
     margin-bottom: 30px;
-    border-radius: 4px;
+    border-radius: 2px;
     overflow: hidden;
   }
   &__block_text {
     margin-bottom: 30px;
     max-width: 96%;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
   }
   &__order {
     width: 100%;
     padding: 50px;
     border-radius: 4px;
     background-color: $border-color;
+    @include media-breakpoint-down(xs) {
+      padding: 35px;
+    }
   }
   &__order-heading {
     font-size: 30px;
@@ -33,6 +44,9 @@
       max-width: 250px;
       line-height: 32px;
       margin-bottom: 10px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
     }
   }
   &__order-wrapper {
@@ -45,6 +59,9 @@
     line-height: 20px;
     @include media-breakpoint-down(lg) {
       max-width: 250px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
     }
   }
   &__order-loop {
@@ -72,15 +89,24 @@
     font-size: 14px;
     text-transform: none;
     z-index: 10;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
   &__order-input:not(:first-child) {
     margin-left: 12px;
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+    }
   }
   &__order-input:not(.button) {
     padding: 15px 17px;
     border-radius: 4px;
     box-shadow: none;
     border: 1px solid $input--border-color;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
   }
   &__order-input::placeholder {
     color: $placeholder-color;
@@ -91,6 +117,9 @@
     @include media-breakpoint-down(lg) {
       margin: 0;
       margin-top: 10px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
     }
   }
 }

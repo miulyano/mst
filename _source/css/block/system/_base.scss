@@ -3,6 +3,16 @@ html, body {
   min-width: 320px;
 }
 
+*::selection {
+  color: $text-white;
+  background-color: $dropdown-color;
+}
+
+input:focus,
+button:focus {
+  outline-color: $--active-color-darken-25;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
