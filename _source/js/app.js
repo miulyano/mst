@@ -1,7 +1,6 @@
 //открытие мобильного меню
 $(function() {
-  $(".menu-button").click(function(e) {
-    //e.preventDefault();
+  $(".menu-button").click(function() {
     $(".header__nav").addClass('menu-active');
     $("body").addClass('body-hidden');
     $(".owl-carousel").css('z-index', '-1');
@@ -11,8 +10,7 @@ $(function() {
 
 //закрытие мобильного меню
 $(function() {
-  $(".menu__close").click(function(e) {
-    //e.preventDefault();
+  $(".menu__close").click(function() {
     $(".header__nav").removeClass('menu-active');
     $("body").removeClass('body-hidden');
     $(".owl-carousel").css('z-index', '1');
@@ -22,15 +20,13 @@ $(function() {
 
 //логика подменю для мобил
 $(function() {
-    $(".main-label").click(function(e) {
-    //e.preventDefault();
+    $(".main-label").click(function() {
     $(this).parent().find(".header__nav_firm-list").removeAttr( 'style' ).css('display', 'block');
   })
 });
 
 $(function() {
-  $(".firm-label").click(function(e) {
-    //e.preventDefault();
+  $(".firm-label").click(function() {
     $(this).parent().find(".header__nav_category-list").removeAttr( 'style' ).css('display', 'block');
   })
 });
@@ -97,8 +93,7 @@ $(function() {
 });
 
 $(function() {
-  $(".sub-label").click(function(e) {
-    //e.preventDefault();
+  $(".sub-label").click(function() {
     $(this).parent().find(".list__label_sub-block").removeAttr( 'style' ).css('display', 'block');
   })
 });
@@ -123,8 +118,7 @@ $(function() {
 
 //Открытие модалки
 $(function() {
-  $(".header__info_action-button").click(function(e) {
-    //e.preventDefault();
+  $(".header__info_action-button").click(function() {
     $(".modal").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -132,8 +126,7 @@ $(function() {
 });
 
 $(function() {
-  $(".header__slider button").click(function(e) {
-    //e.preventDefault();
+  $(".header__slider button").click(function() {
     $(".modal").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -141,8 +134,7 @@ $(function() {
 });
 
 $(function() {
-  $(".main__contacts_block-button").click(function(e) {
-    //e.preventDefault();
+  $(".main__contacts_block-button").click(function() {
     $(".modal").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -150,8 +142,7 @@ $(function() {
 });
 
 $(function() {
-  $(".footer__info_button").click(function(e) {
-    //e.preventDefault();
+  $(".footer__info_button").click(function() {
     $(".modal").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -159,8 +150,15 @@ $(function() {
 });
 
 $(function() {
-  $(".main__services_item-button").click(function(e) {
-    //e.preventDefault();
+  $(".consultation-button").click(function() {
+    $(".modal").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".main__services_item-button").click(function() {
     $(".modal").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -169,16 +167,14 @@ $(function() {
 
 //Закрытие модалки
 $(function() {
-  $(".modal__block_close").click(function(e) {
-    //e.preventDefault();
+  $(".modal__block_close").click(function() {
     $(".modal").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   })
 });
 
 $(function() {
-  $(".modal__overlay").click(function(e) {
-    //e.preventDefault();
+  $(".modal__overlay").click(function() {
     $(".modal").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   })
@@ -189,4 +185,10 @@ $(document).on('keyup',function(evt) {
     $(".modal").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   }
+});
+
+//маска телефона
+$(function() {
+    $("#tel__modal").mask("+7(999) 999-99-99");
+    $("#tel__news-item").mask("+7(999) 999-99-99");
 });

@@ -1552,25 +1552,26 @@
       <div class="main__services_block-article goods-item__block">
         <section class="goods-item__block_characteristics">
           <div class="goods-item__block_foto">
-            <img src="../img/pages/goods/good-1.png" alt="MasterInject 1777"></div>
-          <div>
+            <img src="../img/pages/goods/good-1.png" alt="MasterInject 1777">
+          </div>
+          <div class="goods-item__block_characteristics-wrapper">
             <h5 class="goods-item__block_heading">MasterInject® 1777 доступен в 21,5 кг</h5>
             <p class="goods-item__block_title">Компонент А-20 кг. Компонент В-0,5 кг Компонент С-1 кг.</p>
             <h5 class="goods-item__block_heading">Характеристики</h5>
             <div class="goods-item__block_list">
               <div class="goods-item__block_list-item">
-                <span class="goods-item__block_list-text">Вязкость</span>
-                <span class="goods-item__block_list-text">Растяжение при разрыве</span>
-                <span class="goods-item__block_list-text">Температура применения</span>
-                <span class="goods-item__block_list-text">Время окончания реакции</span>
-                <span class="goods-item__block_list-text">Время жизни материалов</span>
+                <span class="goods-item__block_list-name">Вязкость<span class="mobile-visible">20°С – 4,2 мПа</span></span>
+                <span class="goods-item__block_list-name">Растяжение при разрыве<span class="mobile-visible">1000%</span></span>
+                <span class="goods-item__block_list-name">Температура применения<span class="mobile-visible">+5 - +35°С</span></span>
+                <span class="goods-item__block_list-name">Время окончания реакции<span class="mobile-visible">от 10 до 45 минут</span></span>
+                <span class="goods-item__block_list-name">Время жизни материалов<span class="mobile-visible">от 10 секунд до 24 минут</span></span>
               </div>
               <div class="goods-item__block_list-item">
-                <span class="goods-item__block_list-text">20°С – 4,2 мПас</span>
-                <span class="goods-item__block_list-text">1000%</span>
-                <span class="goods-item__block_list-text">+5 - +35°С</span>
-                <span class="goods-item__block_list-text">от 10 до 45 минут</span>
-                <span class="goods-item__block_list-text">от 10 секунд до 24 минут</span>
+                <span class="goods-item__block_list-value">20°С – 4,2 мПас</span>
+                <span class="goods-item__block_list-value">1000%</span>
+                <span class="goods-item__block_list-value">+5 - +35°С</span>
+                <span class="goods-item__block_list-value">от 10 до 45 минут</span>
+                <span class="goods-item__block_list-value">от 10 секунд до 24 минут</span>
               </div>
             </div>
             <button class="consultation-button">Получить консультацию</button>
@@ -1596,7 +1597,7 @@
             <ul class="goods-item__block_list">
               <li class="goods-item__block_list-item">Бетон, каменная и кирпичная кладка</li>
               <li class="goods-item__block_list-item">Внутри и снаружи</li>
-              <li class="goods-item__block_list-item">Ремонт деформационных шво</li>
+              <li class="goods-item__block_list-item">Ремонт деформационных швов</li>
               <li class="goods-item__block_list-item">Инъекционная завеса</li>
               <li class="goods-item__block_list-item">Инъектирование через пакеры и (ре-) инъекционные шланги</li>
             </ul>
@@ -1714,7 +1715,7 @@
     <p class="modal__block_title">Заполните, пожалуйста, форму. Мы свяжемся с Вами в ближайшее время.</p>
     <form action="/" class="modal__block_form" autocomplete="on">
       <input type="text" class="modal__block_input" id="name" name="name" placeholder="Ваше имя" required>
-      <input type="tel" class="modal__block_input" name="tel" placeholder="Ваш телефон" required>
+      <input type="tel" class="modal__block_input" id="tel__modal" name="tel" placeholder="Ваш телефон" required>
       <input type="email" class="modal__block_input" name="email" placeholder="Ваш е-mail">
       <textarea  class="modal__block_input" rows="1" name="comment" placeholder="Комментарий"></textarea>
       <button type="submit" class="button modal__block_form-submit">Отправить</button>
@@ -1722,6 +1723,7 @@
   </div>
 </div>
 <script src="../module/jquery-3.3.1.min/index.js"></script>
+<script src="../module/jquery.maskedinput.min.js"></script>
 <script src="../js/bundle.min.js"></script>
 <link rel="stylesheet" href="../css/modal-inner.css">
 <link rel="stylesheet" href="../css/js-style.css">

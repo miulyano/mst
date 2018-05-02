@@ -1723,7 +1723,7 @@
         <p class="modal__block_title">Заполните, пожалуйста, форму. Мы свяжемся с Вами в ближайшее время.</p>
         <form action="/" class="modal__block_form" autocomplete="on">
           <input type="text" class="modal__block_input" id="name" name="name" placeholder="Ваше имя" required>
-          <input type="tel" class="modal__block_input" name="tel" placeholder="Ваш телефон" required>
+          <input type="tel" class="modal__block_input" id="tel__modal"  name="tel" placeholder="Ваш телефон" required>
           <input type="email" class="modal__block_input" name="email" placeholder="Ваш е-mail">
           <textarea  class="modal__block_input" rows="1" name="comment" placeholder="Комментарий"></textarea>
           <button type="submit" class="button modal__block_form-submit">Отправить</button>
@@ -1732,6 +1732,7 @@
     </div>
     <script src="module/jquery-3.3.1.min/index.js"></script>
     <script src="module/owl.carousel.min.js"></script>
+    <script src="module/jquery.maskedinput.min.js"></script>
     <script src="module/init-carusel.js"></script>
     <script src="js/bundle.min.js"></script>
     <link rel="stylesheet" href="css/js-style.css">
