@@ -41,6 +41,18 @@
   }
   .mobile-visible {
     display: none;
+    @include media-breakpoint-down(md) {
+      display: block;
+      margin-left: 25px;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    @include media-breakpoint-down(xs) {
+      margin-top: 7px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      font-size: 16px;
+    }
   }
   .consultation-button {
     margin-top: 10px;
@@ -94,6 +106,10 @@
     @include media-breakpoint-down(lg) {
       max-width: 185px;
     }
+    @include media-breakpoint-down(md) {
+      min-width: 100%;
+      max-width: 100%;
+    }
   }
   .goods-item__block_list-item:first-child {
     align-items: flex-start;
@@ -105,6 +121,24 @@
     display: inline-block;
     position: relative;
     background-color: #fff;
+  }
+  .goods-item__block_list-name {
+    @include media-breakpoint-down(md) {
+      display: inline-flex;
+      width: 100%;
+      padding: 0;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      padding-left: 10px;
+    }
+  }
+  .goods-item__block_list-item:last-child {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
   .goods-item__block_list-value {
     padding-right: 0;
