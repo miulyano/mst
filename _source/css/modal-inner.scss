@@ -5,3 +5,9 @@
     animation-direction: normal;
   }
 }
+
+.modal__object-item {
+  .modal__overlay {
+    animation: viewOverlay .35s ease-in-out;
+  }
+}

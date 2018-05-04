@@ -119,7 +119,7 @@ $(function() {
 //Открытие модалки
 $(function() {
   $(".header__info_action-button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -127,7 +127,7 @@ $(function() {
 
 $(function() {
   $(".header__slider button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -135,7 +135,7 @@ $(function() {
 
 $(function() {
   $(".main__contacts_block-button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -143,7 +143,7 @@ $(function() {
 
 $(function() {
   $(".footer__info_button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -151,7 +151,7 @@ $(function() {
 
 $(function() {
   $(".consultation-button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -159,7 +159,44 @@ $(function() {
 
 $(function() {
   $(".main__services_item-button").click(function() {
-    $(".modal").addClass('modal-active');
+    $(".modal__form").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+//открытие модалок с сертификатами
+$(function() {
+  $("#certificates-1").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-1").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $("#certificates-2").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-2").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $("#certificates-3").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-3").addClass('modal-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $("#certificates-4").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-4").addClass('modal-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
   })
@@ -168,21 +205,106 @@ $(function() {
 //Закрытие модалки
 $(function() {
   $(".modal__block_close").click(function() {
-    $(".modal").removeClass('modal-active');
+    $(".modal__form").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   })
 });
 
 $(function() {
   $(".modal__overlay").click(function() {
-    $(".modal").removeClass('modal-active');
+    $(".modal__form").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+//закрытие модалок с сертификатами
+$(function() {
+  $(".modal__overlay").click(function() {
+    $("#modal__certificates-1").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__overlay").click(function() {
+    $("#modal__certificates-2").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__overlay").click(function() {
+    $("#modal__certificates-3").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__overlay").click(function() {
+    $("#modal__certificates-4").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__block_close").click(function() {
+    $("#modal__certificates-1").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__block_close").click(function() {
+    $("#modal__certificates-2").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__block_close").click(function() {
+    $("#modal__certificates-3").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  })
+});
+
+$(function() {
+  $(".modal__block_close").click(function() {
+    $("#modal__certificates-4").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   })
 });
 
 $(document).on('keyup',function(evt) {
   if (evt.keyCode == 27) {
-    $(".modal").removeClass('modal-active');
+    $(".modal__form").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  }
+});
+
+$(document).on('keyup',function(evt) {
+  if (evt.keyCode == 27) {
+    $("#modal__certificates-1").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  }
+});
+
+$(document).on('keyup',function(evt) {
+  if (evt.keyCode == 27) {
+    $("#modal__certificates-2").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  }
+});
+
+$(document).on('keyup',function(evt) {
+  if (evt.keyCode == 27) {
+    $("#modal__certificates-3").removeClass('modal-active');
+    $("body").removeClass('body-hidden');
+  }
+});
+
+$(document).on('keyup',function(evt) {
+  if (evt.keyCode == 27) {
+    $("#modal__certificates-4").removeClass('modal-active');
     $("body").removeClass('body-hidden');
   }
 });

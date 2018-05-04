@@ -71,6 +71,9 @@
   &_command {
     max-width: 760px;
     margin-bottom: 1rem;
+    img {
+      max-width: 100%;
+    }
     @include media-breakpoint-down(lg) {
       max-width: 580px;
     }

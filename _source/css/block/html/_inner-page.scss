@@ -112,3 +112,43 @@
     }
   }
 }
+
+//fotorama custom style
+.fotorama__nav__shaft {
+  margin-top: 20px;
+}
+
+.fotorama__nav__frame:not(:last-child) {
+  margin-right: 17px;
+}
+
+.fotorama__thumb {
+  position: relative;
+  border-radius: 4px;
+  transition: border .3s ease-in-out;
+}
+
+.fotorama__thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color .35s ease-in-out;
+}
+
+.fotorama__active .fotorama__thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0,0,0,.45);
+}
+
+.fotorama__thumb-border {
+  display: none;
+}

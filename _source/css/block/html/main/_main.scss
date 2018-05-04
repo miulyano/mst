@@ -253,6 +253,13 @@
     height: 346px;
     border: 2px solid $border-color;
     overflow: hidden;
+    span {
+      cursor: pointer;
+      transition: opacity .2s ease-in-out;
+    }
+    span:hover {
+      opacity: .8;
+    }
     @include media-breakpoint-down(lg) {
       height: auto;
     }

@@ -1608,24 +1608,24 @@
         <h4 class="main__certificates_heading">Сертификаты</h4>
         <div class="main__certificates_article-block">
           <article class="main__certificates_item">
-            <a href="https://goo.gl/a6CSfF" target="_blank">
+            <span role="button" id="certificates-1">
               <img src="img/main/certificates/certificate_1.png" alt="" class="main__certificates_item-img">
-            </a>
+            </span>
           </article>
           <article class="main__certificates_item">
-            <a href="https://goo.gl/a6CSfF" target="_blank">
+            <span role="button" id="certificates-2">
               <img src="img/main/certificates/certificate_2.png" alt="" class="main__certificates_item-img">
-            </a>
+            </span>
           </article>
           <article class="main__certificates_item">
-            <a href="https://goo.gl/a6CSfF" target="_blank">
+            <span role="button" id="certificates-3">
               <img src="img/main/certificates/certificate_3.png" alt="" class="main__certificates_item-img">
-            </a>
+            </span>
           </article>
           <article class="main__certificates_item">
-            <a href="https://goo.gl/a6CSfF" target="_blank">
+            <span role="button" id="certificates-4">
               <img src="img/main/certificates/certificate_4.png" alt="" class="main__certificates_item-img">
-            </a>
+            </span>
           </article>
         </div>
       </section>
@@ -1711,7 +1711,7 @@
         </div>
       </section>
     </footer>
-    <div class="modal">
+    <div class="modal modal__form">
       <div class="modal__overlay"></div>
       <div class="modal__block">
         <button class="modal__block_close">
@@ -1728,6 +1728,50 @@
           <textarea  class="modal__block_input" rows="1" name="comment" placeholder="Комментарий"></textarea>
           <button type="submit" class="button modal__block_form-submit">Отправить</button>
         </form>
+      </div>
+    </div>
+    <div class="modal modal__certificates" id="modal__certificates-1">
+      <div class="modal__overlay"></div>
+      <div class="modal__block">
+        <button class="modal__block_close">
+          <svg width="52" height="53" class="close-modal">
+            <use xlink:href="#close-modal"></use>
+          </svg>
+        </button>
+        <img class="modal__certificates_img" src="img/main/certificates/certificate_1.png" alt="Сертификат">
+      </div>
+    </div>
+    <div class="modal modal__certificates" id="modal__certificates-2">
+      <div class="modal__overlay"></div>
+      <div class="modal__block">
+        <button class="modal__block_close">
+          <svg width="52" height="53" class="close-modal">
+            <use xlink:href="#close-modal"></use>
+          </svg>
+        </button>
+        <img class="modal__certificates_img" src="img/main/certificates/certificate_2.png" alt="Сертификат">
+      </div>
+    </div>
+    <div class="modal modal__certificates" id="modal__certificates-3">
+      <div class="modal__overlay"></div>
+      <div class="modal__block">
+        <button class="modal__block_close">
+          <svg width="52" height="53" class="close-modal">
+            <use xlink:href="#close-modal"></use>
+          </svg>
+        </button>
+        <img class="modal__certificates_img" src="img/main/certificates/certificate_3.png" alt="Сертификат">
+      </div>
+    </div>
+    <div class="modal modal__certificates" id="modal__certificates-4">
+      <div class="modal__overlay"></div>
+      <div class="modal__block">
+        <button class="modal__block_close">
+          <svg width="52" height="53" class="close-modal">
+            <use xlink:href="#close-modal"></use>
+          </svg>
+        </button>
+        <img class="modal__certificates_img" src="img/main/certificates/certificate_4.png" alt="Сертификат">
       </div>
     </div>
     <script src="module/jquery-3.3.1.min/index.js"></script>
