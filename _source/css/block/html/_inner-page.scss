@@ -100,3 +100,15 @@
     max-width: 100%;
   }
 }
+
+.main__trademarks_item {
+  overflow: hidden;
+  img {
+    @include media-breakpoint-down(lg) {
+      max-width: 130px;
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: 100px;
+    }
+  }
+}

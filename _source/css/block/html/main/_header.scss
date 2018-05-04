@@ -260,6 +260,9 @@
   color: $text-white;
   text-decoration: none;
   border-radius: 0;
+  @include media-breakpoint-down(lg) {
+    padding: 19px 18px;
+  }
   @include media-breakpoint-down(md) {
     display: inline-flex;
     justify-content: space-between;

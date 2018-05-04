@@ -13,11 +13,18 @@
 .about-company__text {
   font-size: 16px;
   line-height: 24px;
+  max-width: 760px;
+  @include media-breakpoint-down(lg) {
+    max-width: 580px;
+  }
 }
 
 .main__about-company_logo {
   margin-left: 45px;
   margin-right: 35px;
+  img {
+    max-width: 100%;
+  }
   @include media-breakpoint-down(lg) {
     margin-left: 30px;
     margin-right: 0;
@@ -38,7 +45,11 @@
 
 .about-company__info {
   &_list {
+    max-width: 760px;
     list-style: none;
+    @include media-breakpoint-down(lg) {
+      max-width: 580px;
+    }
   }
   &_list-item {
     position: relative;
@@ -58,7 +69,11 @@
     background-color: $ul-list-color;
   }
   &_command {
+    max-width: 760px;
     margin-bottom: 1rem;
+    @include media-breakpoint-down(lg) {
+      max-width: 580px;
+    }
   }
   &_management-wrapper {
     padding-top: 10px;
@@ -67,12 +82,27 @@
     @include media-breakpoint-down(md) {
       flex-direction: column-reverse;
     }
+    .about-company__text {
+      max-width: 460px;
+      @include media-breakpoint-down(lg) {
+        max-width: 288px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: 370px;
+      }
+    }
   }
   &_management-heading {
     font-size: 20px;
     @include media-breakpoint-down(md) {
       font-size: 18px;
       line-height: 22px;
+    }
+    @include media-breakpoint-down(lg) {
+      max-width: 288px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 370px;
     }
   }
   &_management-signature span {
