@@ -23,7 +23,7 @@
   margin-left: 45px;
   margin-right: 35px;
   img {
-    max-width: 100%;
+    width: 255px;
   }
   @include media-breakpoint-down(lg) {
     margin-left: 30px;
@@ -76,6 +76,15 @@
     }
     @include media-breakpoint-down(lg) {
       max-width: 580px;
+    }
+    @include media-breakpoint-down(md) {
+      justify-self: center;
+      max-width: 370px;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: calc(100vw - 45px);
     }
   }
   &_management-wrapper {

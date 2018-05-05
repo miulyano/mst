@@ -1,7 +1,16 @@
 .goods__block {
   &_title {
     margin-bottom: 45px;
-
+    max-width: 760px;
+    @include media-breakpoint-down(lg) {
+      max-width: 580px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 370px;
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: calc(100vw - 45px);
+    }
   }
 
   .main__services_block-item {
@@ -20,7 +29,7 @@
   }
 
   .main__services_block-item:not(:nth-child(3n)) {
-    margin-right: 28px;
+    margin-right: 27px;
     @include media-breakpoint-down(md) {
       margin-left: 0;
     }
