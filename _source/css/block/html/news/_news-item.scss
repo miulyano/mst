@@ -20,6 +20,9 @@
     margin-bottom: 30px;
     border-radius: 2px;
     overflow: hidden;
+    img {
+      max-width: 100%;
+    }
   }
   &__block_text {
     margin-bottom: 30px;

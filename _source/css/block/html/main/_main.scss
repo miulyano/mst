@@ -43,6 +43,8 @@
     border-top: 1px solid $border-color;
   }
   .aside-arrow {
+    width: 23px;
+    height: 23px;
     margin-top: 17.6px;
     transition: transform .2s ease-in-out;
   }
@@ -291,6 +293,7 @@
 //Контакты
 
 .main__contacts {
+  position: relative;
   @include media-breakpoint-down(md) {
     padding: 0;
   }
@@ -309,13 +312,15 @@
   }
   &_block {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    margin-top: -534px;
+    top: -483px;
     padding: 35px 45px 41px 40px;
     height: 420px;
     background-color: #fff;
-    box-shadow: 0px 8px 25.65px 1.35px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 8px 25.65px 1.35px rgba(0, 0, 0, 0.23);
     @include media-breakpoint-down(md) {
+      position: static;
       height: auto;
       padding: 0;
       margin-top: 0;
@@ -363,12 +368,9 @@
     }
   }
   &_card {
+    width: 100%;
     @include media-breakpoint-down(md) {
       display: none;
     }
   }
-}
-
-.main__contacts_card {
-  width: 100%;
 }

@@ -82,7 +82,7 @@
     transition: border-bottom .2s ease-in-out;
   }
   &__block_input:focus {
-    border-bottom: 3px solid $active-color;
+    border-bottom: 1px solid $active-color;
   }
   &__block_input::placeholder {
     color: $text-black;
@@ -102,6 +102,10 @@
     letter-spacing: 0;
     font-size: 17px;
   }
+}
+
+.textarea {
+  resize: none;
 }
 
 .modal__certificates {

@@ -16,6 +16,8 @@
     }
   }
   .footer-logo {
+    width: 130px;
+    height: 130px;
     @include media-breakpoint-down(lg) {
       height: 100px;
       width: 100px;
@@ -74,6 +76,26 @@
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
+    }
+    .main-marker {
+      width: 12px;
+      height: 15px;
+    }
+    .mobile-marker {
+      width: 30px;
+      height: 30px;
+    }
+    .main-mail {
+      width: 15px;
+      height: 11px;
+    }
+    .mobile-mail {
+      width: 30px;
+      height: 30px;
+    }
+    .footer-phone {
+      width: 30px;
+      height: 30px;
     }
   }
   &_button {
