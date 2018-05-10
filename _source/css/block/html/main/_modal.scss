@@ -84,6 +84,10 @@
   &__block_input:focus {
     border-bottom: 1px solid $active-color;
   }
+  &__block_input:invalid {
+    border-bottom: 1px solid red;
+    outline: none!important;
+  }
   &__block_input::placeholder {
     color: $text-black;
     transition: color .2s ease-in-out;
