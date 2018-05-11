@@ -47,6 +47,10 @@
     border: none;
     cursor: pointer;
     transition: opacity .2s ease-in-out;
+    svg {
+      width: 52px;
+      height: 53px;
+    }
     @include media-breakpoint-down(md) {
       top: -53px;
       right: -15px;

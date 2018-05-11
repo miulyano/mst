@@ -368,6 +368,7 @@
     }
   }
   &_card {
+    height: 532px;
     width: 100%;
     @include media-breakpoint-down(md) {
       display: none;
