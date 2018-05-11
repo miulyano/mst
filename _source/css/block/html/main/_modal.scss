@@ -56,6 +56,10 @@
   &__block_close:hover {
     opacity: .6;
   }
+  .close-modal {
+    width: 52px;
+    height: 52px;
+  }
   &__block_heading {
     font-size: 27px;
     margin-bottom: 12px;
@@ -85,8 +89,10 @@
     border-bottom: 1px solid $active-color;
   }
   &__block_input:invalid {
+    box-shadow: none;
+  }
+  .required:invalid {
     border-bottom: 1px solid red;
-    outline: none!important;
   }
   &__block_input::placeholder {
     color: $text-black;

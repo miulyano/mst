@@ -75,6 +75,8 @@
     display: inline-block;
   }
   .mail {
+    width: 15px;
+    height: 11px;
     margin-top: 2px;
     @include media-breakpoint-down(md) {
       margin-left: 7px;
@@ -82,9 +84,13 @@
     }
   }
   .tel {
+    width: 30px;
+    height: 30px;
     margin-top: -6px;
   }
   .address {
+    width: 12px;
+    height: 15px;
     @include media-breakpoint-down(md) {
       margin-left: 9px;
       margin-right: 7px;

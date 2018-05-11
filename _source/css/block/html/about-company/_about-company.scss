@@ -117,17 +117,25 @@
       max-width: 370px;
     }
   }
-  &_management-signature span {
-    margin-right: 24px;
-    display: inline-block;
-    font-size: 18px;
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 5px;
+  &_management-signature {
+    span {
+      margin-right: 24px;
+      display: inline-block;
+      font-size: 18px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 5px;
+      }
+    }
+    img {
+      width: 114px;
     }
   }
   &_management-boss {
     position: relative;
     margin-left: 30px;
+    img {
+      width: 262px;
+    }
     @include media-breakpoint-down(md) {
       margin-left: 0;
       margin-top: 10px;

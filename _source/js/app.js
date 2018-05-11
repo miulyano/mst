@@ -314,3 +314,11 @@ $(function() {
     $("#tel__modal").mask("+7(999) 999-99-99");
     $("#tel__news-item").mask("+7(999) 999-99-99");
 });
+
+//валидация формы
+$('[type="submit"]').on('click', function () {
+    $(this)
+        .closest('form')
+        .find('[required]')
+        .addClass('required');
+});
