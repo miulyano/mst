@@ -1,3 +1,10 @@
+.main {
+  margin-bottom: -420px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0;
+  }
+}
+
 .main__services,
 .main__partners,
 .main__certificates,
@@ -302,7 +309,7 @@
     display: flex;
     align-items: center;
     top: 0;
-    height: 0;
+    height: auto;
     @include media-breakpoint-down(md) {
       height: auto;
       margin-top: 35px;
@@ -312,9 +319,9 @@
   }
   &_block {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
-    top: -483px;
+    bottom: -476px;
     padding: 35px 45px 41px 40px;
     height: 420px;
     background-color: #fff;
@@ -322,6 +329,7 @@
     @include media-breakpoint-down(md) {
       position: static;
       height: auto;
+      bottom: 0;
       padding: 0;
       margin-top: 0;
       box-shadow: none;
@@ -372,6 +380,20 @@
     width: 100%;
     @include media-breakpoint-down(md) {
       display: none;
+    }
+  }
+  &_card-mobile {
+    display: none;
+    width: 100%;
+    height: 332px;
+    margin-top: 30px;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+      margin-left: -15px;
+      width: calc(100% + 30px);
     }
   }
 }
