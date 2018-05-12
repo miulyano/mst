@@ -228,3 +228,107 @@
 .mobile-marker {
   width: 30px;
 }
+
+//Контакты
+
+.footer__contacts {
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+  &_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: auto;
+    @include media-breakpoint-down(md) {
+      height: auto;
+      margin-top: 35px;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+  &_block {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: -476px;
+    padding: 35px 45px 41px 40px;
+    height: 420px;
+    background-color: #fff;
+    box-shadow: 0 8px 25.65px 1.35px rgba(0, 0, 0, 0.23);
+    z-index: 100;
+    @include media-breakpoint-down(md) {
+      position: static;
+      height: auto;
+      bottom: 0;
+      padding: 0;
+      margin-top: 0;
+      box-shadow: none;
+    }
+  }
+  &_block-header {
+    margin-bottom: 20px;
+  }
+  &_block-text {
+    display: inline-flex;
+    flex-direction: column;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_block-title {
+    margin-bottom: 5px;
+    font-size: $label-font_size-normal;
+    letter-spacing: .5px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_block-info {
+    font-size: $label-contact;
+    color: $text-black;
+    line-height: 29px;
+    letter-spacing: .2px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_block-info:hover {
+    color: $text-black;
+  }
+  &_block-button {
+    @extend .button;
+    max-width: 205px;
+    padding: 23px 25px;
+    font-size: $label-font_size-normal;
+    background-color: $button-color;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_card {
+    height: 532px;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &_card-mobile {
+    display: none;
+    @include media-breakpoint-down(md) {
+      top: 0;
+      left: 0;
+      margin-top: 30px;
+      display: block;
+      width: 100%;
+      height: 332px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+      margin-left: -15px;
+      width: calc(100% + 30px);
+    }
+  }
+}
