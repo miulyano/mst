@@ -23,12 +23,15 @@
   margin-left: 45px;
   margin-right: 35px;
   img {
+    max-width: 100%;
+    min-width: 255px;
     width: 255px;
   }
   @include media-breakpoint-down(lg) {
     margin-left: 30px;
     margin-right: 0;
     img {
+      min-width: 150px;
       width: 150px;
     }
   }
@@ -38,6 +41,7 @@
     margin-bottom: 25px;
     align-self: center;
     img {
+      min-width: 180px;
       width: 180px;
     }
   }
