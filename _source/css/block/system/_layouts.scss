@@ -11,7 +11,8 @@
 .main__partners,
 .main__trademarks,
 .main__certificates,
-.footer__info {
+.footer__info,
+.footer-mobile__info_action {
   margin: 0 auto;
   @include make-container-max-widths();
 }
