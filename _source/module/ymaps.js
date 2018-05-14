@@ -21,7 +21,8 @@ function init(){
     hintContent: 'Мостовые строительные технологии',
     balloonContent: 'г. Москва, ул. Чекистов 28'
   });
-
+  myMainMap.behaviors.disable('scrollZoom');
+  myMobileMap.behaviors.disable('scrollZoom');
   myMainMap.geoObjects.add(myPlacemark);
   myMobileMap.geoObjects.add(myMobilePlacemark);
 }
