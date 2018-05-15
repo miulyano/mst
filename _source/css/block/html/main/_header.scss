@@ -615,6 +615,7 @@
 .list__label:last-child .label,
 .list__firm-label:last-child .firm-label {
   border-radius: 0 0 4px 4px;
+  margin-top: -1px;
   @include media-breakpoint-down(md) {
     border-radius: 0;
     width: 100vw;
