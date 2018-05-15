@@ -6,12 +6,13 @@
 .header__slider,
 .header__nav,
 .owl-dots,
-.main__contacts_wrapper,
+.footer__contacts_wrapper,
 .main__services,
 .main__partners,
 .main__trademarks,
 .main__certificates,
-.footer {
+.footer__info,
+.footer-mobile__info_action {
   margin: 0 auto;
   @include make-container-max-widths();
 }

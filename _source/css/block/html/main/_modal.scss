@@ -47,6 +47,10 @@
     border: none;
     cursor: pointer;
     transition: opacity .2s ease-in-out;
+    svg {
+      width: 52px;
+      height: 53px;
+    }
     @include media-breakpoint-down(md) {
       top: -53px;
       right: -15px;
@@ -55,6 +59,10 @@
   }
   &__block_close:hover {
     opacity: .6;
+  }
+  .close-modal {
+    width: 52px;
+    height: 52px;
   }
   &__block_heading {
     font-size: 27px;
@@ -82,7 +90,13 @@
     transition: border-bottom .2s ease-in-out;
   }
   &__block_input:focus {
-    border-bottom: 3px solid $active-color;
+    border-bottom: 1px solid $active-color;
+  }
+  &__block_input:invalid {
+    box-shadow: none;
+  }
+  .required:invalid {
+    border-bottom: 1px solid red;
   }
   &__block_input::placeholder {
     color: $text-black;
@@ -102,6 +116,10 @@
     letter-spacing: 0;
     font-size: 17px;
   }
+}
+
+.textarea {
+  resize: none;
 }
 
 .modal__certificates {

@@ -17,6 +17,8 @@
 }
 
 .logo {
+  width: 180px;
+  height: 180px;
   @include media-breakpoint-down(lg) {
     width: 160px;
     height: 160px;
@@ -98,6 +100,10 @@
   }
   //email в шапке
   &_action-mail {
+    svg {
+      width: 15px;
+      height: 12px;
+    }
     @include media-breakpoint-down(md) {
       display: none;
     }
@@ -124,6 +130,10 @@
   }
   //телефон в шапке
   &_action-tel {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
     @include media-breakpoint-down(md) {
       margin: 15px 0 25px;
     }
@@ -580,6 +590,11 @@
   }
 }
 
+.menu-arrow {
+  width: 5px;
+  height: 9px;
+}
+
 .list__label:hover  .list__label_block,
 .list__sub-label:hover .list__label_sub-block {
   display: block;
@@ -852,6 +867,10 @@ button.sub-item__arrow-back span:hover {
   color: $text-white;
   border: none;
   cursor: pointer;
+  svg {
+    width: 21px;
+    height: 21px;
+  }
   span {
     margin-left: 10px;
   }
@@ -873,10 +892,13 @@ button.sub-item__arrow-back span:hover {
   font-weight: normal;
   letter-spacing: 0;
   border-radius: 0;
-}
-
-.menu__close span{
-  margin-left: 10px;
+  svg {
+    width: 17px;
+    height: 17px;
+  }
+  span {
+    margin-left: 10px;
+  }
 }
 
 

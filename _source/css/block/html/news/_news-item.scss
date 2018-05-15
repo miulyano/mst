@@ -20,6 +20,9 @@
     margin-bottom: 30px;
     border-radius: 2px;
     overflow: hidden;
+    img {
+      max-width: 100%;
+    }
   }
   &__block_text {
     margin-bottom: 30px;
@@ -75,6 +78,7 @@
     position: absolute;
     left: 0;
     top: -90px;
+    width: 251px;
     @include media-breakpoint-down(lg) {
       top: -70px;
       max-width: 230px;

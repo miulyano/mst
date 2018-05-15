@@ -16,6 +16,8 @@
   <meta name="theme-color" content="#171b57"/>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="../module/ymaps.js" type="text/javascript" async></script>
   <title>Мостовые строительные технологии</title>
 </head>
 <body class="body">
@@ -77,12 +79,12 @@
     <div class="header__info_wrapper">
       <div class="header__info_logo">
         <a href="/">
-          <svg width="180" height="180" class="header__info_logo-img logo">
+          <svg class="header__info_logo-img logo">
             <use xlink:href="#logo"></use>
           </svg>
         </a>
         <button class="menu-button">
-          <svg width="21" height="21">
+          <svg>
             <use xlink:href="#menu-btn"></use>
           </svg>
           <span>Открыть меню</span>
@@ -96,7 +98,7 @@
         <div class="header__info_action">
           <div class="header__info_action-link item-action">
             <div class="header__info_action-mail">
-              <svg width="15" height="12" class="header__info_mail-img">
+              <svg class="header__info_mail-img">
                 <use xlink:href="#style--header_mail"></use>
               </svg>
               <p class="header__info_mail-text">
@@ -105,7 +107,7 @@
               </p>
             </div>
             <div class="header__info_action-tel">
-              <svg width="30" height="30" class="header__info_tel-img">
+              <svg class="header__info_tel-img">
                 <use xlink:href="#style--header_phone"></use>
               </svg>
               <p class="header__info_tel-text">
@@ -127,7 +129,7 @@
     <ul class="header__nav_list menu">
       <li class="header__nav_category">
         <button class="menu__close header__nav_category-active">
-          <svg width="17" height="17">
+          <svg>
             <use xlink:href="#close-btn"></use>
           </svg>
           <span>Закрыть меню</span>
@@ -135,14 +137,14 @@
       </li>
       <li class="header__nav_category header__nav_category-production">
             <span role="button" class="main-label header__nav_category-active">Продукция
-              <svg width="5" height="9" class="arrow-production">
+              <svg class="menu-arrow arrow-production">
                 <use xlink:href="#arrow"></use>
               </svg>
             </span>
         <ul class="header__nav_firm-list">
           <li class="list__firm-label arrow-back-li">
             <button class="arrow__firm-back header__nav_firm-active">
-              <svg width="5" height="9">
+              <svg class="menu-arrow">
                 <use xlink:href="#arrow"></use>
               </svg>
               <span>Назад в меню</span>
@@ -150,14 +152,14 @@
           </li>
           <li class="list__firm-label list__firm_sica-label">
                 <span role="button" class="firm-label header__nav_firm-active">Sica
-                  <svg width="5" height="9" class="firm-arrow">
+                  <svg class="menu-arrow firm-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                 </span>
             <ul class="header__nav_category-list firm__sika_list">
               <li class="list__label arrow-back-li">
                 <button class="arrow-back">
-                  <svg width="5" height="9">
+                  <svg class="menu-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                   <span>Назад в меню</span>
@@ -165,14 +167,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Производство бетона
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -180,14 +182,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Пластификаторы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -202,14 +204,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Регуляторы схватывания и твердения
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -224,14 +226,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Воздухововлекающие добавки
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -242,14 +244,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Регулятор усадки и расширения бетонов и строительных растворов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -260,14 +262,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Противоморозные добавки
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -278,14 +280,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Стабилизаторы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -297,14 +299,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Добавки для жестких бетонных смесей
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -315,14 +317,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Модификаторы строительных растворов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -333,14 +335,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Пластифицирующие добавки для строительных растворов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -352,13 +354,13 @@
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Вспомогательные материалы
                       </span>
-                    <svg width="5" height="9" class="sub-arrow">
+                    <svg class="menu-arrow sub-arrow">
                       <use xlink:href="#arrow"></use>
                     </svg>
                     <ul class="list__label_sub-block top__950">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -375,14 +377,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Подливочные и анкерные составы
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -390,14 +392,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Подливочные составы на минеральной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                     </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -409,14 +411,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Подливочные составы на полиуретановой основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -427,14 +429,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Подливочные составы на основе ПММА
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -445,14 +447,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Подливочные составы на эпоксидной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -464,14 +466,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Анкеровочные составы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -484,14 +486,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Ремонт и защита бетона
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__150">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -499,14 +501,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Составы для создания адгезионного слоя и антикоррозионной защиты арматуры
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -522,14 +524,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Ремонтные составы на минеральной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -545,14 +547,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Ремонтные составы на эпоксидной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -564,14 +566,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Ремонтные составы на эпоксидно-цементной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -582,14 +584,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Материалы для торкретирования
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -600,14 +602,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Материалы для защиты бетона
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__550">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -631,14 +633,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Ремонтные и защитные составы для резервуаров с питьевой водой
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -652,14 +654,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Усиление конструкций
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -674,14 +676,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Клеи и герметики
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__400">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -689,14 +691,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Клеи на акриловой основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -707,14 +709,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Клеи на эпоксидной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -725,14 +727,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Клеи на полиуретановой основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -745,14 +747,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Грунты для повышения прочности сцепления
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -763,14 +765,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Герметики
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__400">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -788,14 +790,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Клеи и герметики для устройства деревянных полов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__300">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -816,14 +818,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Клеи и герметики для вентилируемых и светопрозрачных фасадов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -836,14 +838,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Всепогодные герметики для герметизации швов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__100">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -858,14 +860,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Антикорозийнная защита металоконструкций
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__250">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -873,14 +875,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Грунтовочные материалы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -896,14 +898,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Системы антикоррозионных защитных покрытий
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -915,14 +917,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Покровные химически стойкие антикоррозионные материалы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__250">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -947,14 +949,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Антикоррозионные материалы для контакта с питьевой водой
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -965,14 +967,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Жидкие мембраны для гидроизоляции и антикоррозионной защиты
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__100">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -988,14 +990,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Гидроизоляция
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__650">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -1003,14 +1005,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Рулонные гидроизоляционные материалы на основе пластифицированного поливинилхлорида (ПвХ)/ термопластичных полиолефинов (ТПО)
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1024,14 +1026,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Жидкие мембраны
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1043,14 +1045,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Материалы для штукатурной гидроизоляции/обмазочной гидроизоляции на полимер-цементной основе
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__100">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1066,14 +1068,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Битумная лента для гидроизоляции
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1084,14 +1086,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Материалы для инъектирования
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__550">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1110,14 +1112,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Гидроизоляция швов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__350">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1131,14 +1133,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Гидроизоляционные ленты для швов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__150">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1153,14 +1155,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Полы и напольные покрытия
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__750">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -1168,14 +1170,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Сухие упрочнители бетонных полов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1188,14 +1190,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Уход засвежеуложенным бетонным полом
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1206,14 +1208,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Жидкие упрочнители бетонных полов
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1225,14 +1227,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Самовыравнивающиеся составы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1244,14 +1246,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Высокопрочные бетонные стяжки
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1263,14 +1265,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Грунтовочные составы
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__150">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1283,14 +1285,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Полимерные напольные покрытия
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__550">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1315,14 +1317,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Антистатические напольные покрытия
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__350">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1338,14 +1340,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Системные решения для декоративных напольных покрытий
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__150">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1360,14 +1362,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Материалы для чистых помещений
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__100">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1380,14 +1382,14 @@
                   </li>
                   <li class="list__sub-label">
                       <span role="button" class="sub-label">Спортивные напольные покрытия
-                        <svg width="5" height="9" class="sub-arrow">
+                        <svg class="menu-arrow sub-arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                     <ul class="list__label_sub-block top__50">
                       <li class="list__label_sub-item arrow-back-li">
                         <button class="sub-item__arrow-back">
-                          <svg width="5" height="9">
+                          <svg class="menu-arrow">
                             <use xlink:href="#arrow"></use>
                           </svg>
                           <span>Назад в меню</span>
@@ -1401,14 +1403,14 @@
               </li>
               <li class="list__label">
                       <span role="button" class="label">Кровельные материалы
-                        <svg width="5" height="9" class="arrow">
+                        <svg class="menu-arrow arrow">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </span>
                 <ul class="list__label_block top__500">
                   <li class="list__sub-label arrow-back-li">
                     <button class="sub__arrow-back">
-                      <svg width="5" height="9">
+                      <svg class="menu-arrow">
                         <use xlink:href="#arrow"></use>
                       </svg>
                       <span>Назад в меню</span>
@@ -1424,14 +1426,14 @@
           </li>
           <li class="list__firm-label list__firm_fc-label">
                 <span role="button" class="firm-label header__nav_firm-active">FlexCrete
-                  <svg width="5" height="9" class="firm-arrow">
+                  <svg class="menu-arrow firm-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                 </span>
             <ul class="header__nav_category-list firm__fc_list">
               <li class="list__label arrow-back-li">
                 <button class="arrow-back">
-                  <svg width="5" height="9">
+                  <svg class="menu-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                   <span>Назад в меню</span>
@@ -1444,14 +1446,14 @@
           </li>
           <li class="list__firm-label list__firm_ej-label">
                 <span role="button" class="firm-label header__nav_firm-active">Exspansion Joints
-                  <svg width="5" height="9" class="firm-arrow">
+                  <svg class="menu-arrow firm-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                 </span>
             <ul class="header__nav_category-list firm__ej_list">
               <li class="list__label arrow-back-li">
                 <button class="arrow-back">
-                  <svg width="5" height="9">
+                  <svg class="menu-arrow">
                     <use xlink:href="#arrow"></use>
                   </svg>
                   <span>Назад в меню</span>
@@ -1481,55 +1483,55 @@
       <h4 class="main__services_aside-heading">Товары</h4>
       <ul class="main__services_aside-list">
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Производство бетона</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Подливочные и анкерные составы</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Ремонт и защита бетона</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Усиление конструкций</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Клеи и герметики</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Антикорозийнная защита<br>металоконструкций</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Гидроизоляция</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Полы и напольные покрытия</a>
         </li>
         <li class="main__services_aside-item">
-          <svg width="23" height="23" class="aside-arrow">
+          <svg class="aside-arrow">
             <use xlink:href="#style--arrow"></use>
           </svg>
           <a href="/pages/goods.html" class="main__services_aside-link">Кровельные материалы</a>
@@ -1540,13 +1542,13 @@
       <ul class="main__breadcrumbs_block">
         <li class="main__breadcrumbs_item">
           <a href="/"><span class="main__breadcrumbs_item-text">Главная</span></a>
-          <svg width="5" height="7" class="breadcrumbs-arrow">
+          <svg class="breadcrumbs-arrow">
             <use xlink:href="#breadcrumbs-arrow"></use>
           </svg>
         </li>
         <li class="main__breadcrumbs_item">
           <a href="/pages/news.html"><span class="main__breadcrumbs_item-text">Новости</span></a>
-          <svg width="5" height="7" class="breadcrumbs-arrow">
+          <svg class="breadcrumbs-arrow">
             <use xlink:href="#breadcrumbs-arrow"></use>
           </svg>
         </li>
@@ -1567,7 +1569,7 @@
           <div class="news-item__order-wrapper">
             <p class="news-item__order-text">Придумать пару Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
             <div class="news-item__order-loop">
-              <img src="../img/pages/news/loupe.png" width="251" alt="Лупа">
+              <img src="../img/pages/news/loupe.png" alt="Лупа">
             </div>
           </div>
           <form action="/" class="news-item__order-form">
@@ -1592,45 +1594,73 @@
       <article class="main__trademarks_item"><img src="../img/all/trademark/dia_mec.png" alt="dia_mec" class="main__partners_item-img"></article>
     </div>
   </section>
-  <section class="main__contacts">
-    <iframe class="main__contacts_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1545734673005!2d37.61544631610641!3d55.75581699922667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDMuNSJF!5e0!3m2!1sru!2sru!4v1523048241201" height="532"  style="border:0" allowfullscreen></iframe>
-    <section class="main__contacts_wrapper">
-      <div class="main__contacts_block vcard">
+</main>
+<footer class="footer">
+  <section class="footer__contacts">
+    <section class="footer__contacts_wrapper">
+      <div class="footer__contacts_block vcard">
             <span class="fn org">
               <span class="value-title" title="Мостовые строительные технологии"></span>
             </span>
         <span class="url">
               <span class="value-title" title="https://morecodemore.github.io/mst.online/"></span>
             </span>
-        <h4 class="main__contacts_block-header">Контакты</h4>
-        <p class="main__contacts_block-text tel">
-          <span class="main__contacts_block-title">Телефон</span>
-          <a class="main__contacts_block-info value" href="tel:+74953993331">+7(495) 399-33-31</a>
+        <h4 class="footer__contacts_block-header">Контакты</h4>
+        <p class="footer__contacts_block-text tel">
+          <span class="footer__contacts_block-title">Телефон</span>
+          <a class="footer__contacts_block-info value" href="tel:+74953993331">+7(495) 399-33-31</a>
         </p>
-        <p class="main__contacts_block-text email">
-          <span class="main__contacts_block-title">Электронная почта</span>
-          <a class="main__contacts_block-info value" href="mailto:admin@sitename.ru">admin@sitename.ru</a>
+        <p class="footer__contacts_block-text email">
+          <span class="footer__contacts_block-title">Электронная почта</span>
+          <a class="footer__contacts_block-info value" href="mailto:admin@sitename.ru">admin@sitename.ru</a>
         </p>
-        <p class="main__contacts_block-text adr">
-          <span class="main__contacts_block-title">Адрес</span>
-          <span class="main__contacts_block-info">
+        <p class="footer__contacts_block-text adr">
+          <span class="footer__contacts_block-title">Адрес</span>
+          <span class="footer__contacts_block-info">
                 <span class="locality">г. Москва</span>,
                 <span class="street-address">ул. Чекистов 28</span>
               </span>
         </p>
-        <button class="main__contacts_block-button">Написать нам</button>
+        <button class="footer__contacts_block-button">Написать нам</button>
       </div>
     </section>
+    <div class="footer__contacts_card" id="main-cart"></div>
   </section>
-</main>
-<footer class="footer">
+  <div class="footer-mobile__info_action">
+    <div class="footer-mobile__info_action-block">
+      <svg class="svg-mobile mobile-marker">
+        <use xlink:href="#footer__mobile_marker"></use>
+      </svg>
+      <p class="footer-mobile__info_action-text">
+        <span class="tag address-tag">Адрес</span>
+        <span class="address">Нижний Новгорд, ул. Нижнепечерская д. 17</span>
+      </p>
+    </div>
+    <div class="footer-mobile__info_action-block">
+      <svg class="svg-mobile mobile-mail">
+        <use xlink:href="#footer__mobile_mail"></use>
+      </svg>
+      <p class="footer-mobile__info_action-text">
+        <span class="tag mail-tag">Электронная почта</span>
+        <a class="mail" href="mailto:office1@-mail.ru">office1@-mail.ru</a>
+      </p>
+    </div>
+    <div class="footer-mobile__info_action-block tel-block">
+      <svg class="footer-phone">
+        <use xlink:href="#style--footer_phone"></use>
+      </svg>
+      <p class="footer-mobile__info_action-text">
+        <a class="tel" href="tel:8800221221">8 (800) 222 12 21</a>
+        <span class="tag tel-tag">Бесплатные звонки по РФ</span>
+      </p>
+    </div>
+  </div>
+  <div class="footer__contacts_card-mobile " id="mobile-cart"></div>
   <section class="footer__info">
     <div class="footer__info_logo">
-      <a href="/">
-        <svg width="130" height="130" class="logo footer-logo">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </a>
+      <svg class="logo footer-logo">
+        <use xlink:href="#logo"></use>
+      </svg>
     </div>
     <div class="footer__info_block">
       <div class="footer__info_text">
@@ -1639,10 +1669,10 @@
       </div>
       <div class="footer__info_action">
         <div class="footer__info_action-block">
-          <svg width="12" height="15" class="svg-main">
+          <svg class="svg-main main-marker">
             <use xlink:href="#style--marker"></use>
           </svg>
-          <svg width="30" height="30" class="svg-mobile mobile-marker">
+          <svg class="svg-mobile mobile-marker">
             <use xlink:href="#footer__mobile_marker"></use>
           </svg>
           <p class="footer__info_action-text">
@@ -1651,10 +1681,10 @@
           </p>
         </div>
         <div class="footer__info_action-block">
-          <svg width="15" height="11" class="svg-main">
+          <svg class="svg-main main-mail">
             <use xlink:href="#style--footer_mail"></use>
           </svg>
-          <svg width="30" height="30" class="svg-mobile">
+          <svg class="svg-mobile mobile-mail">
             <use xlink:href="#footer__mobile_mail"></use>
           </svg>
           <p class="footer__info_action-text">
@@ -1663,7 +1693,7 @@
           </p>
         </div>
         <div class="footer__info_action-block tel-block">
-          <svg width="30" height="30">
+          <svg class="footer-phone">
             <use xlink:href="#style--footer_phone"></use>
           </svg>
           <p class="footer__info_action-text">
@@ -1680,7 +1710,7 @@
   <div class="modal__overlay"></div>
   <div class="modal__block">
     <button class="modal__block_close">
-      <svg width="52" height="53" class="close-modal">
+      <svg class="close-modal">
         <use xlink:href="#close-modal"></use>
       </svg>
     </button>
@@ -1690,7 +1720,7 @@
       <input type="text" class="modal__block_input" id="name" name="name" placeholder="Ваше имя" required>
       <input type="tel" class="modal__block_input" id="tel__modal" name="tel" placeholder="Ваш телефон" required>
       <input type="email" class="modal__block_input" name="email" placeholder="Ваш е-mail">
-      <textarea  class="modal__block_input" rows="1" name="comment" placeholder="Комментарий"></textarea>
+      <textarea  class="modal__block_input textarea" rows="2" name="comment" placeholder="Комментарий"></textarea>
       <button type="submit" class="button modal__block_form-submit">Отправить</button>
     </form>
   </div>
